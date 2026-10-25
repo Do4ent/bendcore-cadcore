@@ -588,6 +588,45 @@ test_protobuf_serializer/fast:
 .PHONY : test_protobuf_serializer/fast
 
 #=============================================================================
+# Target rules for targets named test_loft_feature
+
+# Build rule for target.
+test_loft_feature: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_loft_feature
+.PHONY : test_loft_feature
+
+# fast build rule for target.
+test_loft_feature/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/build
+.PHONY : test_loft_feature/fast
+
+#=============================================================================
+# Target rules for targets named test_sweep_feature
+
+# Build rule for target.
+test_sweep_feature: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sweep_feature
+.PHONY : test_sweep_feature
+
+# fast build rule for target.
+test_sweep_feature/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/build
+.PHONY : test_sweep_feature/fast
+
+#=============================================================================
+# Target rules for targets named test_revolve_feature
+
+# Build rule for target.
+test_revolve_feature: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_revolve_feature
+.PHONY : test_revolve_feature
+
+# fast build rule for target.
+test_revolve_feature/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/build
+.PHONY : test_revolve_feature/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1483,6 +1522,30 @@ src/legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
 .PHONY : src/legacy_adapter.cpp.s
 
+src/loft.o: src/loft.cpp.o
+.PHONY : src/loft.o
+
+# target to build an object file
+src/loft.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.o
+.PHONY : src/loft.cpp.o
+
+src/loft.i: src/loft.cpp.i
+.PHONY : src/loft.i
+
+# target to preprocess a source file
+src/loft.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.i
+.PHONY : src/loft.cpp.i
+
+src/loft.s: src/loft.cpp.s
+.PHONY : src/loft.s
+
+# target to generate assembly for a file
+src/loft.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.s
+.PHONY : src/loft.cpp.s
+
 src/manufacturing.o: src/manufacturing.cpp.o
 .PHONY : src/manufacturing.o
 
@@ -1747,6 +1810,30 @@ src/recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.s
 .PHONY : src/recovery.cpp.s
 
+src/revolve.o: src/revolve.cpp.o
+.PHONY : src/revolve.o
+
+# target to build an object file
+src/revolve.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.o
+.PHONY : src/revolve.cpp.o
+
+src/revolve.i: src/revolve.cpp.i
+.PHONY : src/revolve.i
+
+# target to preprocess a source file
+src/revolve.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.i
+.PHONY : src/revolve.cpp.i
+
+src/revolve.s: src/revolve.cpp.s
+.PHONY : src/revolve.s
+
+# target to generate assembly for a file
+src/revolve.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.s
+.PHONY : src/revolve.cpp.s
+
 src/serialization/protobuf_serializer.o: src/serialization/protobuf_serializer.cpp.o
 .PHONY : src/serialization/protobuf_serializer.o
 
@@ -1794,6 +1881,30 @@ src/serializer.s: src/serializer.cpp.s
 src/serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.s
 .PHONY : src/serializer.cpp.s
+
+src/sweep.o: src/sweep.cpp.o
+.PHONY : src/sweep.o
+
+# target to build an object file
+src/sweep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.o
+.PHONY : src/sweep.cpp.o
+
+src/sweep.i: src/sweep.cpp.i
+.PHONY : src/sweep.i
+
+# target to preprocess a source file
+src/sweep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.i
+.PHONY : src/sweep.cpp.i
+
+src/sweep.s: src/sweep.cpp.s
+.PHONY : src/sweep.s
+
+# target to generate assembly for a file
+src/sweep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.s
+.PHONY : src/sweep.cpp.s
 
 src/transaction.o: src/transaction.cpp.o
 .PHONY : src/transaction.o
@@ -2275,6 +2386,30 @@ tests/test_legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/tests/test_legacy_adapter.cpp.s
 .PHONY : tests/test_legacy_adapter.cpp.s
 
+tests/test_loft_feature.o: tests/test_loft_feature.cpp.o
+.PHONY : tests/test_loft_feature.o
+
+# target to build an object file
+tests/test_loft_feature.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/tests/test_loft_feature.cpp.o
+.PHONY : tests/test_loft_feature.cpp.o
+
+tests/test_loft_feature.i: tests/test_loft_feature.cpp.i
+.PHONY : tests/test_loft_feature.i
+
+# target to preprocess a source file
+tests/test_loft_feature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/tests/test_loft_feature.cpp.i
+.PHONY : tests/test_loft_feature.cpp.i
+
+tests/test_loft_feature.s: tests/test_loft_feature.cpp.s
+.PHONY : tests/test_loft_feature.s
+
+# target to generate assembly for a file
+tests/test_loft_feature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/tests/test_loft_feature.cpp.s
+.PHONY : tests/test_loft_feature.cpp.s
+
 tests/test_manufacturing.o: tests/test_manufacturing.cpp.o
 .PHONY : tests/test_manufacturing.o
 
@@ -2515,6 +2650,30 @@ tests/test_recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.s
 .PHONY : tests/test_recovery.cpp.s
 
+tests/test_revolve_feature.o: tests/test_revolve_feature.cpp.o
+.PHONY : tests/test_revolve_feature.o
+
+# target to build an object file
+tests/test_revolve_feature.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/tests/test_revolve_feature.cpp.o
+.PHONY : tests/test_revolve_feature.cpp.o
+
+tests/test_revolve_feature.i: tests/test_revolve_feature.cpp.i
+.PHONY : tests/test_revolve_feature.i
+
+# target to preprocess a source file
+tests/test_revolve_feature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/tests/test_revolve_feature.cpp.i
+.PHONY : tests/test_revolve_feature.cpp.i
+
+tests/test_revolve_feature.s: tests/test_revolve_feature.cpp.s
+.PHONY : tests/test_revolve_feature.s
+
+# target to generate assembly for a file
+tests/test_revolve_feature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/tests/test_revolve_feature.cpp.s
+.PHONY : tests/test_revolve_feature.cpp.s
+
 tests/test_serializer.o: tests/test_serializer.cpp.o
 .PHONY : tests/test_serializer.o
 
@@ -2538,6 +2697,30 @@ tests/test_serializer.s: tests/test_serializer.cpp.s
 tests/test_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.s
 .PHONY : tests/test_serializer.cpp.s
+
+tests/test_sweep_feature.o: tests/test_sweep_feature.cpp.o
+.PHONY : tests/test_sweep_feature.o
+
+# target to build an object file
+tests/test_sweep_feature.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/tests/test_sweep_feature.cpp.o
+.PHONY : tests/test_sweep_feature.cpp.o
+
+tests/test_sweep_feature.i: tests/test_sweep_feature.cpp.i
+.PHONY : tests/test_sweep_feature.i
+
+# target to preprocess a source file
+tests/test_sweep_feature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/tests/test_sweep_feature.cpp.i
+.PHONY : tests/test_sweep_feature.cpp.i
+
+tests/test_sweep_feature.s: tests/test_sweep_feature.cpp.s
+.PHONY : tests/test_sweep_feature.s
+
+# target to generate assembly for a file
+tests/test_sweep_feature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/tests/test_sweep_feature.cpp.s
+.PHONY : tests/test_sweep_feature.cpp.s
 
 tests/test_transaction.o: tests/test_transaction.cpp.o
 .PHONY : tests/test_transaction.o
@@ -2628,6 +2811,7 @@ help:
 	@echo "... test_geometry_ops"
 	@echo "... test_history_stack"
 	@echo "... test_legacy_adapter"
+	@echo "... test_loft_feature"
 	@echo "... test_manufacturing"
 	@echo "... test_matrix_ops"
 	@echo "... test_model_importer"
@@ -2638,7 +2822,9 @@ help:
 	@echo "... test_protobuf_serializer"
 	@echo "... test_rebuild_engine"
 	@echo "... test_recovery"
+	@echo "... test_revolve_feature"
 	@echo "... test_serializer"
+	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
 	@echo "... src/atomic_save.o"
 	@echo "... src/atomic_save.i"
@@ -2700,6 +2886,9 @@ help:
 	@echo "... src/legacy_adapter.o"
 	@echo "... src/legacy_adapter.i"
 	@echo "... src/legacy_adapter.s"
+	@echo "... src/loft.o"
+	@echo "... src/loft.i"
+	@echo "... src/loft.s"
 	@echo "... src/manufacturing.o"
 	@echo "... src/manufacturing.i"
 	@echo "... src/manufacturing.s"
@@ -2733,12 +2922,18 @@ help:
 	@echo "... src/recovery.o"
 	@echo "... src/recovery.i"
 	@echo "... src/recovery.s"
+	@echo "... src/revolve.o"
+	@echo "... src/revolve.i"
+	@echo "... src/revolve.s"
 	@echo "... src/serialization/protobuf_serializer.o"
 	@echo "... src/serialization/protobuf_serializer.i"
 	@echo "... src/serialization/protobuf_serializer.s"
 	@echo "... src/serializer.o"
 	@echo "... src/serializer.i"
 	@echo "... src/serializer.s"
+	@echo "... src/sweep.o"
+	@echo "... src/sweep.i"
+	@echo "... src/sweep.s"
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
@@ -2799,6 +2994,9 @@ help:
 	@echo "... tests/test_legacy_adapter.o"
 	@echo "... tests/test_legacy_adapter.i"
 	@echo "... tests/test_legacy_adapter.s"
+	@echo "... tests/test_loft_feature.o"
+	@echo "... tests/test_loft_feature.i"
+	@echo "... tests/test_loft_feature.s"
 	@echo "... tests/test_manufacturing.o"
 	@echo "... tests/test_manufacturing.i"
 	@echo "... tests/test_manufacturing.s"
@@ -2829,9 +3027,15 @@ help:
 	@echo "... tests/test_recovery.o"
 	@echo "... tests/test_recovery.i"
 	@echo "... tests/test_recovery.s"
+	@echo "... tests/test_revolve_feature.o"
+	@echo "... tests/test_revolve_feature.i"
+	@echo "... tests/test_revolve_feature.s"
 	@echo "... tests/test_serializer.o"
 	@echo "... tests/test_serializer.i"
 	@echo "... tests/test_serializer.s"
+	@echo "... tests/test_sweep_feature.o"
+	@echo "... tests/test_sweep_feature.i"
+	@echo "... tests/test_sweep_feature.s"
 	@echo "... tests/test_transaction.o"
 	@echo "... tests/test_transaction.i"
 	@echo "... tests/test_transaction.s"

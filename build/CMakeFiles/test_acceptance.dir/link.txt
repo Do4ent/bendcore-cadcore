@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wall -Wextra -Werror -pedantic -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.o -o test_acceptance  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.o -o test_acceptance  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

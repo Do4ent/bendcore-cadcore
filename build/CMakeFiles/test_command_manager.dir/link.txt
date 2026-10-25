@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wall -Wextra -Werror -pedantic -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.o -o test_command_manager  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.o -o test_command_manager  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

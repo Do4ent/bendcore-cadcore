@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_revolve_feature.dir/tests/test_revolve_feature.cpp.o -o test_revolve_feature  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

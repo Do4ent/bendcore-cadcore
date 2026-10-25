@@ -28,6 +28,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
   "/tmp/bendcore-cadcore/src/io/model_importer.cpp" "CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o.d"
   "/tmp/bendcore-cadcore/src/legacy_adapter.cpp" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/loft.cpp" "CMakeFiles/bendcore.dir/src/loft.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/loft.cpp.o.d"
   "/tmp/bendcore-cadcore/src/manufacturing.cpp" "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o.d"
   "/tmp/bendcore-cadcore/src/math/geometry_ops.cpp" "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o.d"
   "/tmp/bendcore-cadcore/src/math/matrix_ops.cpp" "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o.d"
@@ -39,8 +40,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/project_format.cpp" "CMakeFiles/bendcore.dir/src/project_format.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/project_format.cpp.o.d"
   "/tmp/bendcore-cadcore/src/rebuild_engine.cpp" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/recovery.cpp" "CMakeFiles/bendcore.dir/src/recovery.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/recovery.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/revolve.cpp" "CMakeFiles/bendcore.dir/src/revolve.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/revolve.cpp.o.d"
   "/tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp" "CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o.d"
   "/tmp/bendcore-cadcore/src/serializer.cpp" "CMakeFiles/bendcore.dir/src/serializer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/serializer.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/sweep.cpp" "CMakeFiles/bendcore.dir/src/sweep.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/sweep.cpp.o.d"
   "/tmp/bendcore-cadcore/src/transaction.cpp" "CMakeFiles/bendcore.dir/src/transaction.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   )
 

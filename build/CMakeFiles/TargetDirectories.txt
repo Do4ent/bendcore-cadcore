@@ -30,6 +30,9 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_model_importer.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_parallel_executor.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_protobuf_serializer.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_loft_feature.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_sweep_feature.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_revolve_feature.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_loft_feature.dir/tests/test_loft_feature.cpp.o -o test_loft_feature  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

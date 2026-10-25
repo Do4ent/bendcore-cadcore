@@ -95,6 +95,9 @@ all: CMakeFiles/test_geometry_ops.dir/all
 all: CMakeFiles/test_model_importer.dir/all
 all: CMakeFiles/test_parallel_executor.dir/all
 all: CMakeFiles/test_protobuf_serializer.dir/all
+all: CMakeFiles/test_loft_feature.dir/all
+all: CMakeFiles/test_sweep_feature.dir/all
+all: CMakeFiles/test_revolve_feature.dir/all
 all: _deps/googletest-build/all
 all: _deps/taskflow-build/all
 .PHONY : all
@@ -137,6 +140,9 @@ clean: CMakeFiles/test_geometry_ops.dir/clean
 clean: CMakeFiles/test_model_importer.dir/clean
 clean: CMakeFiles/test_parallel_executor.dir/clean
 clean: CMakeFiles/test_protobuf_serializer.dir/clean
+clean: CMakeFiles/test_loft_feature.dir/clean
+clean: CMakeFiles/test_sweep_feature.dir/clean
+clean: CMakeFiles/test_revolve_feature.dir/clean
 clean: _deps/googletest-build/clean
 clean: _deps/taskflow-build/clean
 .PHONY : clean
@@ -269,12 +275,12 @@ CMakeFiles/test_entity_id.dir/all: _deps/googletest-build/googletest/CMakeFiles/
 CMakeFiles/test_entity_id.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_id.dir/build.make CMakeFiles/test_entity_id.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_id.dir/build.make CMakeFiles/test_entity_id.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=61 "Built target test_entity_id"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=58,59 "Built target test_entity_id"
 .PHONY : CMakeFiles/test_entity_id.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_entity_id.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_entity_id.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_entity_id.dir/rule
@@ -297,12 +303,12 @@ CMakeFiles/test_cad_document.dir/all: _deps/googletest-build/googletest/CMakeFil
 CMakeFiles/test_cad_document.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=49,50 "Built target test_cad_document"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=48,49 "Built target test_cad_document"
 .PHONY : CMakeFiles/test_cad_document.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_cad_document.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_cad_document.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_cad_document.dir/rule
@@ -325,12 +331,12 @@ CMakeFiles/test_entity_tree.dir/all: _deps/googletest-build/googletest/CMakeFile
 CMakeFiles/test_entity_tree.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=62,63 "Built target test_entity_tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=60,61 "Built target test_entity_tree"
 .PHONY : CMakeFiles/test_entity_tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_entity_tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_entity_tree.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_entity_tree.dir/rule
@@ -353,7 +359,7 @@ CMakeFiles/test_command_manager.dir/all: _deps/googletest-build/googletest/CMake
 CMakeFiles/test_command_manager.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=51,52 "Built target test_command_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=50 "Built target test_command_manager"
 .PHONY : CMakeFiles/test_command_manager.dir/all
 
 # Build rule for subdir invocation for target.
@@ -386,7 +392,7 @@ CMakeFiles/test_transaction.dir/all: _deps/googletest-build/googletest/CMakeFile
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_transaction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_transaction.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_transaction.dir/rule
@@ -409,7 +415,7 @@ CMakeFiles/test_history_stack.dir/all: _deps/googletest-build/googletest/CMakeFi
 CMakeFiles/test_history_stack.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=74,75 "Built target test_history_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=71 "Built target test_history_stack"
 .PHONY : CMakeFiles/test_history_stack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -437,12 +443,12 @@ CMakeFiles/test_document_event_bus.dir/all: _deps/googletest-build/googletest/CM
 CMakeFiles/test_document_event_bus.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=57,58 "Built target test_document_event_bus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=55,56 "Built target test_document_event_bus"
 .PHONY : CMakeFiles/test_document_event_bus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_document_event_bus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_document_event_bus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_document_event_bus.dir/rule
@@ -465,12 +471,12 @@ CMakeFiles/test_parameter_store.dir/all: _deps/googletest-build/googletest/CMake
 CMakeFiles/test_parameter_store.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=85,86 "Built target test_parameter_store"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=83,84 "Built target test_parameter_store"
 .PHONY : CMakeFiles/test_parameter_store.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_parameter_store.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_parameter_store.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_parameter_store.dir/rule
@@ -493,12 +499,12 @@ CMakeFiles/test_dependency_graph.dir/all: _deps/googletest-build/googletest/CMak
 CMakeFiles/test_dependency_graph.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=55,56 "Built target test_dependency_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=53,54 "Built target test_dependency_graph"
 .PHONY : CMakeFiles/test_dependency_graph.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_dependency_graph.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_dependency_graph.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_dependency_graph.dir/rule
@@ -521,12 +527,12 @@ CMakeFiles/test_rebuild_engine.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_rebuild_engine.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=93,94 "Built target test_rebuild_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=90,91 "Built target test_rebuild_engine"
 .PHONY : CMakeFiles/test_rebuild_engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_rebuild_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_rebuild_engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_rebuild_engine.dir/rule
@@ -549,12 +555,12 @@ CMakeFiles/test_geometry_engine.dir/all: _deps/googletest-build/googletest/CMake
 CMakeFiles/test_geometry_engine.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=70,71 "Built target test_geometry_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=67,68 "Built target test_geometry_engine"
 .PHONY : CMakeFiles/test_geometry_engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_geometry_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_geometry_engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_geometry_engine.dir/rule
@@ -577,12 +583,12 @@ CMakeFiles/test_brep.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest
 CMakeFiles/test_brep.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=47,48 "Built target test_brep"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=46,47 "Built target test_brep"
 .PHONY : CMakeFiles/test_brep.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_brep.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_brep.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_brep.dir/rule
@@ -605,12 +611,12 @@ CMakeFiles/test_feature_system.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_feature_system.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=64,65 "Built target test_feature_system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=62,63 "Built target test_feature_system"
 .PHONY : CMakeFiles/test_feature_system.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_feature_system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_feature_system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_feature_system.dir/rule
@@ -633,12 +639,12 @@ CMakeFiles/test_geometry_cache.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_geometry_cache.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=68,69 "Built target test_geometry_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=65,66 "Built target test_geometry_cache"
 .PHONY : CMakeFiles/test_geometry_cache.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_geometry_cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_geometry_cache.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_geometry_cache.dir/rule
@@ -661,12 +667,12 @@ CMakeFiles/test_project_format.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_project_format.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=89,90 "Built target test_project_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=86,87 "Built target test_project_format"
 .PHONY : CMakeFiles/test_project_format.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_project_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_project_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_project_format.dir/rule
@@ -689,12 +695,12 @@ CMakeFiles/test_serializer.dir/all: _deps/googletest-build/googletest/CMakeFiles
 CMakeFiles/test_serializer.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=97,98 "Built target test_serializer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=95,96 "Built target test_serializer"
 .PHONY : CMakeFiles/test_serializer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_serializer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_serializer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_serializer.dir/rule
@@ -717,7 +723,7 @@ CMakeFiles/test_atomic_save.dir/all: _deps/googletest-build/googletest/CMakeFile
 CMakeFiles/test_atomic_save.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=43,44 "Built target test_atomic_save"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=43 "Built target test_atomic_save"
 .PHONY : CMakeFiles/test_atomic_save.dir/all
 
 # Build rule for subdir invocation for target.
@@ -745,7 +751,7 @@ CMakeFiles/test_recovery.dir/all: _deps/googletest-build/googletest/CMakeFiles/g
 CMakeFiles/test_recovery.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=95,96 "Built target test_recovery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=92 "Built target test_recovery"
 .PHONY : CMakeFiles/test_recovery.dir/all
 
 # Build rule for subdir invocation for target.
@@ -773,12 +779,12 @@ CMakeFiles/test_legacy_adapter.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_legacy_adapter.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=76,77 "Built target test_legacy_adapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=72,73 "Built target test_legacy_adapter"
 .PHONY : CMakeFiles/test_legacy_adapter.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_legacy_adapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_legacy_adapter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_legacy_adapter.dir/rule
@@ -801,7 +807,7 @@ CMakeFiles/test_e2e.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.
 CMakeFiles/test_e2e.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=59,60 "Built target test_e2e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=57 "Built target test_e2e"
 .PHONY : CMakeFiles/test_e2e.dir/all
 
 # Build rule for subdir invocation for target.
@@ -834,7 +840,7 @@ CMakeFiles/test_acceptance.dir/all: _deps/googletest-build/googletest/CMakeFiles
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_acceptance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_acceptance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_acceptance.dir/rule
@@ -857,7 +863,7 @@ CMakeFiles/test_pipe_components.dir/all: _deps/googletest-build/googletest/CMake
 CMakeFiles/test_pipe_components.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=87,88 "Built target test_pipe_components"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=85 "Built target test_pipe_components"
 .PHONY : CMakeFiles/test_pipe_components.dir/all
 
 # Build rule for subdir invocation for target.
@@ -885,12 +891,12 @@ CMakeFiles/test_bend_calculator.dir/all: _deps/googletest-build/googletest/CMake
 CMakeFiles/test_bend_calculator.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=45,46 "Built target test_bend_calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=44,45 "Built target test_bend_calculator"
 .PHONY : CMakeFiles/test_bend_calculator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_bend_calculator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_bend_calculator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_bend_calculator.dir/rule
@@ -913,7 +919,7 @@ CMakeFiles/test_format_exporters.dir/all: _deps/googletest-build/googletest/CMak
 CMakeFiles/test_format_exporters.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=66,67 "Built target test_format_exporters"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=64 "Built target test_format_exporters"
 .PHONY : CMakeFiles/test_format_exporters.dir/all
 
 # Build rule for subdir invocation for target.
@@ -941,12 +947,12 @@ CMakeFiles/test_manufacturing.dir/all: _deps/googletest-build/googletest/CMakeFi
 CMakeFiles/test_manufacturing.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=78,79 "Built target test_manufacturing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=76,77 "Built target test_manufacturing"
 .PHONY : CMakeFiles/test_manufacturing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_manufacturing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_manufacturing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_manufacturing.dir/rule
@@ -969,12 +975,12 @@ CMakeFiles/test_database_manager.dir/all: _deps/googletest-build/googletest/CMak
 CMakeFiles/test_database_manager.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=53,54 "Built target test_database_manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=51,52 "Built target test_database_manager"
 .PHONY : CMakeFiles/test_database_manager.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_database_manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_database_manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_database_manager.dir/rule
@@ -997,12 +1003,12 @@ CMakeFiles/test_matrix_ops.dir/all: _deps/googletest-build/googletest/CMakeFiles
 CMakeFiles/test_matrix_ops.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=80 "Built target test_matrix_ops"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=78 "Built target test_matrix_ops"
 .PHONY : CMakeFiles/test_matrix_ops.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_matrix_ops.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_matrix_ops.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_matrix_ops.dir/rule
@@ -1025,12 +1031,12 @@ CMakeFiles/test_geometry_ops.dir/all: _deps/googletest-build/googletest/CMakeFil
 CMakeFiles/test_geometry_ops.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=72,73 "Built target test_geometry_ops"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=69,70 "Built target test_geometry_ops"
 .PHONY : CMakeFiles/test_geometry_ops.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_geometry_ops.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_geometry_ops.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_geometry_ops.dir/rule
@@ -1053,12 +1059,12 @@ CMakeFiles/test_model_importer.dir/all: _deps/googletest-build/googletest/CMakeF
 CMakeFiles/test_model_importer.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=81,82 "Built target test_model_importer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=79,80 "Built target test_model_importer"
 .PHONY : CMakeFiles/test_model_importer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_model_importer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_model_importer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_model_importer.dir/rule
@@ -1081,12 +1087,12 @@ CMakeFiles/test_parallel_executor.dir/all: _deps/googletest-build/googletest/CMa
 CMakeFiles/test_parallel_executor.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=83,84 "Built target test_parallel_executor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=81,82 "Built target test_parallel_executor"
 .PHONY : CMakeFiles/test_parallel_executor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_parallel_executor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_parallel_executor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_parallel_executor.dir/rule
@@ -1109,12 +1115,12 @@ CMakeFiles/test_protobuf_serializer.dir/all: _deps/googletest-build/googletest/C
 CMakeFiles/test_protobuf_serializer.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=91,92 "Built target test_protobuf_serializer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=88,89 "Built target test_protobuf_serializer"
 .PHONY : CMakeFiles/test_protobuf_serializer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_protobuf_serializer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_protobuf_serializer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_protobuf_serializer.dir/rule
@@ -1127,6 +1133,90 @@ test_protobuf_serializer: CMakeFiles/test_protobuf_serializer.dir/rule
 CMakeFiles/test_protobuf_serializer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/clean
 .PHONY : CMakeFiles/test_protobuf_serializer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_loft_feature.dir
+
+# All Build rule for target.
+CMakeFiles/test_loft_feature.dir/all: CMakeFiles/bendcore.dir/all
+CMakeFiles/test_loft_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_loft_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=74,75 "Built target test_loft_feature"
+.PHONY : CMakeFiles/test_loft_feature.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_loft_feature.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_loft_feature.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_loft_feature.dir/rule
+
+# Convenience name for target.
+test_loft_feature: CMakeFiles/test_loft_feature.dir/rule
+.PHONY : test_loft_feature
+
+# clean rule for target.
+CMakeFiles/test_loft_feature.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_loft_feature.dir/build.make CMakeFiles/test_loft_feature.dir/clean
+.PHONY : CMakeFiles/test_loft_feature.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_sweep_feature.dir
+
+# All Build rule for target.
+CMakeFiles/test_sweep_feature.dir/all: CMakeFiles/bendcore.dir/all
+CMakeFiles/test_sweep_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_sweep_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=97,98 "Built target test_sweep_feature"
+.PHONY : CMakeFiles/test_sweep_feature.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_sweep_feature.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_sweep_feature.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_sweep_feature.dir/rule
+
+# Convenience name for target.
+test_sweep_feature: CMakeFiles/test_sweep_feature.dir/rule
+.PHONY : test_sweep_feature
+
+# clean rule for target.
+CMakeFiles/test_sweep_feature.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sweep_feature.dir/build.make CMakeFiles/test_sweep_feature.dir/clean
+.PHONY : CMakeFiles/test_sweep_feature.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_revolve_feature.dir
+
+# All Build rule for target.
+CMakeFiles/test_revolve_feature.dir/all: CMakeFiles/bendcore.dir/all
+CMakeFiles/test_revolve_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_revolve_feature.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=93,94 "Built target test_revolve_feature"
+.PHONY : CMakeFiles/test_revolve_feature.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_revolve_feature.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 39
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_revolve_feature.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_revolve_feature.dir/rule
+
+# Convenience name for target.
+test_revolve_feature: CMakeFiles/test_revolve_feature.dir/rule
+.PHONY : test_revolve_feature
+
+# clean rule for target.
+CMakeFiles/test_revolve_feature.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_revolve_feature.dir/build.make CMakeFiles/test_revolve_feature.dir/clean
+.PHONY : CMakeFiles/test_revolve_feature.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -1162,12 +1252,12 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=36,37 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=36 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -1188,7 +1278,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=38,39 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=37,38 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1214,12 +1304,12 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=40 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=39,40 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/bendcore-cadcore/build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule

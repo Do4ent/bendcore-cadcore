@@ -42,6 +42,10 @@ set(BENDCORE_SOURCES
     src/format_exporters.cpp
     src/manufacturing.cpp
     src/database_manager.cpp
+    # Extended Features (Phase M6)
+    src/loft.cpp
+    src/sweep.cpp
+    src/revolve.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -323,3 +327,22 @@ if(Protobuf_FOUND)
     target_link_libraries(test_protobuf_serializer protobuf::libprotobuf_lite)
 endif()
 add_test(NAME ProtobufSerializer COMMAND test_protobuf_serializer)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M6: Extended Features (Loft, Sweep, Revolve)
+# ═════════════════════════════════════════════════════════════════
+
+# Loft Feature Tests (M6-001)
+add_executable(test_loft_feature tests/test_loft_feature.cpp)
+target_link_libraries(test_loft_feature bendcore gtest_main)
+add_test(NAME LoftFeature COMMAND test_loft_feature)
+
+# Sweep Feature Tests (M6-002)
+add_executable(test_sweep_feature tests/test_sweep_feature.cpp)
+target_link_libraries(test_sweep_feature bendcore gtest_main)
+add_test(NAME SweepFeature COMMAND test_sweep_feature)
+
+# Revolve Feature Tests (M6-003)
+add_executable(test_revolve_feature tests/test_revolve_feature.cpp)
+target_link_libraries(test_revolve_feature bendcore gtest_main)
+add_test(NAME RevolveFeature COMMAND test_revolve_feature)
