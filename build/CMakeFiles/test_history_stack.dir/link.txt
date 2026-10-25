@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.o -o test_history_stack  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

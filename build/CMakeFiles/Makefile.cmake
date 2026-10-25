@@ -87,6 +87,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_entity_tree.dir/DependInfo.cmake"
   "CMakeFiles/test_command_manager.dir/DependInfo.cmake"
   "CMakeFiles/test_transaction.dir/DependInfo.cmake"
+  "CMakeFiles/test_history_stack.dir/DependInfo.cmake"
+  "CMakeFiles/test_document_event_bus.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

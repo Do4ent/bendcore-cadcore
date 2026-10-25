@@ -14,6 +14,8 @@ set(BENDCORE_SOURCES
     src/entity_tree.cpp
     src/command_manager.cpp
     src/transaction.cpp
+    src/history_stack.cpp
+    src/document_event_bus.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -56,3 +58,13 @@ add_test(NAME CommandManager COMMAND test_command_manager)
 add_executable(test_transaction tests/test_transaction.cpp)
 target_link_libraries(test_transaction bendcore gtest_main)
 add_test(NAME Transaction COMMAND test_transaction)
+
+# CAD-CORE-007: History Stack tests
+add_executable(test_history_stack tests/test_history_stack.cpp)
+target_link_libraries(test_history_stack bendcore gtest_main)
+add_test(NAME HistoryStack COMMAND test_history_stack)
+
+# CAD-CORE-008: Document Event Bus tests
+add_executable(test_document_event_bus tests/test_document_event_bus.cpp)
+target_link_libraries(test_document_event_bus bendcore gtest_main)
+add_test(NAME DocumentEventBus COMMAND test_document_event_bus)

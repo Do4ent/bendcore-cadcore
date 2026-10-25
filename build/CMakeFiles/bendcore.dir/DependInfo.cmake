@@ -10,8 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/cad_document.cpp" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o.d"
   "/tmp/bendcore-cadcore/src/command_manager.cpp" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/document_event_bus.cpp" "CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_id.cpp" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_tree.cpp" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
   "/tmp/bendcore-cadcore/src/transaction.cpp" "CMakeFiles/bendcore.dir/src/transaction.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   )
 

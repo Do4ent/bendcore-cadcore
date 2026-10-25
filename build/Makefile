@@ -250,6 +250,32 @@ test_transaction/fast:
 .PHONY : test_transaction/fast
 
 #=============================================================================
+# Target rules for targets named test_history_stack
+
+# Build rule for target.
+test_history_stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_history_stack
+.PHONY : test_history_stack
+
+# fast build rule for target.
+test_history_stack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/build
+.PHONY : test_history_stack/fast
+
+#=============================================================================
+# Target rules for targets named test_document_event_bus
+
+# Build rule for target.
+test_document_event_bus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_document_event_bus
+.PHONY : test_document_event_bus
+
+# fast build rule for target.
+test_document_event_bus/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/build
+.PHONY : test_document_event_bus/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -349,6 +375,30 @@ src/command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.s
 .PHONY : src/command_manager.cpp.s
 
+src/document_event_bus.o: src/document_event_bus.cpp.o
+.PHONY : src/document_event_bus.o
+
+# target to build an object file
+src/document_event_bus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o
+.PHONY : src/document_event_bus.cpp.o
+
+src/document_event_bus.i: src/document_event_bus.cpp.i
+.PHONY : src/document_event_bus.i
+
+# target to preprocess a source file
+src/document_event_bus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.i
+.PHONY : src/document_event_bus.cpp.i
+
+src/document_event_bus.s: src/document_event_bus.cpp.s
+.PHONY : src/document_event_bus.s
+
+# target to generate assembly for a file
+src/document_event_bus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.s
+.PHONY : src/document_event_bus.cpp.s
+
 src/entity_id.o: src/entity_id.cpp.o
 .PHONY : src/entity_id.o
 
@@ -396,6 +446,30 @@ src/entity_tree.s: src/entity_tree.cpp.s
 src/entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
 .PHONY : src/entity_tree.cpp.s
+
+src/history_stack.o: src/history_stack.cpp.o
+.PHONY : src/history_stack.o
+
+# target to build an object file
+src/history_stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.o
+.PHONY : src/history_stack.cpp.o
+
+src/history_stack.i: src/history_stack.cpp.i
+.PHONY : src/history_stack.i
+
+# target to preprocess a source file
+src/history_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.i
+.PHONY : src/history_stack.cpp.i
+
+src/history_stack.s: src/history_stack.cpp.s
+.PHONY : src/history_stack.s
+
+# target to generate assembly for a file
+src/history_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.s
+.PHONY : src/history_stack.cpp.s
 
 src/transaction.o: src/transaction.cpp.o
 .PHONY : src/transaction.o
@@ -469,6 +543,30 @@ tests/test_command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.s
 .PHONY : tests/test_command_manager.cpp.s
 
+tests/test_document_event_bus.o: tests/test_document_event_bus.cpp.o
+.PHONY : tests/test_document_event_bus.o
+
+# target to build an object file
+tests/test_document_event_bus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/tests/test_document_event_bus.cpp.o
+.PHONY : tests/test_document_event_bus.cpp.o
+
+tests/test_document_event_bus.i: tests/test_document_event_bus.cpp.i
+.PHONY : tests/test_document_event_bus.i
+
+# target to preprocess a source file
+tests/test_document_event_bus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/tests/test_document_event_bus.cpp.i
+.PHONY : tests/test_document_event_bus.cpp.i
+
+tests/test_document_event_bus.s: tests/test_document_event_bus.cpp.s
+.PHONY : tests/test_document_event_bus.s
+
+# target to generate assembly for a file
+tests/test_document_event_bus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/tests/test_document_event_bus.cpp.s
+.PHONY : tests/test_document_event_bus.cpp.s
+
 tests/test_entity_id.o: tests/test_entity_id.cpp.o
 .PHONY : tests/test_entity_id.o
 
@@ -517,6 +615,30 @@ tests/test_entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.s
 .PHONY : tests/test_entity_tree.cpp.s
 
+tests/test_history_stack.o: tests/test_history_stack.cpp.o
+.PHONY : tests/test_history_stack.o
+
+# target to build an object file
+tests/test_history_stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.o
+.PHONY : tests/test_history_stack.cpp.o
+
+tests/test_history_stack.i: tests/test_history_stack.cpp.i
+.PHONY : tests/test_history_stack.i
+
+# target to preprocess a source file
+tests/test_history_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.i
+.PHONY : tests/test_history_stack.cpp.i
+
+tests/test_history_stack.s: tests/test_history_stack.cpp.s
+.PHONY : tests/test_history_stack.s
+
+# target to generate assembly for a file
+tests/test_history_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.s
+.PHONY : tests/test_history_stack.cpp.s
+
 tests/test_transaction.o: tests/test_transaction.cpp.o
 .PHONY : tests/test_transaction.o
 
@@ -561,8 +683,10 @@ help:
 	@echo "... gtest_main"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
+	@echo "... test_document_event_bus"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
+	@echo "... test_history_stack"
 	@echo "... test_transaction"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
@@ -570,12 +694,18 @@ help:
 	@echo "... src/command_manager.o"
 	@echo "... src/command_manager.i"
 	@echo "... src/command_manager.s"
+	@echo "... src/document_event_bus.o"
+	@echo "... src/document_event_bus.i"
+	@echo "... src/document_event_bus.s"
 	@echo "... src/entity_id.o"
 	@echo "... src/entity_id.i"
 	@echo "... src/entity_id.s"
 	@echo "... src/entity_tree.o"
 	@echo "... src/entity_tree.i"
 	@echo "... src/entity_tree.s"
+	@echo "... src/history_stack.o"
+	@echo "... src/history_stack.i"
+	@echo "... src/history_stack.s"
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
@@ -585,12 +715,18 @@ help:
 	@echo "... tests/test_command_manager.o"
 	@echo "... tests/test_command_manager.i"
 	@echo "... tests/test_command_manager.s"
+	@echo "... tests/test_document_event_bus.o"
+	@echo "... tests/test_document_event_bus.i"
+	@echo "... tests/test_document_event_bus.s"
 	@echo "... tests/test_entity_id.o"
 	@echo "... tests/test_entity_id.i"
 	@echo "... tests/test_entity_id.s"
 	@echo "... tests/test_entity_tree.o"
 	@echo "... tests/test_entity_tree.i"
 	@echo "... tests/test_entity_tree.s"
+	@echo "... tests/test_history_stack.o"
+	@echo "... tests/test_history_stack.i"
+	@echo "... tests/test_history_stack.s"
 	@echo "... tests/test_transaction.o"
 	@echo "... tests/test_transaction.i"
 	@echo "... tests/test_transaction.s"
