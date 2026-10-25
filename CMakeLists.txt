@@ -56,6 +56,8 @@ set(BENDCORE_SOURCES
     src/assembly/assembly_ui.cpp
     # Phase M9: Direct Editing & Parametrics
     src/geometry/direct_editing.cpp
+    # Phase M10: Manufacturing & Export
+    src/manufacturing/nc_generator.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -401,3 +403,12 @@ add_test(NAME AssemblyUI COMMAND test_assembly_ui)
 add_executable(test_direct_editing tests/test_direct_editing.cpp)
 target_link_libraries(test_direct_editing bendcore gtest_main)
 add_test(NAME DirectEditing COMMAND test_direct_editing)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M10: Manufacturing & Export
+# ═════════════════════════════════════════════════════════════════
+
+# Manufacturing Tests (CAD-DEV-076 to CAD-DEV-100)
+add_executable(test_nc_generator tests/test_nc_generator.cpp)
+target_link_libraries(test_nc_generator bendcore gtest_main)
+add_test(NAME NCGenerator COMMAND test_nc_generator)

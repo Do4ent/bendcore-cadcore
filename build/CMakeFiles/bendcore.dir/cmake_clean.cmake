@@ -53,6 +53,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/loft.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o"
   "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o"
+  "CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o"
   "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o"

@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/legacy_adapter.cpp" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o.d"
   "/tmp/bendcore-cadcore/src/loft.cpp" "CMakeFiles/bendcore.dir/src/loft.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/loft.cpp.o.d"
   "/tmp/bendcore-cadcore/src/manufacturing.cpp" "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/manufacturing.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/manufacturing/nc_generator.cpp" "CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o.d"
   "/tmp/bendcore-cadcore/src/math/geometry_ops.cpp" "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o.d"
   "/tmp/bendcore-cadcore/src/math/matrix_ops.cpp" "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o.d"
   "/tmp/bendcore-cadcore/src/mesh_generator.cpp" "CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o.d"

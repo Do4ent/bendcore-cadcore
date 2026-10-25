@@ -692,6 +692,19 @@ test_direct_editing/fast:
 .PHONY : test_direct_editing/fast
 
 #=============================================================================
+# Target rules for targets named test_nc_generator
+
+# Build rule for target.
+test_nc_generator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_nc_generator
+.PHONY : test_nc_generator
+
+# fast build rule for target.
+test_nc_generator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_nc_generator.dir/build.make CMakeFiles/test_nc_generator.dir/build
+.PHONY : test_nc_generator/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1755,6 +1768,30 @@ src/manufacturing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.s
 .PHONY : src/manufacturing.cpp.s
 
+src/manufacturing/nc_generator.o: src/manufacturing/nc_generator.cpp.o
+.PHONY : src/manufacturing/nc_generator.o
+
+# target to build an object file
+src/manufacturing/nc_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o
+.PHONY : src/manufacturing/nc_generator.cpp.o
+
+src/manufacturing/nc_generator.i: src/manufacturing/nc_generator.cpp.i
+.PHONY : src/manufacturing/nc_generator.i
+
+# target to preprocess a source file
+src/manufacturing/nc_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.i
+.PHONY : src/manufacturing/nc_generator.cpp.i
+
+src/manufacturing/nc_generator.s: src/manufacturing/nc_generator.cpp.s
+.PHONY : src/manufacturing/nc_generator.s
+
+# target to generate assembly for a file
+src/manufacturing/nc_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.s
+.PHONY : src/manufacturing/nc_generator.cpp.s
+
 src/math/geometry_ops.o: src/math/geometry_ops.cpp.o
 .PHONY : src/math/geometry_ops.o
 
@@ -2739,6 +2776,30 @@ tests/test_model_importer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.s
 .PHONY : tests/test_model_importer.cpp.s
 
+tests/test_nc_generator.o: tests/test_nc_generator.cpp.o
+.PHONY : tests/test_nc_generator.o
+
+# target to build an object file
+tests/test_nc_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_nc_generator.dir/build.make CMakeFiles/test_nc_generator.dir/tests/test_nc_generator.cpp.o
+.PHONY : tests/test_nc_generator.cpp.o
+
+tests/test_nc_generator.i: tests/test_nc_generator.cpp.i
+.PHONY : tests/test_nc_generator.i
+
+# target to preprocess a source file
+tests/test_nc_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_nc_generator.dir/build.make CMakeFiles/test_nc_generator.dir/tests/test_nc_generator.cpp.i
+.PHONY : tests/test_nc_generator.cpp.i
+
+tests/test_nc_generator.s: tests/test_nc_generator.cpp.s
+.PHONY : tests/test_nc_generator.s
+
+# target to generate assembly for a file
+tests/test_nc_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_nc_generator.dir/build.make CMakeFiles/test_nc_generator.dir/tests/test_nc_generator.cpp.s
+.PHONY : tests/test_nc_generator.cpp.s
+
 tests/test_occt_wrapper.o: tests/test_occt_wrapper.cpp.o
 .PHONY : tests/test_occt_wrapper.o
 
@@ -3123,6 +3184,7 @@ help:
 	@echo "... test_mate_solver"
 	@echo "... test_matrix_ops"
 	@echo "... test_model_importer"
+	@echo "... test_nc_generator"
 	@echo "... test_occt_wrapper"
 	@echo "... test_parallel_executor"
 	@echo "... test_parameter_store"
@@ -3217,6 +3279,9 @@ help:
 	@echo "... src/manufacturing.o"
 	@echo "... src/manufacturing.i"
 	@echo "... src/manufacturing.s"
+	@echo "... src/manufacturing/nc_generator.o"
+	@echo "... src/manufacturing/nc_generator.i"
+	@echo "... src/manufacturing/nc_generator.s"
 	@echo "... src/math/geometry_ops.o"
 	@echo "... src/math/geometry_ops.i"
 	@echo "... src/math/geometry_ops.s"
@@ -3340,6 +3405,9 @@ help:
 	@echo "... tests/test_model_importer.o"
 	@echo "... tests/test_model_importer.i"
 	@echo "... tests/test_model_importer.s"
+	@echo "... tests/test_nc_generator.o"
+	@echo "... tests/test_nc_generator.i"
+	@echo "... tests/test_nc_generator.s"
 	@echo "... tests/test_occt_wrapper.o"
 	@echo "... tests/test_occt_wrapper.i"
 	@echo "... tests/test_occt_wrapper.s"

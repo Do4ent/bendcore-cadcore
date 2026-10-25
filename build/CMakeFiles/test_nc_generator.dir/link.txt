@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_nc_generator.dir/tests/test_nc_generator.cpp.o -o test_nc_generator  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

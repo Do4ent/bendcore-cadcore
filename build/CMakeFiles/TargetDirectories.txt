@@ -38,6 +38,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_mate_solver.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_assembly_ui.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_direct_editing.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_nc_generator.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir
