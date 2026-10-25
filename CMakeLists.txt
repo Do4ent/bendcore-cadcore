@@ -64,6 +64,20 @@ set(BENDCORE_SOURCES
     src/sketch/advanced_sketcher.cpp
     # Phase M13: Inspection & Quality Analysis
     src/analysis/inspection_tools.cpp
+    # Phase M14: Rendering & Visualization
+    src/rendering/visualization_engine.cpp
+    # Phase M15: Performance Optimization
+    src/optimization/cache_manager.cpp
+    # Phase M16: Collaboration Features
+    src/collaboration/session_manager.cpp
+    # Phase M17: Simulation Framework
+    src/simulation/stress_analyzer.cpp
+    # Phase M18: API & Integration
+    src/api/rest_api_handler.cpp
+    # Phase M19: Documentation System
+    src/documentation/help_system.cpp
+    # Phase M20: Cloud Integration
+    src/cloud/cloud_sync_manager.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -445,3 +459,52 @@ add_test(NAME AdvancedSketcher COMMAND test_advanced_sketcher)
 add_executable(test_inspection_tools tests/test_inspection_tools.cpp)
 target_link_libraries(test_inspection_tools bendcore gtest_main)
 add_test(NAME InspectionTools COMMAND test_inspection_tools)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M14: Rendering & Visualization
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_visualization_engine tests/test_visualization_engine.cpp)
+target_link_libraries(test_visualization_engine bendcore gtest_main)
+add_test(NAME VisualizationEngine COMMAND test_visualization_engine)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M15: Performance Optimization
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_cache_manager tests/test_cache_manager.cpp)
+target_link_libraries(test_cache_manager bendcore gtest_main)
+add_test(NAME CacheManager COMMAND test_cache_manager)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M16: Collaboration Features
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_session_manager tests/test_session_manager.cpp)
+target_link_libraries(test_session_manager bendcore gtest_main)
+add_test(NAME SessionManager COMMAND test_session_manager)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M17: Simulation Framework
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_stress_analyzer tests/test_stress_analyzer.cpp)
+target_link_libraries(test_stress_analyzer bendcore gtest_main)
+add_test(NAME StressAnalyzer COMMAND test_stress_analyzer)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M18: API & Integration
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_rest_api tests/test_rest_api.cpp)
+target_link_libraries(test_rest_api bendcore gtest_main)
+add_test(NAME RESTAPI COMMAND test_rest_api)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M19: Documentation System
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_help_system tests/test_help_system.cpp)
+target_link_libraries(test_help_system bendcore gtest_main)
+add_test(NAME HelpSystem COMMAND test_help_system)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M20: Cloud Integration
+# ═════════════════════════════════════════════════════════════════
+add_executable(test_cloud_sync tests/test_cloud_sync.cpp)
+target_link_libraries(test_cloud_sync bendcore gtest_main)
+add_test(NAME CloudSync COMMAND test_cloud_sync)

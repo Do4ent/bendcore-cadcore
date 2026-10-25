@@ -42,6 +42,13 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_sheet_metal_ops.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_advanced_sketcher.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_inspection_tools.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_visualization_engine.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_cache_manager.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_session_manager.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_stress_analyzer.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_rest_api.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_help_system.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_cloud_sync.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

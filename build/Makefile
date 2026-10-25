@@ -744,6 +744,97 @@ test_inspection_tools/fast:
 .PHONY : test_inspection_tools/fast
 
 #=============================================================================
+# Target rules for targets named test_visualization_engine
+
+# Build rule for target.
+test_visualization_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_visualization_engine
+.PHONY : test_visualization_engine
+
+# fast build rule for target.
+test_visualization_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_visualization_engine.dir/build.make CMakeFiles/test_visualization_engine.dir/build
+.PHONY : test_visualization_engine/fast
+
+#=============================================================================
+# Target rules for targets named test_cache_manager
+
+# Build rule for target.
+test_cache_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cache_manager
+.PHONY : test_cache_manager
+
+# fast build rule for target.
+test_cache_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cache_manager.dir/build.make CMakeFiles/test_cache_manager.dir/build
+.PHONY : test_cache_manager/fast
+
+#=============================================================================
+# Target rules for targets named test_session_manager
+
+# Build rule for target.
+test_session_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_session_manager
+.PHONY : test_session_manager
+
+# fast build rule for target.
+test_session_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_manager.dir/build.make CMakeFiles/test_session_manager.dir/build
+.PHONY : test_session_manager/fast
+
+#=============================================================================
+# Target rules for targets named test_stress_analyzer
+
+# Build rule for target.
+test_stress_analyzer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_stress_analyzer
+.PHONY : test_stress_analyzer
+
+# fast build rule for target.
+test_stress_analyzer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_analyzer.dir/build.make CMakeFiles/test_stress_analyzer.dir/build
+.PHONY : test_stress_analyzer/fast
+
+#=============================================================================
+# Target rules for targets named test_rest_api
+
+# Build rule for target.
+test_rest_api: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_rest_api
+.PHONY : test_rest_api
+
+# fast build rule for target.
+test_rest_api/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rest_api.dir/build.make CMakeFiles/test_rest_api.dir/build
+.PHONY : test_rest_api/fast
+
+#=============================================================================
+# Target rules for targets named test_help_system
+
+# Build rule for target.
+test_help_system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_help_system
+.PHONY : test_help_system
+
+# fast build rule for target.
+test_help_system/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_help_system.dir/build.make CMakeFiles/test_help_system.dir/build
+.PHONY : test_help_system/fast
+
+#=============================================================================
+# Target rules for targets named test_cloud_sync
+
+# Build rule for target.
+test_cloud_sync: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cloud_sync
+.PHONY : test_cloud_sync
+
+# fast build rule for target.
+test_cloud_sync/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cloud_sync.dir/build.make CMakeFiles/test_cloud_sync.dir/build
+.PHONY : test_cloud_sync/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1183,6 +1274,30 @@ src/analysis/inspection_tools.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.s
 .PHONY : src/analysis/inspection_tools.cpp.s
 
+src/api/rest_api_handler.o: src/api/rest_api_handler.cpp.o
+.PHONY : src/api/rest_api_handler.o
+
+# target to build an object file
+src/api/rest_api_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.o
+.PHONY : src/api/rest_api_handler.cpp.o
+
+src/api/rest_api_handler.i: src/api/rest_api_handler.cpp.i
+.PHONY : src/api/rest_api_handler.i
+
+# target to preprocess a source file
+src/api/rest_api_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.i
+.PHONY : src/api/rest_api_handler.cpp.i
+
+src/api/rest_api_handler.s: src/api/rest_api_handler.cpp.s
+.PHONY : src/api/rest_api_handler.s
+
+# target to generate assembly for a file
+src/api/rest_api_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.s
+.PHONY : src/api/rest_api_handler.cpp.s
+
 src/assembly/assembly_ui.o: src/assembly/assembly_ui.cpp.o
 .PHONY : src/assembly/assembly_ui.o
 
@@ -1375,6 +1490,54 @@ src/cad_document.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.s
 .PHONY : src/cad_document.cpp.s
 
+src/cloud/cloud_sync_manager.o: src/cloud/cloud_sync_manager.cpp.o
+.PHONY : src/cloud/cloud_sync_manager.o
+
+# target to build an object file
+src/cloud/cloud_sync_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.o
+.PHONY : src/cloud/cloud_sync_manager.cpp.o
+
+src/cloud/cloud_sync_manager.i: src/cloud/cloud_sync_manager.cpp.i
+.PHONY : src/cloud/cloud_sync_manager.i
+
+# target to preprocess a source file
+src/cloud/cloud_sync_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.i
+.PHONY : src/cloud/cloud_sync_manager.cpp.i
+
+src/cloud/cloud_sync_manager.s: src/cloud/cloud_sync_manager.cpp.s
+.PHONY : src/cloud/cloud_sync_manager.s
+
+# target to generate assembly for a file
+src/cloud/cloud_sync_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.s
+.PHONY : src/cloud/cloud_sync_manager.cpp.s
+
+src/collaboration/session_manager.o: src/collaboration/session_manager.cpp.o
+.PHONY : src/collaboration/session_manager.o
+
+# target to build an object file
+src/collaboration/session_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.o
+.PHONY : src/collaboration/session_manager.cpp.o
+
+src/collaboration/session_manager.i: src/collaboration/session_manager.cpp.i
+.PHONY : src/collaboration/session_manager.i
+
+# target to preprocess a source file
+src/collaboration/session_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.i
+.PHONY : src/collaboration/session_manager.cpp.i
+
+src/collaboration/session_manager.s: src/collaboration/session_manager.cpp.s
+.PHONY : src/collaboration/session_manager.s
+
+# target to generate assembly for a file
+src/collaboration/session_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.s
+.PHONY : src/collaboration/session_manager.cpp.s
+
 src/command_manager.o: src/command_manager.cpp.o
 .PHONY : src/command_manager.o
 
@@ -1494,6 +1657,30 @@ src/document_event_bus.s: src/document_event_bus.cpp.s
 src/document_event_bus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.s
 .PHONY : src/document_event_bus.cpp.s
+
+src/documentation/help_system.o: src/documentation/help_system.cpp.o
+.PHONY : src/documentation/help_system.o
+
+# target to build an object file
+src/documentation/help_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.o
+.PHONY : src/documentation/help_system.cpp.o
+
+src/documentation/help_system.i: src/documentation/help_system.cpp.i
+.PHONY : src/documentation/help_system.i
+
+# target to preprocess a source file
+src/documentation/help_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.i
+.PHONY : src/documentation/help_system.cpp.i
+
+src/documentation/help_system.s: src/documentation/help_system.cpp.s
+.PHONY : src/documentation/help_system.s
+
+# target to generate assembly for a file
+src/documentation/help_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.s
+.PHONY : src/documentation/help_system.cpp.s
 
 src/entity_id.o: src/entity_id.cpp.o
 .PHONY : src/entity_id.o
@@ -1951,6 +2138,30 @@ src/mesh_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s
 .PHONY : src/mesh_generator.cpp.s
 
+src/optimization/cache_manager.o: src/optimization/cache_manager.cpp.o
+.PHONY : src/optimization/cache_manager.o
+
+# target to build an object file
+src/optimization/cache_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.o
+.PHONY : src/optimization/cache_manager.cpp.o
+
+src/optimization/cache_manager.i: src/optimization/cache_manager.cpp.i
+.PHONY : src/optimization/cache_manager.i
+
+# target to preprocess a source file
+src/optimization/cache_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.i
+.PHONY : src/optimization/cache_manager.cpp.i
+
+src/optimization/cache_manager.s: src/optimization/cache_manager.cpp.s
+.PHONY : src/optimization/cache_manager.s
+
+# target to generate assembly for a file
+src/optimization/cache_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.s
+.PHONY : src/optimization/cache_manager.cpp.s
+
 src/parallel/parallel_executor.o: src/parallel/parallel_executor.cpp.o
 .PHONY : src/parallel/parallel_executor.o
 
@@ -2119,6 +2330,30 @@ src/recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.s
 .PHONY : src/recovery.cpp.s
 
+src/rendering/visualization_engine.o: src/rendering/visualization_engine.cpp.o
+.PHONY : src/rendering/visualization_engine.o
+
+# target to build an object file
+src/rendering/visualization_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.o
+.PHONY : src/rendering/visualization_engine.cpp.o
+
+src/rendering/visualization_engine.i: src/rendering/visualization_engine.cpp.i
+.PHONY : src/rendering/visualization_engine.i
+
+# target to preprocess a source file
+src/rendering/visualization_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.i
+.PHONY : src/rendering/visualization_engine.cpp.i
+
+src/rendering/visualization_engine.s: src/rendering/visualization_engine.cpp.s
+.PHONY : src/rendering/visualization_engine.s
+
+# target to generate assembly for a file
+src/rendering/visualization_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.s
+.PHONY : src/rendering/visualization_engine.cpp.s
+
 src/revolve.o: src/revolve.cpp.o
 .PHONY : src/revolve.o
 
@@ -2190,6 +2425,30 @@ src/serializer.s: src/serializer.cpp.s
 src/serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.s
 .PHONY : src/serializer.cpp.s
+
+src/simulation/stress_analyzer.o: src/simulation/stress_analyzer.cpp.o
+.PHONY : src/simulation/stress_analyzer.o
+
+# target to build an object file
+src/simulation/stress_analyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.o
+.PHONY : src/simulation/stress_analyzer.cpp.o
+
+src/simulation/stress_analyzer.i: src/simulation/stress_analyzer.cpp.i
+.PHONY : src/simulation/stress_analyzer.i
+
+# target to preprocess a source file
+src/simulation/stress_analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.i
+.PHONY : src/simulation/stress_analyzer.cpp.i
+
+src/simulation/stress_analyzer.s: src/simulation/stress_analyzer.cpp.s
+.PHONY : src/simulation/stress_analyzer.s
+
+# target to generate assembly for a file
+src/simulation/stress_analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.s
+.PHONY : src/simulation/stress_analyzer.cpp.s
 
 src/sketch/advanced_sketcher.o: src/sketch/advanced_sketcher.cpp.o
 .PHONY : src/sketch/advanced_sketcher.o
@@ -2407,6 +2666,30 @@ tests/test_brep.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/tests/test_brep.cpp.s
 .PHONY : tests/test_brep.cpp.s
 
+tests/test_cache_manager.o: tests/test_cache_manager.cpp.o
+.PHONY : tests/test_cache_manager.o
+
+# target to build an object file
+tests/test_cache_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cache_manager.dir/build.make CMakeFiles/test_cache_manager.dir/tests/test_cache_manager.cpp.o
+.PHONY : tests/test_cache_manager.cpp.o
+
+tests/test_cache_manager.i: tests/test_cache_manager.cpp.i
+.PHONY : tests/test_cache_manager.i
+
+# target to preprocess a source file
+tests/test_cache_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cache_manager.dir/build.make CMakeFiles/test_cache_manager.dir/tests/test_cache_manager.cpp.i
+.PHONY : tests/test_cache_manager.cpp.i
+
+tests/test_cache_manager.s: tests/test_cache_manager.cpp.s
+.PHONY : tests/test_cache_manager.s
+
+# target to generate assembly for a file
+tests/test_cache_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cache_manager.dir/build.make CMakeFiles/test_cache_manager.dir/tests/test_cache_manager.cpp.s
+.PHONY : tests/test_cache_manager.cpp.s
+
 tests/test_cad_document.o: tests/test_cad_document.cpp.o
 .PHONY : tests/test_cad_document.o
 
@@ -2430,6 +2713,30 @@ tests/test_cad_document.s: tests/test_cad_document.cpp.s
 tests/test_cad_document.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/tests/test_cad_document.cpp.s
 .PHONY : tests/test_cad_document.cpp.s
+
+tests/test_cloud_sync.o: tests/test_cloud_sync.cpp.o
+.PHONY : tests/test_cloud_sync.o
+
+# target to build an object file
+tests/test_cloud_sync.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cloud_sync.dir/build.make CMakeFiles/test_cloud_sync.dir/tests/test_cloud_sync.cpp.o
+.PHONY : tests/test_cloud_sync.cpp.o
+
+tests/test_cloud_sync.i: tests/test_cloud_sync.cpp.i
+.PHONY : tests/test_cloud_sync.i
+
+# target to preprocess a source file
+tests/test_cloud_sync.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cloud_sync.dir/build.make CMakeFiles/test_cloud_sync.dir/tests/test_cloud_sync.cpp.i
+.PHONY : tests/test_cloud_sync.cpp.i
+
+tests/test_cloud_sync.s: tests/test_cloud_sync.cpp.s
+.PHONY : tests/test_cloud_sync.s
+
+# target to generate assembly for a file
+tests/test_cloud_sync.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cloud_sync.dir/build.make CMakeFiles/test_cloud_sync.dir/tests/test_cloud_sync.cpp.s
+.PHONY : tests/test_cloud_sync.cpp.s
 
 tests/test_command_manager.o: tests/test_command_manager.cpp.o
 .PHONY : tests/test_command_manager.o
@@ -2742,6 +3049,30 @@ tests/test_geometry_ops.s: tests/test_geometry_ops.cpp.s
 tests/test_geometry_ops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/tests/test_geometry_ops.cpp.s
 .PHONY : tests/test_geometry_ops.cpp.s
+
+tests/test_help_system.o: tests/test_help_system.cpp.o
+.PHONY : tests/test_help_system.o
+
+# target to build an object file
+tests/test_help_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_help_system.dir/build.make CMakeFiles/test_help_system.dir/tests/test_help_system.cpp.o
+.PHONY : tests/test_help_system.cpp.o
+
+tests/test_help_system.i: tests/test_help_system.cpp.i
+.PHONY : tests/test_help_system.i
+
+# target to preprocess a source file
+tests/test_help_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_help_system.dir/build.make CMakeFiles/test_help_system.dir/tests/test_help_system.cpp.i
+.PHONY : tests/test_help_system.cpp.i
+
+tests/test_help_system.s: tests/test_help_system.cpp.s
+.PHONY : tests/test_help_system.s
+
+# target to generate assembly for a file
+tests/test_help_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_help_system.dir/build.make CMakeFiles/test_help_system.dir/tests/test_help_system.cpp.s
+.PHONY : tests/test_help_system.cpp.s
 
 tests/test_history_stack.o: tests/test_history_stack.cpp.o
 .PHONY : tests/test_history_stack.o
@@ -3151,6 +3482,30 @@ tests/test_recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.s
 .PHONY : tests/test_recovery.cpp.s
 
+tests/test_rest_api.o: tests/test_rest_api.cpp.o
+.PHONY : tests/test_rest_api.o
+
+# target to build an object file
+tests/test_rest_api.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rest_api.dir/build.make CMakeFiles/test_rest_api.dir/tests/test_rest_api.cpp.o
+.PHONY : tests/test_rest_api.cpp.o
+
+tests/test_rest_api.i: tests/test_rest_api.cpp.i
+.PHONY : tests/test_rest_api.i
+
+# target to preprocess a source file
+tests/test_rest_api.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rest_api.dir/build.make CMakeFiles/test_rest_api.dir/tests/test_rest_api.cpp.i
+.PHONY : tests/test_rest_api.cpp.i
+
+tests/test_rest_api.s: tests/test_rest_api.cpp.s
+.PHONY : tests/test_rest_api.s
+
+# target to generate assembly for a file
+tests/test_rest_api.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rest_api.dir/build.make CMakeFiles/test_rest_api.dir/tests/test_rest_api.cpp.s
+.PHONY : tests/test_rest_api.cpp.s
+
 tests/test_revolve_feature.o: tests/test_revolve_feature.cpp.o
 .PHONY : tests/test_revolve_feature.o
 
@@ -3199,6 +3554,30 @@ tests/test_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.s
 .PHONY : tests/test_serializer.cpp.s
 
+tests/test_session_manager.o: tests/test_session_manager.cpp.o
+.PHONY : tests/test_session_manager.o
+
+# target to build an object file
+tests/test_session_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_manager.dir/build.make CMakeFiles/test_session_manager.dir/tests/test_session_manager.cpp.o
+.PHONY : tests/test_session_manager.cpp.o
+
+tests/test_session_manager.i: tests/test_session_manager.cpp.i
+.PHONY : tests/test_session_manager.i
+
+# target to preprocess a source file
+tests/test_session_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_manager.dir/build.make CMakeFiles/test_session_manager.dir/tests/test_session_manager.cpp.i
+.PHONY : tests/test_session_manager.cpp.i
+
+tests/test_session_manager.s: tests/test_session_manager.cpp.s
+.PHONY : tests/test_session_manager.s
+
+# target to generate assembly for a file
+tests/test_session_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_manager.dir/build.make CMakeFiles/test_session_manager.dir/tests/test_session_manager.cpp.s
+.PHONY : tests/test_session_manager.cpp.s
+
 tests/test_sheet_metal_ops.o: tests/test_sheet_metal_ops.cpp.o
 .PHONY : tests/test_sheet_metal_ops.o
 
@@ -3222,6 +3601,30 @@ tests/test_sheet_metal_ops.s: tests/test_sheet_metal_ops.cpp.s
 tests/test_sheet_metal_ops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sheet_metal_ops.dir/build.make CMakeFiles/test_sheet_metal_ops.dir/tests/test_sheet_metal_ops.cpp.s
 .PHONY : tests/test_sheet_metal_ops.cpp.s
+
+tests/test_stress_analyzer.o: tests/test_stress_analyzer.cpp.o
+.PHONY : tests/test_stress_analyzer.o
+
+# target to build an object file
+tests/test_stress_analyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_analyzer.dir/build.make CMakeFiles/test_stress_analyzer.dir/tests/test_stress_analyzer.cpp.o
+.PHONY : tests/test_stress_analyzer.cpp.o
+
+tests/test_stress_analyzer.i: tests/test_stress_analyzer.cpp.i
+.PHONY : tests/test_stress_analyzer.i
+
+# target to preprocess a source file
+tests/test_stress_analyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_analyzer.dir/build.make CMakeFiles/test_stress_analyzer.dir/tests/test_stress_analyzer.cpp.i
+.PHONY : tests/test_stress_analyzer.cpp.i
+
+tests/test_stress_analyzer.s: tests/test_stress_analyzer.cpp.s
+.PHONY : tests/test_stress_analyzer.s
+
+# target to generate assembly for a file
+tests/test_stress_analyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_analyzer.dir/build.make CMakeFiles/test_stress_analyzer.dir/tests/test_stress_analyzer.cpp.s
+.PHONY : tests/test_stress_analyzer.cpp.s
 
 tests/test_surface_features.o: tests/test_surface_features.cpp.o
 .PHONY : tests/test_surface_features.o
@@ -3295,6 +3698,30 @@ tests/test_transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_transaction.dir/build.make CMakeFiles/test_transaction.dir/tests/test_transaction.cpp.s
 .PHONY : tests/test_transaction.cpp.s
 
+tests/test_visualization_engine.o: tests/test_visualization_engine.cpp.o
+.PHONY : tests/test_visualization_engine.o
+
+# target to build an object file
+tests/test_visualization_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_visualization_engine.dir/build.make CMakeFiles/test_visualization_engine.dir/tests/test_visualization_engine.cpp.o
+.PHONY : tests/test_visualization_engine.cpp.o
+
+tests/test_visualization_engine.i: tests/test_visualization_engine.cpp.i
+.PHONY : tests/test_visualization_engine.i
+
+# target to preprocess a source file
+tests/test_visualization_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_visualization_engine.dir/build.make CMakeFiles/test_visualization_engine.dir/tests/test_visualization_engine.cpp.i
+.PHONY : tests/test_visualization_engine.cpp.i
+
+tests/test_visualization_engine.s: tests/test_visualization_engine.cpp.s
+.PHONY : tests/test_visualization_engine.s
+
+# target to generate assembly for a file
+tests/test_visualization_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_visualization_engine.dir/build.make CMakeFiles/test_visualization_engine.dir/tests/test_visualization_engine.cpp.s
+.PHONY : tests/test_visualization_engine.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3347,7 +3774,9 @@ help:
 	@echo "... test_atomic_save"
 	@echo "... test_bend_calculator"
 	@echo "... test_brep"
+	@echo "... test_cache_manager"
 	@echo "... test_cad_document"
+	@echo "... test_cloud_sync"
 	@echo "... test_command_manager"
 	@echo "... test_database_manager"
 	@echo "... test_dependency_graph"
@@ -3361,6 +3790,7 @@ help:
 	@echo "... test_geometry_cache"
 	@echo "... test_geometry_engine"
 	@echo "... test_geometry_ops"
+	@echo "... test_help_system"
 	@echo "... test_history_stack"
 	@echo "... test_inspection_tools"
 	@echo "... test_legacy_adapter"
@@ -3378,15 +3808,22 @@ help:
 	@echo "... test_protobuf_serializer"
 	@echo "... test_rebuild_engine"
 	@echo "... test_recovery"
+	@echo "... test_rest_api"
 	@echo "... test_revolve_feature"
 	@echo "... test_serializer"
+	@echo "... test_session_manager"
 	@echo "... test_sheet_metal_ops"
+	@echo "... test_stress_analyzer"
 	@echo "... test_surface_features"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
+	@echo "... test_visualization_engine"
 	@echo "... src/analysis/inspection_tools.o"
 	@echo "... src/analysis/inspection_tools.i"
 	@echo "... src/analysis/inspection_tools.s"
+	@echo "... src/api/rest_api_handler.o"
+	@echo "... src/api/rest_api_handler.i"
+	@echo "... src/api/rest_api_handler.s"
 	@echo "... src/assembly/assembly_ui.o"
 	@echo "... src/assembly/assembly_ui.i"
 	@echo "... src/assembly/assembly_ui.s"
@@ -3411,6 +3848,12 @@ help:
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
 	@echo "... src/cad_document.s"
+	@echo "... src/cloud/cloud_sync_manager.o"
+	@echo "... src/cloud/cloud_sync_manager.i"
+	@echo "... src/cloud/cloud_sync_manager.s"
+	@echo "... src/collaboration/session_manager.o"
+	@echo "... src/collaboration/session_manager.i"
+	@echo "... src/collaboration/session_manager.s"
 	@echo "... src/command_manager.o"
 	@echo "... src/command_manager.i"
 	@echo "... src/command_manager.s"
@@ -3426,6 +3869,9 @@ help:
 	@echo "... src/document_event_bus.o"
 	@echo "... src/document_event_bus.i"
 	@echo "... src/document_event_bus.s"
+	@echo "... src/documentation/help_system.o"
+	@echo "... src/documentation/help_system.i"
+	@echo "... src/documentation/help_system.s"
 	@echo "... src/entity_id.o"
 	@echo "... src/entity_id.i"
 	@echo "... src/entity_id.s"
@@ -3483,6 +3929,9 @@ help:
 	@echo "... src/mesh_generator.o"
 	@echo "... src/mesh_generator.i"
 	@echo "... src/mesh_generator.s"
+	@echo "... src/optimization/cache_manager.o"
+	@echo "... src/optimization/cache_manager.i"
+	@echo "... src/optimization/cache_manager.s"
 	@echo "... src/parallel/parallel_executor.o"
 	@echo "... src/parallel/parallel_executor.i"
 	@echo "... src/parallel/parallel_executor.s"
@@ -3504,6 +3953,9 @@ help:
 	@echo "... src/recovery.o"
 	@echo "... src/recovery.i"
 	@echo "... src/recovery.s"
+	@echo "... src/rendering/visualization_engine.o"
+	@echo "... src/rendering/visualization_engine.i"
+	@echo "... src/rendering/visualization_engine.s"
 	@echo "... src/revolve.o"
 	@echo "... src/revolve.i"
 	@echo "... src/revolve.s"
@@ -3513,6 +3965,9 @@ help:
 	@echo "... src/serializer.o"
 	@echo "... src/serializer.i"
 	@echo "... src/serializer.s"
+	@echo "... src/simulation/stress_analyzer.o"
+	@echo "... src/simulation/stress_analyzer.i"
+	@echo "... src/simulation/stress_analyzer.s"
 	@echo "... src/sketch/advanced_sketcher.o"
 	@echo "... src/sketch/advanced_sketcher.i"
 	@echo "... src/sketch/advanced_sketcher.s"
@@ -3540,9 +3995,15 @@ help:
 	@echo "... tests/test_brep.o"
 	@echo "... tests/test_brep.i"
 	@echo "... tests/test_brep.s"
+	@echo "... tests/test_cache_manager.o"
+	@echo "... tests/test_cache_manager.i"
+	@echo "... tests/test_cache_manager.s"
 	@echo "... tests/test_cad_document.o"
 	@echo "... tests/test_cad_document.i"
 	@echo "... tests/test_cad_document.s"
+	@echo "... tests/test_cloud_sync.o"
+	@echo "... tests/test_cloud_sync.i"
+	@echo "... tests/test_cloud_sync.s"
 	@echo "... tests/test_command_manager.o"
 	@echo "... tests/test_command_manager.i"
 	@echo "... tests/test_command_manager.s"
@@ -3582,6 +4043,9 @@ help:
 	@echo "... tests/test_geometry_ops.o"
 	@echo "... tests/test_geometry_ops.i"
 	@echo "... tests/test_geometry_ops.s"
+	@echo "... tests/test_help_system.o"
+	@echo "... tests/test_help_system.i"
+	@echo "... tests/test_help_system.s"
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"
@@ -3633,15 +4097,24 @@ help:
 	@echo "... tests/test_recovery.o"
 	@echo "... tests/test_recovery.i"
 	@echo "... tests/test_recovery.s"
+	@echo "... tests/test_rest_api.o"
+	@echo "... tests/test_rest_api.i"
+	@echo "... tests/test_rest_api.s"
 	@echo "... tests/test_revolve_feature.o"
 	@echo "... tests/test_revolve_feature.i"
 	@echo "... tests/test_revolve_feature.s"
 	@echo "... tests/test_serializer.o"
 	@echo "... tests/test_serializer.i"
 	@echo "... tests/test_serializer.s"
+	@echo "... tests/test_session_manager.o"
+	@echo "... tests/test_session_manager.i"
+	@echo "... tests/test_session_manager.s"
 	@echo "... tests/test_sheet_metal_ops.o"
 	@echo "... tests/test_sheet_metal_ops.i"
 	@echo "... tests/test_sheet_metal_ops.s"
+	@echo "... tests/test_stress_analyzer.o"
+	@echo "... tests/test_stress_analyzer.i"
+	@echo "... tests/test_stress_analyzer.s"
 	@echo "... tests/test_surface_features.o"
 	@echo "... tests/test_surface_features.i"
 	@echo "... tests/test_surface_features.s"
@@ -3651,6 +4124,9 @@ help:
 	@echo "... tests/test_transaction.o"
 	@echo "... tests/test_transaction.i"
 	@echo "... tests/test_transaction.s"
+	@echo "... tests/test_visualization_engine.o"
+	@echo "... tests/test_visualization_engine.i"
+	@echo "... tests/test_visualization_engine.s"
 .PHONY : help
 
 

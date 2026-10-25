@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_cloud_sync.dir/tests/test_cloud_sync.cpp.o -o test_cloud_sync  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
