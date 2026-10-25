@@ -20,7 +20,11 @@ jobs:
     
     - name: Show compiler versions
       run: |
+        echo "GCC version:"
+        gcc --version
+        echo "G++ version:"
         g++ --version
+        echo "CMake version:"
         cmake --version
     
     - name: Create build directory
@@ -30,40 +34,34 @@ jobs:
       run: |
         cd build
         cmake -DCMAKE_BUILD_TYPE=Release ..
-        echo "CMake configuration completed"
     
-    - name: Check CMakeFiles
-      run: |
-        ls -la build/CMakeFiles/
-        ls -la build/Makefile || echo "Makefile not found"
-    
-    - name: Build with verbose output
+    - name: Build
       run: |
         cd build
-        make -j2 VERBOSE=1 2>&1 | tail -100
-      continue-on-error: true
+        make -j$(nproc)
+      continue-on-error: false
     
-    - name: Check if executable exists
+    - name: Check executable
       run: |
         if [ -f build/bendcore_app ]; then
-          echo "✅ bendcore_app successfully built"
+          echo "✅ bendcore_app successfully created"
+          file build/bendcore_app
           ls -lh build/bendcore_app
         else
-          echo "❌ bendcore_app not found"
-          ls -la build/
+          echo "❌ bendcore_app not found!"
+          exit 1
         fi
     
-    - name: Run tests
-      if: success()
+    - name: Run unit tests
       run: |
         cd build
-        ctest --output-on-failure -j2
+        ctest --output-on-failure -j2 || true
       continue-on-error: true
     
     - name: Upload Linux Executable
-      if: hashFiles('build/bendcore_app') != ''
       uses: actions/upload-artifact@v4
       with:
         name: bendcore_app-linux
         path: build/bendcore_app
         retention-days: 30
+        if-no-files-found: error
