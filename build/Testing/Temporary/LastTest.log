@@ -1,10 +1,10 @@
-Start testing: Oct 25 10:37 CET
+Start testing: Oct 25 11:06 CET
 ----------------------------------------------------------
-1/3 Testing: EntityId
-1/3 Test: EntityId
+1/4 Testing: EntityId
+1/4 Test: EntityId
 Command: "/tmp/bendcore-cadcore/build/test_entity_id"
 Directory: /tmp/bendcore-cadcore/build
-"EntityId" start time: Oct 25 10:37 CET
+"EntityId" start time: Oct 25 11:06 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 15 tests from 1 test suite.
@@ -25,7 +25,7 @@ Output:
 [ RUN      ] EntityIdTest.SerializationWithoutLoss
 [       OK ] EntityIdTest.SerializationWithoutLoss (0 ms)
 [ RUN      ] EntityIdTest.GenerateUniqueIds
-[       OK ] EntityIdTest.GenerateUniqueIds (309 ms)
+[       OK ] EntityIdTest.GenerateUniqueIds (285 ms)
 [ RUN      ] EntityIdTest.RoundTripSerialization
 [       OK ] EntityIdTest.RoundTripSerialization (0 ms)
 [ RUN      ] EntityIdTest.InvalidIdsRejected
@@ -40,24 +40,24 @@ Output:
 [       OK ] EntityIdTest.NullIdDetection (0 ms)
 [ RUN      ] EntityIdTest.ComparisonOperators
 [       OK ] EntityIdTest.ComparisonOperators (0 ms)
-[----------] 15 tests from EntityIdTest (310 ms total)
+[----------] 15 tests from EntityIdTest (286 ms total)
 
 [----------] Global test environment tear-down
-[==========] 15 tests from 1 test suite ran. (310 ms total)
+[==========] 15 tests from 1 test suite ran. (286 ms total)
 [  PASSED  ] 15 tests.
 <end of output>
-Test time =   0.31 sec
+Test time =   0.29 sec
 ----------------------------------------------------------
 Test Passed.
-"EntityId" end time: Oct 25 10:37 CET
+"EntityId" end time: Oct 25 11:06 CET
 "EntityId" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/3 Testing: CadDocument
-2/3 Test: CadDocument
+2/4 Testing: CadDocument
+2/4 Test: CadDocument
 Command: "/tmp/bendcore-cadcore/build/test_cad_document"
 Directory: /tmp/bendcore-cadcore/build
-"CadDocument" start time: Oct 25 10:37 CET
+"CadDocument" start time: Oct 25 11:06 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -76,7 +76,7 @@ Output:
 [ RUN      ] CadDocumentTest.SequentialChangesIncreaseRevision
 [       OK ] CadDocumentTest.SequentialChangesIncreaseRevision (0 ms)
 [ RUN      ] CadDocumentTest.LargeSequentialChanges
-[       OK ] CadDocumentTest.LargeSequentialChanges (40 ms)
+[       OK ] CadDocumentTest.LargeSequentialChanges (44 ms)
 [ RUN      ] CadDocumentTest.RemoveEntityMarksDeleted
 [       OK ] CadDocumentTest.RemoveEntityMarksDeleted (0 ms)
 [ RUN      ] CadDocumentTest.DocumentMaintainsInternalReferences
@@ -103,24 +103,24 @@ Output:
 [       OK ] CadDocumentTest.GetAllEntityIds (0 ms)
 [ RUN      ] CadDocumentTest.DocumentRevisionScopedCorrectly
 [       OK ] CadDocumentTest.DocumentRevisionScopedCorrectly (0 ms)
-[----------] 20 tests from CadDocumentTest (41 ms total)
+[----------] 20 tests from CadDocumentTest (45 ms total)
 
 [----------] Global test environment tear-down
-[==========] 20 tests from 1 test suite ran. (41 ms total)
+[==========] 20 tests from 1 test suite ran. (45 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
-Test time =   0.04 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"CadDocument" end time: Oct 25 10:37 CET
+"CadDocument" end time: Oct 25 11:06 CET
 "CadDocument" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/3 Testing: EntityTree
-3/3 Test: EntityTree
+3/4 Testing: EntityTree
+3/4 Test: EntityTree
 Command: "/tmp/bendcore-cadcore/build/test_entity_tree"
 Directory: /tmp/bendcore-cadcore/build
-"EntityTree" start time: Oct 25 10:37 CET
+"EntityTree" start time: Oct 25 11:06 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -166,7 +166,7 @@ Output:
 [       OK ] EntityTreeTest.LargeHierarchy (1 ms)
 [ RUN      ] EntityTreeTest.PathConsistency
 [       OK ] EntityTreeTest.PathConsistency (0 ms)
-[----------] 20 tests from EntityTreeTest (1 ms total)
+[----------] 20 tests from EntityTreeTest (2 ms total)
 
 [----------] Global test environment tear-down
 [==========] 20 tests from 1 test suite ran. (2 ms total)
@@ -175,8 +175,71 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"EntityTree" end time: Oct 25 10:37 CET
+"EntityTree" end time: Oct 25 11:06 CET
 "EntityTree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 25 10:37 CET
+4/4 Testing: CommandManager
+4/4 Test: CommandManager
+Command: "/tmp/bendcore-cadcore/build/test_command_manager"
+Directory: /tmp/bendcore-cadcore/build
+"CommandManager" start time: Oct 25 11:06 CET
+Output:
+----------------------------------------------------------
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from CommandManagerTest
+[ RUN      ] CommandManagerTest.ExecuteCommand
+[       OK ] CommandManagerTest.ExecuteCommand (0 ms)
+[ RUN      ] CommandManagerTest.NullCommandRejected
+[       OK ] CommandManagerTest.NullCommandRejected (0 ms)
+[ RUN      ] CommandManagerTest.CommandResultTracking
+[       OK ] CommandManagerTest.CommandResultTracking (0 ms)
+[ RUN      ] CommandManagerTest.RevisionTracking
+[       OK ] CommandManagerTest.RevisionTracking (0 ms)
+[ RUN      ] CommandManagerTest.CommandHistory
+[       OK ] CommandManagerTest.CommandHistory (0 ms)
+[ RUN      ] CommandManagerTest.ValidationPassesForValidCommands
+[       OK ] CommandManagerTest.ValidationPassesForValidCommands (0 ms)
+[ RUN      ] CommandManagerTest.ValidationFailsForNull
+[       OK ] CommandManagerTest.ValidationFailsForNull (0 ms)
+[ RUN      ] CommandManagerTest.ErrorMessageTracking
+[       OK ] CommandManagerTest.ErrorMessageTracking (0 ms)
+[ RUN      ] CommandManagerTest.MultipleCommandExecution
+[       OK ] CommandManagerTest.MultipleCommandExecution (0 ms)
+[ RUN      ] CommandManagerTest.ClearHistory
+[       OK ] CommandManagerTest.ClearHistory (0 ms)
+[ RUN      ] CommandManagerTest.HistorySizeLimit
+[       OK ] CommandManagerTest.HistorySizeLimit (0 ms)
+[ RUN      ] CommandManagerTest.CommandIdUniqueness
+[       OK ] CommandManagerTest.CommandIdUniqueness (0 ms)
+[ RUN      ] CommandManagerTest.LastResultTracking
+[       OK ] CommandManagerTest.LastResultTracking (0 ms)
+[ RUN      ] CommandManagerTest.ExpectedRevisionCheck
+[       OK ] CommandManagerTest.ExpectedRevisionCheck (0 ms)
+[ RUN      ] CommandManagerTest.MemoryUsageTracking
+[       OK ] CommandManagerTest.MemoryUsageTracking (0 ms)
+[ RUN      ] CommandManagerTest.DescriptionPreservation
+[       OK ] CommandManagerTest.DescriptionPreservation (0 ms)
+[ RUN      ] CommandManagerTest.FailedCountTracking
+[       OK ] CommandManagerTest.FailedCountTracking (0 ms)
+[ RUN      ] CommandManagerTest.ResultRetrieval
+[       OK ] CommandManagerTest.ResultRetrieval (0 ms)
+[ RUN      ] CommandManagerTest.NonExistentResultReturnsNull
+[       OK ] CommandManagerTest.NonExistentResultReturnsNull (0 ms)
+[ RUN      ] CommandManagerTest.SequentialStateChanges
+[       OK ] CommandManagerTest.SequentialStateChanges (0 ms)
+[----------] 20 tests from CommandManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 20 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CommandManager" end time: Oct 25 11:06 CET
+"CommandManager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 11:06 CET

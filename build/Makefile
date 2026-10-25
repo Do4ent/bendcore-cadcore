@@ -224,6 +224,19 @@ test_entity_tree/fast:
 .PHONY : test_entity_tree/fast
 
 #=============================================================================
+# Target rules for targets named test_command_manager
+
+# Build rule for target.
+test_command_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_command_manager
+.PHONY : test_command_manager
+
+# fast build rule for target.
+test_command_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/build
+.PHONY : test_command_manager/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -299,6 +312,30 @@ src/cad_document.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.s
 .PHONY : src/cad_document.cpp.s
 
+src/command_manager.o: src/command_manager.cpp.o
+.PHONY : src/command_manager.o
+
+# target to build an object file
+src/command_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.o
+.PHONY : src/command_manager.cpp.o
+
+src/command_manager.i: src/command_manager.cpp.i
+.PHONY : src/command_manager.i
+
+# target to preprocess a source file
+src/command_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.i
+.PHONY : src/command_manager.cpp.i
+
+src/command_manager.s: src/command_manager.cpp.s
+.PHONY : src/command_manager.s
+
+# target to generate assembly for a file
+src/command_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.s
+.PHONY : src/command_manager.cpp.s
+
 src/entity_id.o: src/entity_id.cpp.o
 .PHONY : src/entity_id.o
 
@@ -371,6 +408,30 @@ tests/test_cad_document.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/tests/test_cad_document.cpp.s
 .PHONY : tests/test_cad_document.cpp.s
 
+tests/test_command_manager.o: tests/test_command_manager.cpp.o
+.PHONY : tests/test_command_manager.o
+
+# target to build an object file
+tests/test_command_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.o
+.PHONY : tests/test_command_manager.cpp.o
+
+tests/test_command_manager.i: tests/test_command_manager.cpp.i
+.PHONY : tests/test_command_manager.i
+
+# target to preprocess a source file
+tests/test_command_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.i
+.PHONY : tests/test_command_manager.cpp.i
+
+tests/test_command_manager.s: tests/test_command_manager.cpp.s
+.PHONY : tests/test_command_manager.s
+
+# target to generate assembly for a file
+tests/test_command_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.s
+.PHONY : tests/test_command_manager.cpp.s
+
 tests/test_entity_id.o: tests/test_entity_id.cpp.o
 .PHONY : tests/test_entity_id.o
 
@@ -438,11 +499,15 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_cad_document"
+	@echo "... test_command_manager"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
 	@echo "... src/cad_document.s"
+	@echo "... src/command_manager.o"
+	@echo "... src/command_manager.i"
+	@echo "... src/command_manager.s"
 	@echo "... src/entity_id.o"
 	@echo "... src/entity_id.i"
 	@echo "... src/entity_id.s"
@@ -452,6 +517,9 @@ help:
 	@echo "... tests/test_cad_document.o"
 	@echo "... tests/test_cad_document.i"
 	@echo "... tests/test_cad_document.s"
+	@echo "... tests/test_command_manager.o"
+	@echo "... tests/test_command_manager.i"
+	@echo "... tests/test_command_manager.s"
 	@echo "... tests/test_entity_id.o"
 	@echo "... tests/test_entity_id.i"
 	@echo "... tests/test_entity_id.s"

@@ -12,6 +12,7 @@ set(BENDCORE_SOURCES
     src/entity_id.cpp
     src/cad_document.cpp
     src/entity_tree.cpp
+    src/command_manager.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -44,3 +45,8 @@ add_test(NAME CadDocument COMMAND test_cad_document)
 add_executable(test_entity_tree tests/test_entity_tree.cpp)
 target_link_libraries(test_entity_tree bendcore gtest_main)
 add_test(NAME EntityTree COMMAND test_entity_tree)
+
+# CAD-CORE-005: Command Manager tests
+add_executable(test_command_manager tests/test_command_manager.cpp)
+target_link_libraries(test_command_manager bendcore gtest_main)
+add_test(NAME CommandManager COMMAND test_command_manager)
