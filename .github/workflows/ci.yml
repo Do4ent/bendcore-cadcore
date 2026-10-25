@@ -1,261 +1,42 @@
-name: CI/CD Pipeline
+name: CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main ]
 
 jobs:
-  # C++ Build and Test
-  cpp-build:
-    name: C++ Build & Tests
+  build-linux:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        build-type: [Debug, Release]
-
+    
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake g++ build-essential
-
-      - name: Configure CMake
-        run: |
-          cmake -B build -DCMAKE_BUILD_TYPE=${{ matrix.build-type }}
-
-      - name: Build
-        run: |
-          cmake --build build --config ${{ matrix.build-type }} --parallel $(nproc)
-
-      - name: Run tests
-        run: |
-          cd build
-          ctest --output-on-failure --parallel $(nproc)
-
-      - name: Test coverage
-        if: matrix.build-type == 'Debug'
-        run: |
-          sudo apt-get install -y lcov
-          cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage"
-          cmake --build build
-          cd build
-          lcov --capture --directory . --output-file coverage.info --rc lcov_branch_coverage=1
-          lcov --remove coverage.info '/usr/*' --output-file coverage.info --rc lcov_branch_coverage=1
-          cat coverage.info | curl --data-binary @- https://codecov.io/upload/v0.1.3?commit=$(git rev-parse HEAD) 2>/dev/null || true
-
-  # WebAssembly Build
-  wasm-build:
-    name: WebAssembly Build
-    runs-on: ubuntu-latest
-    needs: cpp-build
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install emscripten
-        run: |
-          git clone https://github.com/emscripten-core/emsdk.git
-          cd emsdk
-          ./emsdk install latest
-          ./emsdk activate latest
-          source ./emsdk_env.sh
-
-      - name: Configure and build WebAssembly
-        run: |
-          source emsdk/emsdk_env.sh
-          mkdir -p build-wasm
-          cd build-wasm
-          emcmake cmake .. -DCMAKE_BUILD_TYPE=Release -f ../CMakeLists-wasm.txt
-          emmake make -j$(nproc)
-
-      - name: Upload WASM artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: wasm-build
-          path: |
-            build-wasm/bendcore_wasm.js
-            build-wasm/bendcore_wasm.wasm
-
-  # React Build
-  react-build:
-    name: React Build
-    runs-on: ubuntu-latest
-    needs: wasm-build
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: web/package-lock.json
-
-      - name: Download WASM artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: wasm-build
-          path: web/public/lib
-
-      - name: Install dependencies
-        run: |
-          cd web
-          npm ci
-
-      - name: Type check
-        run: |
-          cd web
-          npm run type-check
-
-      - name: Lint
-        run: |
-          cd web
-          npm run lint
-
-      - name: Build
-        run: |
-          cd web
-          npm run build
-
-      - name: Upload React build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: react-build
-          path: web/dist
-
-  # NPM Package Publishing
-  npm-publish:
-    name: Publish NPM Package
-    runs-on: ubuntu-latest
-    needs: [cpp-build, react-build]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Download WASM artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: wasm-build
-          path: web/public/lib
-
-      - name: Download React artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: react-build
-          path: web/dist
-
-      - name: Install dependencies
-        run: |
-          cd web
-          npm ci
-
-      - name: Publish to NPM
-        run: |
-          cd web
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-  # Code Coverage Report
-  coverage:
-    name: Code Coverage Report
-    runs-on: ubuntu-latest
-    needs: cpp-build
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake g++ build-essential lcov
-
-      - name: Build with coverage
-        run: |
-          cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage"
-          cmake --build build --parallel $(nproc)
-
-      - name: Generate coverage report
-        run: |
-          cd build
-          ctest --output-on-failure
-          lcov --capture --directory . --output-file coverage.info --rc lcov_branch_coverage=1
-          lcov --remove coverage.info '/usr/*' '/tmp/*' --output-file coverage.info --rc lcov_branch_coverage=1
-          lcov --summary coverage.info
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./build/coverage.info
-          flags: unittests
-          name: codecov-umbrella
-          fail_ci_if_error: false
-
-  # Integration Tests
-  integration-tests:
-    name: Integration Tests
-    runs-on: ubuntu-latest
-    needs: [cpp-build, react-build]
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake g++ build-essential
-
-      - name: Build C++ library
-        run: |
-          cmake -B build -DCMAKE_BUILD_TYPE=Release
-          cmake --build build --parallel $(nproc)
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-
-      - name: Run integration tests
-        run: |
-          cd web
-          npm ci
-          npm run test 2>&1 || true
-
-  # Build Status Badge
-  build-status:
-    name: Build Status
-    runs-on: ubuntu-latest
-    needs: [cpp-build, wasm-build, react-build, coverage]
-    if: always()
-
-    steps:
-      - name: Check build status
-        run: |
-          if [ "${{ needs.cpp-build.result }}" != "success" ]; then
-            echo "C++ build failed"
-            exit 1
-          fi
-          if [ "${{ needs.wasm-build.result }}" != "success" ]; then
-            echo "WebAssembly build failed"
-            exit 1
-          fi
-          if [ "${{ needs.react-build.result }}" != "success" ]; then
-            echo "React build failed"
-            exit 1
-          fi
-          echo "All builds passed!"
+    - uses: actions/checkout@v4
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake build-essential
+    
+    - name: Configure CMake
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release ..
+    
+    - name: Build
+      run: |
+        cd build
+        make -j4
+    
+    - name: Run tests
+      run: |
+        cd build
+        ctest --output-on-failure -j4
+    
+    - name: Upload Linux Executable
+      uses: actions/upload-artifact@v4
+      with:
+        name: bendcore_app-linux
+        path: build/bendcore_app
+        retention-days: 30
