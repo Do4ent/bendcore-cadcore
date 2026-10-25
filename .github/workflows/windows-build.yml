@@ -33,7 +33,7 @@ jobs:
         ctest -C Release --output-on-failure -j 4
     
     - name: Upload Windows Executable
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bendcore_app-windows
         path: build-windows/Release/bendcore_app.exe

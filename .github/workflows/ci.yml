@@ -73,7 +73,7 @@ jobs:
           emmake make -j$(nproc)
 
       - name: Upload WASM artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: wasm-build
           path: |
@@ -97,7 +97,7 @@ jobs:
           cache-dependency-path: web/package-lock.json
 
       - name: Download WASM artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: wasm-build
           path: web/public/lib
@@ -123,7 +123,7 @@ jobs:
           npm run build
 
       - name: Upload React build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: react-build
           path: web/dist
@@ -145,13 +145,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Download WASM artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: wasm-build
           path: web/public/lib
 
       - name: Download React artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: react-build
           path: web/dist
@@ -228,7 +228,7 @@ jobs:
           node-version: '18'
 
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
 
       - name: Run integration tests
         run: |
