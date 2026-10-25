@@ -1,4 +1,5 @@
 #include "bendcore/dependency/rebuild_engine.hpp"
+#include <algorithm>
 
 namespace BendCore::CadCore {
 
