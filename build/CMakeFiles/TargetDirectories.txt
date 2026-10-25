@@ -6,6 +6,9 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_transaction.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_history_stack.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_document_event_bus.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_parameter_store.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_dependency_graph.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_rebuild_engine.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

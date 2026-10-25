@@ -16,6 +16,9 @@ set(BENDCORE_SOURCES
     src/transaction.cpp
     src/history_stack.cpp
     src/document_event_bus.cpp
+    src/parameter_store.cpp
+    src/dependency_graph.cpp
+    src/rebuild_engine.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -68,3 +71,18 @@ add_test(NAME HistoryStack COMMAND test_history_stack)
 add_executable(test_document_event_bus tests/test_document_event_bus.cpp)
 target_link_libraries(test_document_event_bus bendcore gtest_main)
 add_test(NAME DocumentEventBus COMMAND test_document_event_bus)
+
+# CAD-CORE-009: Parameter Store tests
+add_executable(test_parameter_store tests/test_parameter_store.cpp)
+target_link_libraries(test_parameter_store bendcore gtest_main)
+add_test(NAME ParameterStore COMMAND test_parameter_store)
+
+# CAD-CORE-010: Dependency Graph tests
+add_executable(test_dependency_graph tests/test_dependency_graph.cpp)
+target_link_libraries(test_dependency_graph bendcore gtest_main)
+add_test(NAME DependencyGraph COMMAND test_dependency_graph)
+
+# CAD-CORE-011: Rebuild Engine tests
+add_executable(test_rebuild_engine tests/test_rebuild_engine.cpp)
+target_link_libraries(test_rebuild_engine bendcore gtest_main)
+add_test(NAME RebuildEngine COMMAND test_rebuild_engine)

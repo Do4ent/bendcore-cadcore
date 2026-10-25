@@ -276,6 +276,45 @@ test_document_event_bus/fast:
 .PHONY : test_document_event_bus/fast
 
 #=============================================================================
+# Target rules for targets named test_parameter_store
+
+# Build rule for target.
+test_parameter_store: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parameter_store
+.PHONY : test_parameter_store
+
+# fast build rule for target.
+test_parameter_store/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/build
+.PHONY : test_parameter_store/fast
+
+#=============================================================================
+# Target rules for targets named test_dependency_graph
+
+# Build rule for target.
+test_dependency_graph: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_dependency_graph
+.PHONY : test_dependency_graph
+
+# fast build rule for target.
+test_dependency_graph/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/build
+.PHONY : test_dependency_graph/fast
+
+#=============================================================================
+# Target rules for targets named test_rebuild_engine
+
+# Build rule for target.
+test_rebuild_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_rebuild_engine
+.PHONY : test_rebuild_engine
+
+# fast build rule for target.
+test_rebuild_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/build
+.PHONY : test_rebuild_engine/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -375,6 +414,30 @@ src/command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.s
 .PHONY : src/command_manager.cpp.s
 
+src/dependency_graph.o: src/dependency_graph.cpp.o
+.PHONY : src/dependency_graph.o
+
+# target to build an object file
+src/dependency_graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.o
+.PHONY : src/dependency_graph.cpp.o
+
+src/dependency_graph.i: src/dependency_graph.cpp.i
+.PHONY : src/dependency_graph.i
+
+# target to preprocess a source file
+src/dependency_graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.i
+.PHONY : src/dependency_graph.cpp.i
+
+src/dependency_graph.s: src/dependency_graph.cpp.s
+.PHONY : src/dependency_graph.s
+
+# target to generate assembly for a file
+src/dependency_graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.s
+.PHONY : src/dependency_graph.cpp.s
+
 src/document_event_bus.o: src/document_event_bus.cpp.o
 .PHONY : src/document_event_bus.o
 
@@ -471,6 +534,54 @@ src/history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.s
 .PHONY : src/history_stack.cpp.s
 
+src/parameter_store.o: src/parameter_store.cpp.o
+.PHONY : src/parameter_store.o
+
+# target to build an object file
+src/parameter_store.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.o
+.PHONY : src/parameter_store.cpp.o
+
+src/parameter_store.i: src/parameter_store.cpp.i
+.PHONY : src/parameter_store.i
+
+# target to preprocess a source file
+src/parameter_store.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.i
+.PHONY : src/parameter_store.cpp.i
+
+src/parameter_store.s: src/parameter_store.cpp.s
+.PHONY : src/parameter_store.s
+
+# target to generate assembly for a file
+src/parameter_store.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.s
+.PHONY : src/parameter_store.cpp.s
+
+src/rebuild_engine.o: src/rebuild_engine.cpp.o
+.PHONY : src/rebuild_engine.o
+
+# target to build an object file
+src/rebuild_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o
+.PHONY : src/rebuild_engine.cpp.o
+
+src/rebuild_engine.i: src/rebuild_engine.cpp.i
+.PHONY : src/rebuild_engine.i
+
+# target to preprocess a source file
+src/rebuild_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.i
+.PHONY : src/rebuild_engine.cpp.i
+
+src/rebuild_engine.s: src/rebuild_engine.cpp.s
+.PHONY : src/rebuild_engine.s
+
+# target to generate assembly for a file
+src/rebuild_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.s
+.PHONY : src/rebuild_engine.cpp.s
+
 src/transaction.o: src/transaction.cpp.o
 .PHONY : src/transaction.o
 
@@ -542,6 +653,30 @@ tests/test_command_manager.s: tests/test_command_manager.cpp.s
 tests/test_command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.s
 .PHONY : tests/test_command_manager.cpp.s
+
+tests/test_dependency_graph.o: tests/test_dependency_graph.cpp.o
+.PHONY : tests/test_dependency_graph.o
+
+# target to build an object file
+tests/test_dependency_graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/tests/test_dependency_graph.cpp.o
+.PHONY : tests/test_dependency_graph.cpp.o
+
+tests/test_dependency_graph.i: tests/test_dependency_graph.cpp.i
+.PHONY : tests/test_dependency_graph.i
+
+# target to preprocess a source file
+tests/test_dependency_graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/tests/test_dependency_graph.cpp.i
+.PHONY : tests/test_dependency_graph.cpp.i
+
+tests/test_dependency_graph.s: tests/test_dependency_graph.cpp.s
+.PHONY : tests/test_dependency_graph.s
+
+# target to generate assembly for a file
+tests/test_dependency_graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/tests/test_dependency_graph.cpp.s
+.PHONY : tests/test_dependency_graph.cpp.s
 
 tests/test_document_event_bus.o: tests/test_document_event_bus.cpp.o
 .PHONY : tests/test_document_event_bus.o
@@ -639,6 +774,54 @@ tests/test_history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.s
 .PHONY : tests/test_history_stack.cpp.s
 
+tests/test_parameter_store.o: tests/test_parameter_store.cpp.o
+.PHONY : tests/test_parameter_store.o
+
+# target to build an object file
+tests/test_parameter_store.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/tests/test_parameter_store.cpp.o
+.PHONY : tests/test_parameter_store.cpp.o
+
+tests/test_parameter_store.i: tests/test_parameter_store.cpp.i
+.PHONY : tests/test_parameter_store.i
+
+# target to preprocess a source file
+tests/test_parameter_store.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/tests/test_parameter_store.cpp.i
+.PHONY : tests/test_parameter_store.cpp.i
+
+tests/test_parameter_store.s: tests/test_parameter_store.cpp.s
+.PHONY : tests/test_parameter_store.s
+
+# target to generate assembly for a file
+tests/test_parameter_store.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/tests/test_parameter_store.cpp.s
+.PHONY : tests/test_parameter_store.cpp.s
+
+tests/test_rebuild_engine.o: tests/test_rebuild_engine.cpp.o
+.PHONY : tests/test_rebuild_engine.o
+
+# target to build an object file
+tests/test_rebuild_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/tests/test_rebuild_engine.cpp.o
+.PHONY : tests/test_rebuild_engine.cpp.o
+
+tests/test_rebuild_engine.i: tests/test_rebuild_engine.cpp.i
+.PHONY : tests/test_rebuild_engine.i
+
+# target to preprocess a source file
+tests/test_rebuild_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/tests/test_rebuild_engine.cpp.i
+.PHONY : tests/test_rebuild_engine.cpp.i
+
+tests/test_rebuild_engine.s: tests/test_rebuild_engine.cpp.s
+.PHONY : tests/test_rebuild_engine.s
+
+# target to generate assembly for a file
+tests/test_rebuild_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/tests/test_rebuild_engine.cpp.s
+.PHONY : tests/test_rebuild_engine.cpp.s
+
 tests/test_transaction.o: tests/test_transaction.cpp.o
 .PHONY : tests/test_transaction.o
 
@@ -683,10 +866,13 @@ help:
 	@echo "... gtest_main"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
+	@echo "... test_dependency_graph"
 	@echo "... test_document_event_bus"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
 	@echo "... test_history_stack"
+	@echo "... test_parameter_store"
+	@echo "... test_rebuild_engine"
 	@echo "... test_transaction"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
@@ -694,6 +880,9 @@ help:
 	@echo "... src/command_manager.o"
 	@echo "... src/command_manager.i"
 	@echo "... src/command_manager.s"
+	@echo "... src/dependency_graph.o"
+	@echo "... src/dependency_graph.i"
+	@echo "... src/dependency_graph.s"
 	@echo "... src/document_event_bus.o"
 	@echo "... src/document_event_bus.i"
 	@echo "... src/document_event_bus.s"
@@ -706,6 +895,12 @@ help:
 	@echo "... src/history_stack.o"
 	@echo "... src/history_stack.i"
 	@echo "... src/history_stack.s"
+	@echo "... src/parameter_store.o"
+	@echo "... src/parameter_store.i"
+	@echo "... src/parameter_store.s"
+	@echo "... src/rebuild_engine.o"
+	@echo "... src/rebuild_engine.i"
+	@echo "... src/rebuild_engine.s"
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
@@ -715,6 +910,9 @@ help:
 	@echo "... tests/test_command_manager.o"
 	@echo "... tests/test_command_manager.i"
 	@echo "... tests/test_command_manager.s"
+	@echo "... tests/test_dependency_graph.o"
+	@echo "... tests/test_dependency_graph.i"
+	@echo "... tests/test_dependency_graph.s"
 	@echo "... tests/test_document_event_bus.o"
 	@echo "... tests/test_document_event_bus.i"
 	@echo "... tests/test_document_event_bus.s"
@@ -727,6 +925,12 @@ help:
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"
+	@echo "... tests/test_parameter_store.o"
+	@echo "... tests/test_parameter_store.i"
+	@echo "... tests/test_parameter_store.s"
+	@echo "... tests/test_rebuild_engine.o"
+	@echo "... tests/test_rebuild_engine.i"
+	@echo "... tests/test_rebuild_engine.s"
 	@echo "... tests/test_transaction.o"
 	@echo "... tests/test_transaction.i"
 	@echo "... tests/test_transaction.s"
