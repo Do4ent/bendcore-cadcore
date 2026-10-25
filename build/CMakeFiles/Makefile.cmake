@@ -137,6 +137,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_loft_feature.dir/DependInfo.cmake"
   "CMakeFiles/test_sweep_feature.dir/DependInfo.cmake"
   "CMakeFiles/test_revolve_feature.dir/DependInfo.cmake"
+  "CMakeFiles/test_surface_features.dir/DependInfo.cmake"
   "CMakeFiles/test_occt_wrapper.dir/DependInfo.cmake"
   "CMakeFiles/test_mate_solver.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"

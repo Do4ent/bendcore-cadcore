@@ -46,6 +46,8 @@ set(BENDCORE_SOURCES
     src/loft.cpp
     src/sweep.cpp
     src/revolve.cpp
+    # Phase M6.1: Surface Modeling Enhancements
+    src/geometry/surface_features.cpp
     # Phase M6.5: OCCT Integration
     src/geometry/occt_wrapper.cpp
     # Phase M7: Assembly Solver
@@ -350,6 +352,15 @@ add_test(NAME SweepFeature COMMAND test_sweep_feature)
 add_executable(test_revolve_feature tests/test_revolve_feature.cpp)
 target_link_libraries(test_revolve_feature bendcore gtest_main)
 add_test(NAME RevolveFeature COMMAND test_revolve_feature)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M6.1: Surface Modeling Enhancements
+# ═════════════════════════════════════════════════════════════════
+
+# Surface Features Tests (CAD-DEV-026 to CAD-DEV-030)
+add_executable(test_surface_features tests/test_surface_features.cpp)
+target_link_libraries(test_surface_features bendcore gtest_main)
+add_test(NAME SurfaceFeatures COMMAND test_surface_features)
 
 # ═════════════════════════════════════════════════════════════════
 # Phase M6.5: OCCT Integration

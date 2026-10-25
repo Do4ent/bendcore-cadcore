@@ -627,6 +627,19 @@ test_revolve_feature/fast:
 .PHONY : test_revolve_feature/fast
 
 #=============================================================================
+# Target rules for targets named test_surface_features
+
+# Build rule for target.
+test_surface_features: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_surface_features
+.PHONY : test_surface_features
+
+# fast build rule for target.
+test_surface_features/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_surface_features.dir/build.make CMakeFiles/test_surface_features.dir/build
+.PHONY : test_surface_features/fast
+
+#=============================================================================
 # Target rules for targets named test_occt_wrapper
 
 # Build rule for target.
@@ -1475,6 +1488,30 @@ src/geometry/occt_wrapper.s: src/geometry/occt_wrapper.cpp.s
 src/geometry/occt_wrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.s
 .PHONY : src/geometry/occt_wrapper.cpp.s
+
+src/geometry/surface_features.o: src/geometry/surface_features.cpp.o
+.PHONY : src/geometry/surface_features.o
+
+# target to build an object file
+src/geometry/surface_features.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o
+.PHONY : src/geometry/surface_features.cpp.o
+
+src/geometry/surface_features.i: src/geometry/surface_features.cpp.i
+.PHONY : src/geometry/surface_features.i
+
+# target to preprocess a source file
+src/geometry/surface_features.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.i
+.PHONY : src/geometry/surface_features.cpp.i
+
+src/geometry/surface_features.s: src/geometry/surface_features.cpp.s
+.PHONY : src/geometry/surface_features.s
+
+# target to generate assembly for a file
+src/geometry/surface_features.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.s
+.PHONY : src/geometry/surface_features.cpp.s
 
 src/geometry_cache.o: src/geometry_cache.cpp.o
 .PHONY : src/geometry_cache.o
@@ -2820,6 +2857,30 @@ tests/test_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.s
 .PHONY : tests/test_serializer.cpp.s
 
+tests/test_surface_features.o: tests/test_surface_features.cpp.o
+.PHONY : tests/test_surface_features.o
+
+# target to build an object file
+tests/test_surface_features.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_surface_features.dir/build.make CMakeFiles/test_surface_features.dir/tests/test_surface_features.cpp.o
+.PHONY : tests/test_surface_features.cpp.o
+
+tests/test_surface_features.i: tests/test_surface_features.cpp.i
+.PHONY : tests/test_surface_features.i
+
+# target to preprocess a source file
+tests/test_surface_features.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_surface_features.dir/build.make CMakeFiles/test_surface_features.dir/tests/test_surface_features.cpp.i
+.PHONY : tests/test_surface_features.cpp.i
+
+tests/test_surface_features.s: tests/test_surface_features.cpp.s
+.PHONY : tests/test_surface_features.s
+
+# target to generate assembly for a file
+tests/test_surface_features.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_surface_features.dir/build.make CMakeFiles/test_surface_features.dir/tests/test_surface_features.cpp.s
+.PHONY : tests/test_surface_features.cpp.s
+
 tests/test_sweep_feature.o: tests/test_sweep_feature.cpp.o
 .PHONY : tests/test_sweep_feature.o
 
@@ -2948,6 +3009,7 @@ help:
 	@echo "... test_recovery"
 	@echo "... test_revolve_feature"
 	@echo "... test_serializer"
+	@echo "... test_surface_features"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
 	@echo "... src/assembly/mate_solver.o"
@@ -3001,6 +3063,9 @@ help:
 	@echo "... src/geometry/occt_wrapper.o"
 	@echo "... src/geometry/occt_wrapper.i"
 	@echo "... src/geometry/occt_wrapper.s"
+	@echo "... src/geometry/surface_features.o"
+	@echo "... src/geometry/surface_features.i"
+	@echo "... src/geometry/surface_features.s"
 	@echo "... src/geometry_cache.o"
 	@echo "... src/geometry_cache.i"
 	@echo "... src/geometry_cache.s"
@@ -3169,6 +3234,9 @@ help:
 	@echo "... tests/test_serializer.o"
 	@echo "... tests/test_serializer.i"
 	@echo "... tests/test_serializer.s"
+	@echo "... tests/test_surface_features.o"
+	@echo "... tests/test_surface_features.i"
+	@echo "... tests/test_surface_features.s"
 	@echo "... tests/test_sweep_feature.o"
 	@echo "... tests/test_sweep_feature.i"
 	@echo "... tests/test_sweep_feature.s"

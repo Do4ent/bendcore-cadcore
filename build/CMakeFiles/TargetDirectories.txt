@@ -33,6 +33,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_loft_feature.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_sweep_feature.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_revolve_feature.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_surface_features.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_occt_wrapper.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_mate_solver.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir

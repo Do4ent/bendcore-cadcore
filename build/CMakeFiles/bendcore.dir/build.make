@@ -517,10 +517,24 @@ CMakeFiles/bendcore.dir/src/revolve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/revolve.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/revolve.cpp -o CMakeFiles/bendcore.dir/src/revolve.cpp.s
 
+CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o: /tmp/bendcore-cadcore/src/geometry/surface_features.cpp
+CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o -MF CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o.d -o CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o -c /tmp/bendcore-cadcore/src/geometry/surface_features.cpp
+
+CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/geometry/surface_features.cpp > CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.i
+
+CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/geometry/surface_features.cpp -o CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.s
+
 CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o: /tmp/bendcore-cadcore/src/geometry/occt_wrapper.cpp
 CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o -MF CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d -o CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o -c /tmp/bendcore-cadcore/src/geometry/occt_wrapper.cpp
 
 CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.i: cmake_force
@@ -534,7 +548,7 @@ CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o: /tmp/bendcore-cadcore/src/assembly/mate_solver.cpp
 CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o -MF CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o.d -o CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o -c /tmp/bendcore-cadcore/src/assembly/mate_solver.cpp
 
 CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.i: cmake_force
@@ -548,7 +562,7 @@ CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: /tmp/bendcore-cadcore/src/math/matrix_ops.cpp
 CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o -MF CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o.d -o CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o -c /tmp/bendcore-cadcore/src/math/matrix_ops.cpp
 
 CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i: cmake_force
@@ -562,7 +576,7 @@ CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: /tmp/bendcore-cadcore/src/math/geometry_ops.cpp
 CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o -MF CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o.d -o CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o -c /tmp/bendcore-cadcore/src/math/geometry_ops.cpp
 
 CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i: cmake_force
@@ -576,7 +590,7 @@ CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: /tmp/bendcore-cadcore/src/io/model_importer.cpp
 CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o -MF CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o.d -o CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o -c /tmp/bendcore-cadcore/src/io/model_importer.cpp
 
 CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i: cmake_force
@@ -590,7 +604,7 @@ CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp
 CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o -MF CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o.d -o CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o -c /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp
 
 CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i: cmake_force
@@ -604,7 +618,7 @@ CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s: cmake_force
 CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: CMakeFiles/bendcore.dir/flags.make
 CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp
 CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o -MF CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o.d -o CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o -c /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp
 
 CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i: cmake_force
@@ -649,6 +663,7 @@ bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/loft.cpp.o" \
 "CMakeFiles/bendcore.dir/src/sweep.cpp.o" \
 "CMakeFiles/bendcore.dir/src/revolve.cpp.o" \
+"CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o" \
 "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o" \
 "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o" \
 "CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o" \
@@ -692,6 +707,7 @@ libbendcore.a: CMakeFiles/bendcore.dir/src/database_manager.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/loft.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/sweep.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/revolve.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o
@@ -701,7 +717,7 @@ libbendcore.a: CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/build.make
 libbendcore.a: CMakeFiles/bendcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX static library libbendcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX static library libbendcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bendcore.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bendcore.dir/link.txt --verbose=$(VERBOSE)
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_surface_features.dir/tests/test_surface_features.cpp.o -o test_surface_features  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

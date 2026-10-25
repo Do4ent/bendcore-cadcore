@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/feature_system.cpp" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
   "/tmp/bendcore-cadcore/src/format_exporters.cpp" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry/occt_wrapper.cpp" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/geometry/surface_features.cpp" "CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_cache.cpp" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_engine.cpp" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
