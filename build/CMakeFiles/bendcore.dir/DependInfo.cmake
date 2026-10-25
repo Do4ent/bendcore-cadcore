@@ -8,12 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/tmp/bendcore-cadcore/src/brep.cpp" "CMakeFiles/bendcore.dir/src/brep.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/brep.cpp.o.d"
   "/tmp/bendcore-cadcore/src/cad_document.cpp" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o.d"
   "/tmp/bendcore-cadcore/src/command_manager.cpp" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o.d"
   "/tmp/bendcore-cadcore/src/dependency_graph.cpp" "CMakeFiles/bendcore.dir/src/dependency_graph.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/dependency_graph.cpp.o.d"
   "/tmp/bendcore-cadcore/src/document_event_bus.cpp" "CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_id.cpp" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_tree.cpp" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/feature_system.cpp" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/geometry_cache.cpp" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/geometry_engine.cpp" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
   "/tmp/bendcore-cadcore/src/parameter_store.cpp" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o.d"
   "/tmp/bendcore-cadcore/src/rebuild_engine.cpp" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o.d"

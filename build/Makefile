@@ -315,6 +315,58 @@ test_rebuild_engine/fast:
 .PHONY : test_rebuild_engine/fast
 
 #=============================================================================
+# Target rules for targets named test_geometry_engine
+
+# Build rule for target.
+test_geometry_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_geometry_engine
+.PHONY : test_geometry_engine
+
+# fast build rule for target.
+test_geometry_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/build
+.PHONY : test_geometry_engine/fast
+
+#=============================================================================
+# Target rules for targets named test_brep
+
+# Build rule for target.
+test_brep: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_brep
+.PHONY : test_brep
+
+# fast build rule for target.
+test_brep/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/build
+.PHONY : test_brep/fast
+
+#=============================================================================
+# Target rules for targets named test_feature_system
+
+# Build rule for target.
+test_feature_system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_feature_system
+.PHONY : test_feature_system
+
+# fast build rule for target.
+test_feature_system/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/build
+.PHONY : test_feature_system/fast
+
+#=============================================================================
+# Target rules for targets named test_geometry_cache
+
+# Build rule for target.
+test_geometry_cache: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_geometry_cache
+.PHONY : test_geometry_cache
+
+# fast build rule for target.
+test_geometry_cache/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/build
+.PHONY : test_geometry_cache/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -365,6 +417,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/brep.o: src/brep.cpp.o
+.PHONY : src/brep.o
+
+# target to build an object file
+src/brep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.o
+.PHONY : src/brep.cpp.o
+
+src/brep.i: src/brep.cpp.i
+.PHONY : src/brep.i
+
+# target to preprocess a source file
+src/brep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.i
+.PHONY : src/brep.cpp.i
+
+src/brep.s: src/brep.cpp.s
+.PHONY : src/brep.s
+
+# target to generate assembly for a file
+src/brep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.s
+.PHONY : src/brep.cpp.s
 
 src/cad_document.o: src/cad_document.cpp.o
 .PHONY : src/cad_document.o
@@ -510,6 +586,78 @@ src/entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
 .PHONY : src/entity_tree.cpp.s
 
+src/feature_system.o: src/feature_system.cpp.o
+.PHONY : src/feature_system.o
+
+# target to build an object file
+src/feature_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.o
+.PHONY : src/feature_system.cpp.o
+
+src/feature_system.i: src/feature_system.cpp.i
+.PHONY : src/feature_system.i
+
+# target to preprocess a source file
+src/feature_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.i
+.PHONY : src/feature_system.cpp.i
+
+src/feature_system.s: src/feature_system.cpp.s
+.PHONY : src/feature_system.s
+
+# target to generate assembly for a file
+src/feature_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.s
+.PHONY : src/feature_system.cpp.s
+
+src/geometry_cache.o: src/geometry_cache.cpp.o
+.PHONY : src/geometry_cache.o
+
+# target to build an object file
+src/geometry_cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o
+.PHONY : src/geometry_cache.cpp.o
+
+src/geometry_cache.i: src/geometry_cache.cpp.i
+.PHONY : src/geometry_cache.i
+
+# target to preprocess a source file
+src/geometry_cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.i
+.PHONY : src/geometry_cache.cpp.i
+
+src/geometry_cache.s: src/geometry_cache.cpp.s
+.PHONY : src/geometry_cache.s
+
+# target to generate assembly for a file
+src/geometry_cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.s
+.PHONY : src/geometry_cache.cpp.s
+
+src/geometry_engine.o: src/geometry_engine.cpp.o
+.PHONY : src/geometry_engine.o
+
+# target to build an object file
+src/geometry_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o
+.PHONY : src/geometry_engine.cpp.o
+
+src/geometry_engine.i: src/geometry_engine.cpp.i
+.PHONY : src/geometry_engine.i
+
+# target to preprocess a source file
+src/geometry_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.i
+.PHONY : src/geometry_engine.cpp.i
+
+src/geometry_engine.s: src/geometry_engine.cpp.s
+.PHONY : src/geometry_engine.s
+
+# target to generate assembly for a file
+src/geometry_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.s
+.PHONY : src/geometry_engine.cpp.s
+
 src/history_stack.o: src/history_stack.cpp.o
 .PHONY : src/history_stack.o
 
@@ -605,6 +753,30 @@ src/transaction.s: src/transaction.cpp.s
 src/transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.s
 .PHONY : src/transaction.cpp.s
+
+tests/test_brep.o: tests/test_brep.cpp.o
+.PHONY : tests/test_brep.o
+
+# target to build an object file
+tests/test_brep.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/tests/test_brep.cpp.o
+.PHONY : tests/test_brep.cpp.o
+
+tests/test_brep.i: tests/test_brep.cpp.i
+.PHONY : tests/test_brep.i
+
+# target to preprocess a source file
+tests/test_brep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/tests/test_brep.cpp.i
+.PHONY : tests/test_brep.cpp.i
+
+tests/test_brep.s: tests/test_brep.cpp.s
+.PHONY : tests/test_brep.s
+
+# target to generate assembly for a file
+tests/test_brep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_brep.dir/build.make CMakeFiles/test_brep.dir/tests/test_brep.cpp.s
+.PHONY : tests/test_brep.cpp.s
 
 tests/test_cad_document.o: tests/test_cad_document.cpp.o
 .PHONY : tests/test_cad_document.o
@@ -750,6 +922,78 @@ tests/test_entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.s
 .PHONY : tests/test_entity_tree.cpp.s
 
+tests/test_feature_system.o: tests/test_feature_system.cpp.o
+.PHONY : tests/test_feature_system.o
+
+# target to build an object file
+tests/test_feature_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/tests/test_feature_system.cpp.o
+.PHONY : tests/test_feature_system.cpp.o
+
+tests/test_feature_system.i: tests/test_feature_system.cpp.i
+.PHONY : tests/test_feature_system.i
+
+# target to preprocess a source file
+tests/test_feature_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/tests/test_feature_system.cpp.i
+.PHONY : tests/test_feature_system.cpp.i
+
+tests/test_feature_system.s: tests/test_feature_system.cpp.s
+.PHONY : tests/test_feature_system.s
+
+# target to generate assembly for a file
+tests/test_feature_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/tests/test_feature_system.cpp.s
+.PHONY : tests/test_feature_system.cpp.s
+
+tests/test_geometry_cache.o: tests/test_geometry_cache.cpp.o
+.PHONY : tests/test_geometry_cache.o
+
+# target to build an object file
+tests/test_geometry_cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/tests/test_geometry_cache.cpp.o
+.PHONY : tests/test_geometry_cache.cpp.o
+
+tests/test_geometry_cache.i: tests/test_geometry_cache.cpp.i
+.PHONY : tests/test_geometry_cache.i
+
+# target to preprocess a source file
+tests/test_geometry_cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/tests/test_geometry_cache.cpp.i
+.PHONY : tests/test_geometry_cache.cpp.i
+
+tests/test_geometry_cache.s: tests/test_geometry_cache.cpp.s
+.PHONY : tests/test_geometry_cache.s
+
+# target to generate assembly for a file
+tests/test_geometry_cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_cache.dir/build.make CMakeFiles/test_geometry_cache.dir/tests/test_geometry_cache.cpp.s
+.PHONY : tests/test_geometry_cache.cpp.s
+
+tests/test_geometry_engine.o: tests/test_geometry_engine.cpp.o
+.PHONY : tests/test_geometry_engine.o
+
+# target to build an object file
+tests/test_geometry_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/tests/test_geometry_engine.cpp.o
+.PHONY : tests/test_geometry_engine.cpp.o
+
+tests/test_geometry_engine.i: tests/test_geometry_engine.cpp.i
+.PHONY : tests/test_geometry_engine.i
+
+# target to preprocess a source file
+tests/test_geometry_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/tests/test_geometry_engine.cpp.i
+.PHONY : tests/test_geometry_engine.cpp.i
+
+tests/test_geometry_engine.s: tests/test_geometry_engine.cpp.s
+.PHONY : tests/test_geometry_engine.s
+
+# target to generate assembly for a file
+tests/test_geometry_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/tests/test_geometry_engine.cpp.s
+.PHONY : tests/test_geometry_engine.cpp.s
+
 tests/test_history_stack.o: tests/test_history_stack.cpp.o
 .PHONY : tests/test_history_stack.o
 
@@ -864,16 +1108,23 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... test_brep"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
 	@echo "... test_dependency_graph"
 	@echo "... test_document_event_bus"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
+	@echo "... test_feature_system"
+	@echo "... test_geometry_cache"
+	@echo "... test_geometry_engine"
 	@echo "... test_history_stack"
 	@echo "... test_parameter_store"
 	@echo "... test_rebuild_engine"
 	@echo "... test_transaction"
+	@echo "... src/brep.o"
+	@echo "... src/brep.i"
+	@echo "... src/brep.s"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
 	@echo "... src/cad_document.s"
@@ -892,6 +1143,15 @@ help:
 	@echo "... src/entity_tree.o"
 	@echo "... src/entity_tree.i"
 	@echo "... src/entity_tree.s"
+	@echo "... src/feature_system.o"
+	@echo "... src/feature_system.i"
+	@echo "... src/feature_system.s"
+	@echo "... src/geometry_cache.o"
+	@echo "... src/geometry_cache.i"
+	@echo "... src/geometry_cache.s"
+	@echo "... src/geometry_engine.o"
+	@echo "... src/geometry_engine.i"
+	@echo "... src/geometry_engine.s"
 	@echo "... src/history_stack.o"
 	@echo "... src/history_stack.i"
 	@echo "... src/history_stack.s"
@@ -904,6 +1164,9 @@ help:
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
+	@echo "... tests/test_brep.o"
+	@echo "... tests/test_brep.i"
+	@echo "... tests/test_brep.s"
 	@echo "... tests/test_cad_document.o"
 	@echo "... tests/test_cad_document.i"
 	@echo "... tests/test_cad_document.s"
@@ -922,6 +1185,15 @@ help:
 	@echo "... tests/test_entity_tree.o"
 	@echo "... tests/test_entity_tree.i"
 	@echo "... tests/test_entity_tree.s"
+	@echo "... tests/test_feature_system.o"
+	@echo "... tests/test_feature_system.i"
+	@echo "... tests/test_feature_system.s"
+	@echo "... tests/test_geometry_cache.o"
+	@echo "... tests/test_geometry_cache.i"
+	@echo "... tests/test_geometry_cache.s"
+	@echo "... tests/test_geometry_engine.o"
+	@echo "... tests/test_geometry_engine.i"
+	@echo "... tests/test_geometry_engine.s"
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"

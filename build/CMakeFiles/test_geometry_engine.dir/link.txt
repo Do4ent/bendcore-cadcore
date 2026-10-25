@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic CMakeFiles/test_geometry_engine.dir/tests/test_geometry_engine.cpp.o -o test_geometry_engine  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

@@ -1,11 +1,15 @@
-EntityId 13 0.0190768
-CadDocument 13 0.00341608
-EntityTree 12 0.000367779
-CommandManager 10 0.00034507
-Transaction 6 0.000500391
-HistoryStack 5 0.00048906
-DocumentEventBus 5 0.000515717
-ParameterStore 3 0.000781287
-DependencyGraph 1 0.00262742
-RebuildEngine 3 0.00101186
+EntityId 14 0.0111947
+CadDocument 14 0.00280488
+EntityTree 13 0.000400704
+CommandManager 11 0.000338741
+Transaction 7 0.000494735
+HistoryStack 6 0.000488238
+DocumentEventBus 6 0.000426655
+ParameterStore 4 0.000599723
+DependencyGraph 2 0.0014162
+RebuildEngine 4 0.000640594
+GeometryEngine 1 0.00242088
+BRep 1 0.00249064
+FeatureSystem 1 0.00249595
+GeometryCache 1 0.00230949
 ---

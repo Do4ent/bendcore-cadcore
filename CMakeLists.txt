@@ -19,6 +19,10 @@ set(BENDCORE_SOURCES
     src/parameter_store.cpp
     src/dependency_graph.cpp
     src/rebuild_engine.cpp
+    src/geometry_engine.cpp
+    src/brep.cpp
+    src/feature_system.cpp
+    src/geometry_cache.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -86,3 +90,23 @@ add_test(NAME DependencyGraph COMMAND test_dependency_graph)
 add_executable(test_rebuild_engine tests/test_rebuild_engine.cpp)
 target_link_libraries(test_rebuild_engine bendcore gtest_main)
 add_test(NAME RebuildEngine COMMAND test_rebuild_engine)
+
+# CAD-CORE-012: Geometry Engine tests
+add_executable(test_geometry_engine tests/test_geometry_engine.cpp)
+target_link_libraries(test_geometry_engine bendcore gtest_main)
+add_test(NAME GeometryEngine COMMAND test_geometry_engine)
+
+# CAD-CORE-013: B-Rep tests
+add_executable(test_brep tests/test_brep.cpp)
+target_link_libraries(test_brep bendcore gtest_main)
+add_test(NAME BRep COMMAND test_brep)
+
+# CAD-CORE-015: Feature System tests
+add_executable(test_feature_system tests/test_feature_system.cpp)
+target_link_libraries(test_feature_system bendcore gtest_main)
+add_test(NAME FeatureSystem COMMAND test_feature_system)
+
+# CAD-CORE-016: Geometry Cache tests
+add_executable(test_geometry_cache tests/test_geometry_cache.cpp)
+target_link_libraries(test_geometry_cache bendcore gtest_main)
+add_test(NAME GeometryCache COMMAND test_geometry_cache)
