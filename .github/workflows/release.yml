@@ -15,12 +15,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get release notes
-        id: release_notes
+      - name: Get release notes and version
+        id: release_info
         run: |
           TAG=${GITHUB_REF#refs/tags/}
-          NOTES=$(git log $(git describe --tags --abbrev=0 HEAD^)..HEAD --pretty=format:"%h - %s")
+          echo "version=$TAG" >> $GITHUB_OUTPUT
+
+          # Generate comprehensive release notes
+          if git describe --tags --abbrev=0 HEAD^ >/dev/null 2>&1; then
+            PREV_TAG=$(git describe --tags --abbrev=0 HEAD^)
+            NOTES=$(git log $PREV_TAG..HEAD --pretty=format:"- %h: %s (%an)")
+          else
+            NOTES=$(git log --pretty=format:"- %h: %s (%an)" | head -20)
+          fi
+
           echo "notes<<EOF" >> $GITHUB_OUTPUT
+          echo "## Changes since last release" >> $GITHUB_OUTPUT
           echo "$NOTES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
@@ -37,15 +47,21 @@ jobs:
       - name: Run tests
         run: |
           cd build
-          ctest --output-on-failure
+          ctest --output-on-failure --parallel $(nproc)
 
-      - name: Create Release
-        uses: actions/create-release@v1
+      - name: Prepare release assets
+        run: |
+          mkdir -p release-assets
+          cp build/bendcore_app release-assets/bendcore_app-linux-x64
+          ls -lh build/test_* | awk '{print $NF}' | head -10 | xargs -I {} cp {} release-assets/
+          chmod +x release-assets/*
+
+      - name: Create Release with Assets
+        run: |
+          gh release create ${{ steps.release_info.outputs.version }} \
+            release-assets/* \
+            --title "Release ${{ steps.release_info.outputs.version }}" \
+            --notes "${{ steps.release_info.outputs.notes }}" \
+            --draft=false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: ${{ steps.release_notes.outputs.notes }}
-          draft: false
-          prerelease: false
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
