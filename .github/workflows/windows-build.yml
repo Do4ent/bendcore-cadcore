@@ -69,11 +69,8 @@ jobs:
         Push-Location build-windows
 
         if ("${{ matrix.compiler }}" -eq "MSVC") {
-          Write-Host "      Using Visual Studio 17 2022 (x64) with Ninja"
-          cmake -G "Ninja" `
-            -DCMAKE_BUILD_TYPE=Release `
-            -DCMAKE_CXX_COMPILER="cl.exe" `
-            ..
+          Write-Host "      Using Visual Studio 17 2022 (x64)"
+          cmake -G "Visual Studio 17 2022" -A x64 ..
         } else {
           Write-Host "      Using MinGW-w64 Makefiles"
           cmake -G "MinGW Makefiles" `
