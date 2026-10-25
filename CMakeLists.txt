@@ -58,6 +58,8 @@ set(BENDCORE_SOURCES
     src/geometry/direct_editing.cpp
     # Phase M10: Manufacturing & Export
     src/manufacturing/nc_generator.cpp
+    # Phase M11: Sheet Metal Operations
+    src/geometry/sheet_metal_ops.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -412,3 +414,12 @@ add_test(NAME DirectEditing COMMAND test_direct_editing)
 add_executable(test_nc_generator tests/test_nc_generator.cpp)
 target_link_libraries(test_nc_generator bendcore gtest_main)
 add_test(NAME NCGenerator COMMAND test_nc_generator)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M11: Sheet Metal Operations
+# ═════════════════════════════════════════════════════════════════
+
+# Sheet Metal Tests (CAD-DEV-101 to CAD-DEV-125)
+add_executable(test_sheet_metal_ops tests/test_sheet_metal_ops.cpp)
+target_link_libraries(test_sheet_metal_ops bendcore gtest_main)
+add_test(NAME SheetMetalOps COMMAND test_sheet_metal_ops)

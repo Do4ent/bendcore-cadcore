@@ -705,6 +705,19 @@ test_nc_generator/fast:
 .PHONY : test_nc_generator/fast
 
 #=============================================================================
+# Target rules for targets named test_sheet_metal_ops
+
+# Build rule for target.
+test_sheet_metal_ops: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sheet_metal_ops
+.PHONY : test_sheet_metal_ops
+
+# fast build rule for target.
+test_sheet_metal_ops/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sheet_metal_ops.dir/build.make CMakeFiles/test_sheet_metal_ops.dir/build
+.PHONY : test_sheet_metal_ops/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1575,6 +1588,30 @@ src/geometry/occt_wrapper.s: src/geometry/occt_wrapper.cpp.s
 src/geometry/occt_wrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.s
 .PHONY : src/geometry/occt_wrapper.cpp.s
+
+src/geometry/sheet_metal_ops.o: src/geometry/sheet_metal_ops.cpp.o
+.PHONY : src/geometry/sheet_metal_ops.o
+
+# target to build an object file
+src/geometry/sheet_metal_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.o
+.PHONY : src/geometry/sheet_metal_ops.cpp.o
+
+src/geometry/sheet_metal_ops.i: src/geometry/sheet_metal_ops.cpp.i
+.PHONY : src/geometry/sheet_metal_ops.i
+
+# target to preprocess a source file
+src/geometry/sheet_metal_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.i
+.PHONY : src/geometry/sheet_metal_ops.cpp.i
+
+src/geometry/sheet_metal_ops.s: src/geometry/sheet_metal_ops.cpp.s
+.PHONY : src/geometry/sheet_metal_ops.s
+
+# target to generate assembly for a file
+src/geometry/sheet_metal_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.s
+.PHONY : src/geometry/sheet_metal_ops.cpp.s
 
 src/geometry/surface_features.o: src/geometry/surface_features.cpp.o
 .PHONY : src/geometry/surface_features.o
@@ -3040,6 +3077,30 @@ tests/test_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.s
 .PHONY : tests/test_serializer.cpp.s
 
+tests/test_sheet_metal_ops.o: tests/test_sheet_metal_ops.cpp.o
+.PHONY : tests/test_sheet_metal_ops.o
+
+# target to build an object file
+tests/test_sheet_metal_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sheet_metal_ops.dir/build.make CMakeFiles/test_sheet_metal_ops.dir/tests/test_sheet_metal_ops.cpp.o
+.PHONY : tests/test_sheet_metal_ops.cpp.o
+
+tests/test_sheet_metal_ops.i: tests/test_sheet_metal_ops.cpp.i
+.PHONY : tests/test_sheet_metal_ops.i
+
+# target to preprocess a source file
+tests/test_sheet_metal_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sheet_metal_ops.dir/build.make CMakeFiles/test_sheet_metal_ops.dir/tests/test_sheet_metal_ops.cpp.i
+.PHONY : tests/test_sheet_metal_ops.cpp.i
+
+tests/test_sheet_metal_ops.s: tests/test_sheet_metal_ops.cpp.s
+.PHONY : tests/test_sheet_metal_ops.s
+
+# target to generate assembly for a file
+tests/test_sheet_metal_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sheet_metal_ops.dir/build.make CMakeFiles/test_sheet_metal_ops.dir/tests/test_sheet_metal_ops.cpp.s
+.PHONY : tests/test_sheet_metal_ops.cpp.s
+
 tests/test_surface_features.o: tests/test_surface_features.cpp.o
 .PHONY : tests/test_surface_features.o
 
@@ -3195,6 +3256,7 @@ help:
 	@echo "... test_recovery"
 	@echo "... test_revolve_feature"
 	@echo "... test_serializer"
+	@echo "... test_sheet_metal_ops"
 	@echo "... test_surface_features"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
@@ -3255,6 +3317,9 @@ help:
 	@echo "... src/geometry/occt_wrapper.o"
 	@echo "... src/geometry/occt_wrapper.i"
 	@echo "... src/geometry/occt_wrapper.s"
+	@echo "... src/geometry/sheet_metal_ops.o"
+	@echo "... src/geometry/sheet_metal_ops.i"
+	@echo "... src/geometry/sheet_metal_ops.s"
 	@echo "... src/geometry/surface_features.o"
 	@echo "... src/geometry/surface_features.i"
 	@echo "... src/geometry/surface_features.s"
@@ -3438,6 +3503,9 @@ help:
 	@echo "... tests/test_serializer.o"
 	@echo "... tests/test_serializer.i"
 	@echo "... tests/test_serializer.s"
+	@echo "... tests/test_sheet_metal_ops.o"
+	@echo "... tests/test_sheet_metal_ops.i"
+	@echo "... tests/test_sheet_metal_ops.s"
 	@echo "... tests/test_surface_features.o"
 	@echo "... tests/test_surface_features.i"
 	@echo "... tests/test_surface_features.s"
