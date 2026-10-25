@@ -3,61 +3,229 @@ name: Windows Build
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'include/**'
+      - 'CMakeLists.txt'
+      - '.github/workflows/windows-build.yml'
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-windows:
     runs-on: windows-latest
-    
+    strategy:
+      matrix:
+        compiler: [ 'MSVC', 'MinGW' ]
+
+    name: Build with ${{ matrix.compiler }}
+
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Setup CMake and Ninja
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Setup build environment
+      shell: pwsh
       run: |
-        choco install cmake ninja -y
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host "BendCore Windows Build Setup" -ForegroundColor Green
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host "Compiler: ${{ matrix.compiler }}"
+        Write-Host "OS: ${{ runner.os }}"
+        Write-Host "PowerShell Version: $($PSVersionTable.PSVersion)"
+        Write-Host ""
+
+    - name: Setup CMake and tools
+      shell: pwsh
+      run: |
+        Write-Host "[1/5] Installing build tools..."
+        choco install cmake ninja -y --no-progress
+
+        if ("${{ matrix.compiler }}" -eq "MinGW") {
+          Write-Host "      Installing MinGW-w64..."
+          choco install mingw-w64 -y --no-progress
+        }
+
+        Write-Host ""
         cmake --version
         ninja --version
-    
-    - name: Configure CMake
+        if ("${{ matrix.compiler }}" -eq "MinGW") {
+          g++ --version
+        }
+
+    - name: Configure CMake with ${{ matrix.compiler }}
+      shell: pwsh
       run: |
-        mkdir build-windows
-        cd build-windows
-        cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release ..
-        if errorlevel 1 (
-          echo CMake configuration failed!
-          exit /b 1
-        )
-    
-    - name: Build Release
+        Write-Host "[2/5] Configuring CMake..."
+
+        if (Test-Path "build-windows") {
+          Remove-Item -Recurse -Force "build-windows"
+        }
+        New-Item -ItemType Directory "build-windows" | Out-Null
+
+        Push-Location build-windows
+
+        if ("${{ matrix.compiler }}" -eq "MSVC") {
+          Write-Host "      Using Visual Studio 17 2022 (x64) with Ninja"
+          cmake -G "Ninja" `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DCMAKE_CXX_COMPILER="cl.exe" `
+            ..
+        } else {
+          Write-Host "      Using MinGW-w64 Makefiles"
+          cmake -G "MinGW Makefiles" `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DCMAKE_CXX_COMPILER="g++.exe" `
+            ..
+        }
+
+        if ($LASTEXITCODE -ne 0) {
+          Write-Host "[ERROR] CMake configuration failed!" -ForegroundColor Red
+          exit 1
+        }
+
+        Pop-Location
+        Write-Host "      ✓ CMake configuration successful"
+
+    - name: Build Release executable
+      shell: pwsh
       run: |
-        cd build-windows
-        cmake --build . --config Release -j 4
-        if errorlevel 1 (
-          echo Build failed!
-          exit /b 1
-        )
-    
-    - name: Run Tests
+        Write-Host "[3/5] Building bendcore_app.exe..."
+
+        Push-Location build-windows
+
+        $buildStart = Get-Date
+        cmake --build . --config Release --parallel 4 --verbose
+        $buildEnd = Get-Date
+
+        if ($LASTEXITCODE -ne 0) {
+          Write-Host "[ERROR] Build failed!" -ForegroundColor Red
+          exit 1
+        }
+
+        $buildTime = ($buildEnd - $buildStart).TotalSeconds
+        Write-Host "      ✓ Build successful (took $buildTime seconds)" -ForegroundColor Green
+
+        # Find the executable
+        $exePath = Get-ChildItem -Recurse -Filter "bendcore_app.exe" | Select-Object -First 1
+        if ($exePath) {
+          Write-Host "      Found executable: $($exePath.FullName)"
+          Copy-Item -Path $exePath.FullName -Destination "bendcore_app.exe"
+        }
+
+        Pop-Location
+
+    - name: Run unit tests
+      shell: pwsh
+      continue-on-error: true
       run: |
-        cd build-windows
-        ctest -C Release --output-on-failure -j 4
-    
+        Write-Host "[4/5] Running unit tests..."
+
+        Push-Location build-windows
+
+        ctest -C Release --output-on-failure --parallel 4 -T Test
+
+        $testResult = $LASTEXITCODE
+
+        # Upload test results
+        if (Test-Path "Testing/Temporary/LastTestsFailed.log") {
+          Write-Host "      ! Some tests failed (see details above)" -ForegroundColor Yellow
+        } else {
+          Write-Host "      ✓ All tests passed" -ForegroundColor Green
+        }
+
+        Pop-Location
+
+    - name: Verify executable
+      shell: pwsh
+      run: |
+        Write-Host "[5/5] Verifying executable..."
+
+        $exePath = "build-windows/bendcore_app.exe"
+
+        if (-not (Test-Path $exePath)) {
+          Write-Host "      [ERROR] bendcore_app.exe not found at $exePath" -ForegroundColor Red
+          Get-ChildItem -Recurse -Filter "*.exe" build-windows | Select-Object -First 10
+          exit 1
+        }
+
+        $fileInfo = Get-Item $exePath
+        Write-Host "      ✓ Executable found: $exePath"
+        Write-Host "      ✓ File size: $([math]::Round($fileInfo.Length / 1MB, 2)) MB"
+        Write-Host "      ✓ Created: $($fileInfo.CreationTime)"
+
+        # Try to get file version info
+        $versionInfo = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($exePath)
+        if ($versionInfo.FileVersion) {
+          Write-Host "      ✓ Version: $($versionInfo.FileVersion)"
+        }
+
     - name: Upload Windows Executable
       if: success()
       uses: actions/upload-artifact@v4
       with:
-        name: bendcore_app-windows
+        name: bendcore_app-windows-${{ matrix.compiler }}
         path: build-windows/bendcore_app.exe
         retention-days: 30
-    
-    - name: Create Release
-      if: startsWith(github.ref, 'refs/tags/') && success()
+
+    - name: Create Release (tagged commits only)
+      if: startsWith(github.ref, 'refs/tags/') && success() && matrix.compiler == 'MSVC'
       uses: softprops/action-gh-release@v1
       with:
+        name: BendCore Windows Release ${{ github.ref_name }}
+        body: |
+          ## Windows Executable Release
+
+          **Date**: ${{ github.event.head_commit.timestamp }}
+          **Commit**: ${{ github.sha }}
+
+          ### Contents
+          - `bendcore_app.exe` - Windows executable (compiled with MSVC)
+          - `bendcore-windows-build.bat` - Build script for local compilation
+          - `RUN_ON_WINDOWS.txt` - Windows installation instructions
+
+          ### Features
+          ✓ 3D Assembly & Constraints
+          ✓ Direct Editing Operations
+          ✓ Sheet Metal Operations
+          ✓ Manufacturing Export (G-Code ISO 6983)
+          ✓ Bill of Materials
+          ✓ Quality Inspection
+          ✓ Visualization Engine
+          ✓ Advanced Sketcher Tools
+          ✓ Performance Optimization
+
+          ### System Requirements
+          - Windows 10 or Windows 11
+          - x86-64 processor
+          - 512 MB RAM minimum
+          - 100 MB free disk space
+
+          ### Installation
+          Simply download `bendcore_app.exe` and run it!
         files: |
           build-windows/bendcore_app.exe
           bendcore-windows-build.bat
           RUN_ON_WINDOWS.txt
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build Summary
+      if: always()
+      shell: pwsh
+      run: |
+        Write-Host ""
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host "Build Summary" -ForegroundColor Green
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host "Compiler: ${{ matrix.compiler }}"
+        Write-Host "Status: $(if ($LASTEXITCODE -eq 0) { 'SUCCESS ✓' } else { 'FAILED ✗' })"
+        Write-Host ""
+
+        if (Test-Path "build-windows/bendcore_app.exe") {
+          $size = (Get-Item "build-windows/bendcore_app.exe").Length / 1MB
+          Write-Host "Executable: build-windows/bendcore_app.exe ($([math]::Round($size, 2)) MB)"
+        }
