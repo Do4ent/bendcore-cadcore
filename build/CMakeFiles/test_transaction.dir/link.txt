@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_transaction.dir/tests/test_transaction.cpp.o -o test_transaction  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

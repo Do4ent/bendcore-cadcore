@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_project_format.dir/tests/test_project_format.cpp.o -o test_project_format  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

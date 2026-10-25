@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_stress_analyzer.dir/tests/test_stress_analyzer.cpp.o -o test_stress_analyzer  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

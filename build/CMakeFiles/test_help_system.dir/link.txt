@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_help_system.dir/tests/test_help_system.cpp.o -o test_help_system  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

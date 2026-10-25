@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_direct_editing.dir/tests/test_direct_editing.cpp.o -o test_direct_editing  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

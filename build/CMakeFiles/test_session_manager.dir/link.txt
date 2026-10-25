@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_session_manager.dir/tests/test_session_manager.cpp.o -o test_session_manager  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

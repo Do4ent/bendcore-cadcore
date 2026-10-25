@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.o -o test_recovery  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

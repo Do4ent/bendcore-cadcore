@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.o -o test_model_importer  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

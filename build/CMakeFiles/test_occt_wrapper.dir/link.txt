@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_occt_wrapper.dir/tests/test_occt_wrapper.cpp.o -o test_occt_wrapper  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

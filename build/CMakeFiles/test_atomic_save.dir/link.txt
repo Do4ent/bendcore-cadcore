@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_atomic_save.dir/tests/test_atomic_save.cpp.o -o test_atomic_save  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
