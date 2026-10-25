@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbendcore.a CMakeFiles/bendcore.dir/src/entity_id.cpp.o
+/usr/bin/ranlib libbendcore.a
