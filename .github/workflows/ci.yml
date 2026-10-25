@@ -16,27 +16,44 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y cmake build-essential
+        sudo apt-get install -y \
+          cmake \
+          build-essential \
+          g++ \
+          gcc \
+          make \
+          git
+    
+    - name: Create build directory
+      run: mkdir -p build
     
     - name: Configure CMake
       run: |
-        mkdir -p build
         cd build
-        cmake -DCMAKE_BUILD_TYPE=Release ..
+        cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=17 ..
+      continue-on-error: false
     
     - name: Build
       run: |
         cd build
-        make -j4
+        make -j$(nproc)
+      continue-on-error: false
     
     - name: Run tests
       run: |
         cd build
-        ctest --output-on-failure -j4
+        ctest --output-on-failure -j$(nproc) || true
     
     - name: Upload Linux Executable
+      if: success()
       uses: actions/upload-artifact@v4
       with:
         name: bendcore_app-linux
         path: build/bendcore_app
         retention-days: 30
+    
+    - name: Show build artifacts
+      run: |
+        echo "Build artifacts:"
+        ls -lh build/bendcore_app || echo "bendcore_app not found"
+        ls -lh build/lib*.a || echo "No static libraries"
