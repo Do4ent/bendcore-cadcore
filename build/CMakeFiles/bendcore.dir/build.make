@@ -321,6 +321,20 @@ CMakeFiles/bendcore.dir/src/recovery.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/recovery.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/recovery.cpp -o CMakeFiles/bendcore.dir/src/recovery.cpp.s
 
+CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o: /tmp/bendcore-cadcore/src/legacy_adapter.cpp
+CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o -MF CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o.d -o CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o -c /tmp/bendcore-cadcore/src/legacy_adapter.cpp
+
+CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/legacy_adapter.cpp > CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.i
+
+CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/legacy_adapter.cpp -o CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
+
 # Object files for target bendcore
 bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" \
@@ -340,7 +354,8 @@ bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/project_format.cpp.o" \
 "CMakeFiles/bendcore.dir/src/serializer.cpp.o" \
 "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o" \
-"CMakeFiles/bendcore.dir/src/recovery.cpp.o"
+"CMakeFiles/bendcore.dir/src/recovery.cpp.o" \
+"CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o"
 
 # External object files for target bendcore
 bendcore_EXTERNAL_OBJECTS =
@@ -363,9 +378,10 @@ libbendcore.a: CMakeFiles/bendcore.dir/src/project_format.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/serializer.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/atomic_save.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/recovery.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/build.make
 libbendcore.a: CMakeFiles/bendcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libbendcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libbendcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bendcore.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bendcore.dir/link.txt --verbose=$(VERBOSE)
 

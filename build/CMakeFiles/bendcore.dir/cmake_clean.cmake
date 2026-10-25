@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/history_stack.cpp.o"
   "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o"
+  "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o"
   "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/project_format.cpp.o"

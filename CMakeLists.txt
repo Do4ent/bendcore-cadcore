@@ -27,6 +27,7 @@ set(BENDCORE_SOURCES
     src/serializer.cpp
     src/atomic_save.cpp
     src/recovery.cpp
+    src/legacy_adapter.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -134,3 +135,18 @@ add_test(NAME AtomicSave COMMAND test_atomic_save)
 add_executable(test_recovery tests/test_recovery.cpp)
 target_link_libraries(test_recovery bendcore gtest_main)
 add_test(NAME Recovery COMMAND test_recovery)
+
+# CAD-CORE-021: Legacy Adapter tests
+add_executable(test_legacy_adapter tests/test_legacy_adapter.cpp)
+target_link_libraries(test_legacy_adapter bendcore gtest_main)
+add_test(NAME LegacyAdapter COMMAND test_legacy_adapter)
+
+# CAD-CORE-024: E2E Tests
+add_executable(test_e2e tests/test_e2e.cpp)
+target_link_libraries(test_e2e bendcore gtest_main)
+add_test(NAME E2E COMMAND test_e2e)
+
+# CAD-CORE-025: Acceptance Tests
+add_executable(test_acceptance tests/test_acceptance.cpp)
+target_link_libraries(test_acceptance bendcore gtest_main)
+add_test(NAME Acceptance COMMAND test_acceptance)

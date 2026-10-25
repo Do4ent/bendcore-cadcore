@@ -419,6 +419,45 @@ test_recovery/fast:
 .PHONY : test_recovery/fast
 
 #=============================================================================
+# Target rules for targets named test_legacy_adapter
+
+# Build rule for target.
+test_legacy_adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_legacy_adapter
+.PHONY : test_legacy_adapter
+
+# fast build rule for target.
+test_legacy_adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/build
+.PHONY : test_legacy_adapter/fast
+
+#=============================================================================
+# Target rules for targets named test_e2e
+
+# Build rule for target.
+test_e2e: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_e2e
+.PHONY : test_e2e
+
+# fast build rule for target.
+test_e2e/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/build
+.PHONY : test_e2e/fast
+
+#=============================================================================
+# Target rules for targets named test_acceptance
+
+# Build rule for target.
+test_acceptance: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_acceptance
+.PHONY : test_acceptance
+
+# fast build rule for target.
+test_acceptance/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/build
+.PHONY : test_acceptance/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -758,6 +797,30 @@ src/history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.s
 .PHONY : src/history_stack.cpp.s
 
+src/legacy_adapter.o: src/legacy_adapter.cpp.o
+.PHONY : src/legacy_adapter.o
+
+# target to build an object file
+src/legacy_adapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o
+.PHONY : src/legacy_adapter.cpp.o
+
+src/legacy_adapter.i: src/legacy_adapter.cpp.i
+.PHONY : src/legacy_adapter.i
+
+# target to preprocess a source file
+src/legacy_adapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.i
+.PHONY : src/legacy_adapter.cpp.i
+
+src/legacy_adapter.s: src/legacy_adapter.cpp.s
+.PHONY : src/legacy_adapter.s
+
+# target to generate assembly for a file
+src/legacy_adapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
+.PHONY : src/legacy_adapter.cpp.s
+
 src/parameter_store.o: src/parameter_store.cpp.o
 .PHONY : src/parameter_store.o
 
@@ -901,6 +964,30 @@ src/transaction.s: src/transaction.cpp.s
 src/transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.s
 .PHONY : src/transaction.cpp.s
+
+tests/test_acceptance.o: tests/test_acceptance.cpp.o
+.PHONY : tests/test_acceptance.o
+
+# target to build an object file
+tests/test_acceptance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.o
+.PHONY : tests/test_acceptance.cpp.o
+
+tests/test_acceptance.i: tests/test_acceptance.cpp.i
+.PHONY : tests/test_acceptance.i
+
+# target to preprocess a source file
+tests/test_acceptance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.i
+.PHONY : tests/test_acceptance.cpp.i
+
+tests/test_acceptance.s: tests/test_acceptance.cpp.s
+.PHONY : tests/test_acceptance.s
+
+# target to generate assembly for a file
+tests/test_acceptance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.s
+.PHONY : tests/test_acceptance.cpp.s
 
 tests/test_atomic_save.o: tests/test_atomic_save.cpp.o
 .PHONY : tests/test_atomic_save.o
@@ -1046,6 +1133,30 @@ tests/test_document_event_bus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_document_event_bus.dir/build.make CMakeFiles/test_document_event_bus.dir/tests/test_document_event_bus.cpp.s
 .PHONY : tests/test_document_event_bus.cpp.s
 
+tests/test_e2e.o: tests/test_e2e.cpp.o
+.PHONY : tests/test_e2e.o
+
+# target to build an object file
+tests/test_e2e.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/tests/test_e2e.cpp.o
+.PHONY : tests/test_e2e.cpp.o
+
+tests/test_e2e.i: tests/test_e2e.cpp.i
+.PHONY : tests/test_e2e.i
+
+# target to preprocess a source file
+tests/test_e2e.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/tests/test_e2e.cpp.i
+.PHONY : tests/test_e2e.cpp.i
+
+tests/test_e2e.s: tests/test_e2e.cpp.s
+.PHONY : tests/test_e2e.s
+
+# target to generate assembly for a file
+tests/test_e2e.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_e2e.dir/build.make CMakeFiles/test_e2e.dir/tests/test_e2e.cpp.s
+.PHONY : tests/test_e2e.cpp.s
+
 tests/test_entity_id.o: tests/test_entity_id.cpp.o
 .PHONY : tests/test_entity_id.o
 
@@ -1189,6 +1300,30 @@ tests/test_history_stack.s: tests/test_history_stack.cpp.s
 tests/test_history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.s
 .PHONY : tests/test_history_stack.cpp.s
+
+tests/test_legacy_adapter.o: tests/test_legacy_adapter.cpp.o
+.PHONY : tests/test_legacy_adapter.o
+
+# target to build an object file
+tests/test_legacy_adapter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/tests/test_legacy_adapter.cpp.o
+.PHONY : tests/test_legacy_adapter.cpp.o
+
+tests/test_legacy_adapter.i: tests/test_legacy_adapter.cpp.i
+.PHONY : tests/test_legacy_adapter.i
+
+# target to preprocess a source file
+tests/test_legacy_adapter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/tests/test_legacy_adapter.cpp.i
+.PHONY : tests/test_legacy_adapter.cpp.i
+
+tests/test_legacy_adapter.s: tests/test_legacy_adapter.cpp.s
+.PHONY : tests/test_legacy_adapter.s
+
+# target to generate assembly for a file
+tests/test_legacy_adapter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/tests/test_legacy_adapter.cpp.s
+.PHONY : tests/test_legacy_adapter.cpp.s
 
 tests/test_parameter_store.o: tests/test_parameter_store.cpp.o
 .PHONY : tests/test_parameter_store.o
@@ -1352,18 +1487,21 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... test_acceptance"
 	@echo "... test_atomic_save"
 	@echo "... test_brep"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
 	@echo "... test_dependency_graph"
 	@echo "... test_document_event_bus"
+	@echo "... test_e2e"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
 	@echo "... test_feature_system"
 	@echo "... test_geometry_cache"
 	@echo "... test_geometry_engine"
 	@echo "... test_history_stack"
+	@echo "... test_legacy_adapter"
 	@echo "... test_parameter_store"
 	@echo "... test_project_format"
 	@echo "... test_rebuild_engine"
@@ -1406,6 +1544,9 @@ help:
 	@echo "... src/history_stack.o"
 	@echo "... src/history_stack.i"
 	@echo "... src/history_stack.s"
+	@echo "... src/legacy_adapter.o"
+	@echo "... src/legacy_adapter.i"
+	@echo "... src/legacy_adapter.s"
 	@echo "... src/parameter_store.o"
 	@echo "... src/parameter_store.i"
 	@echo "... src/parameter_store.s"
@@ -1424,6 +1565,9 @@ help:
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
+	@echo "... tests/test_acceptance.o"
+	@echo "... tests/test_acceptance.i"
+	@echo "... tests/test_acceptance.s"
 	@echo "... tests/test_atomic_save.o"
 	@echo "... tests/test_atomic_save.i"
 	@echo "... tests/test_atomic_save.s"
@@ -1442,6 +1586,9 @@ help:
 	@echo "... tests/test_document_event_bus.o"
 	@echo "... tests/test_document_event_bus.i"
 	@echo "... tests/test_document_event_bus.s"
+	@echo "... tests/test_e2e.o"
+	@echo "... tests/test_e2e.i"
+	@echo "... tests/test_e2e.s"
 	@echo "... tests/test_entity_id.o"
 	@echo "... tests/test_entity_id.i"
 	@echo "... tests/test_entity_id.s"
@@ -1460,6 +1607,9 @@ help:
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"
+	@echo "... tests/test_legacy_adapter.o"
+	@echo "... tests/test_legacy_adapter.i"
+	@echo "... tests/test_legacy_adapter.s"
 	@echo "... tests/test_parameter_store.o"
 	@echo "... tests/test_parameter_store.i"
 	@echo "... tests/test_parameter_store.s"

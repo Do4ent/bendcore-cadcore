@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/geometry_cache.cpp" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_engine.cpp" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/legacy_adapter.cpp" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o.d"
   "/tmp/bendcore-cadcore/src/parameter_store.cpp" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o.d"
   "/tmp/bendcore-cadcore/src/project_format.cpp" "CMakeFiles/bendcore.dir/src/project_format.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/project_format.cpp.o.d"
   "/tmp/bendcore-cadcore/src/rebuild_engine.cpp" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o.d"
