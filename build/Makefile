@@ -666,6 +666,19 @@ test_mate_solver/fast:
 .PHONY : test_mate_solver/fast
 
 #=============================================================================
+# Target rules for targets named test_assembly_ui
+
+# Build rule for target.
+test_assembly_ui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_assembly_ui
+.PHONY : test_assembly_ui
+
+# fast build rule for target.
+test_assembly_ui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_assembly_ui.dir/build.make CMakeFiles/test_assembly_ui.dir/build
+.PHONY : test_assembly_ui/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1080,6 +1093,30 @@ ContinuousSubmit: cmake_check_build_system
 ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
+
+src/assembly/assembly_ui.o: src/assembly/assembly_ui.cpp.o
+.PHONY : src/assembly/assembly_ui.o
+
+# target to build an object file
+src/assembly/assembly_ui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o
+.PHONY : src/assembly/assembly_ui.cpp.o
+
+src/assembly/assembly_ui.i: src/assembly/assembly_ui.cpp.i
+.PHONY : src/assembly/assembly_ui.i
+
+# target to preprocess a source file
+src/assembly/assembly_ui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.i
+.PHONY : src/assembly/assembly_ui.cpp.i
+
+src/assembly/assembly_ui.s: src/assembly/assembly_ui.cpp.s
+.PHONY : src/assembly/assembly_ui.s
+
+# target to generate assembly for a file
+src/assembly/assembly_ui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.s
+.PHONY : src/assembly/assembly_ui.cpp.s
 
 src/assembly/mate_solver.o: src/assembly/mate_solver.cpp.o
 .PHONY : src/assembly/mate_solver.o
@@ -2065,6 +2102,30 @@ tests/test_acceptance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.s
 .PHONY : tests/test_acceptance.cpp.s
 
+tests/test_assembly_ui.o: tests/test_assembly_ui.cpp.o
+.PHONY : tests/test_assembly_ui.o
+
+# target to build an object file
+tests/test_assembly_ui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_assembly_ui.dir/build.make CMakeFiles/test_assembly_ui.dir/tests/test_assembly_ui.cpp.o
+.PHONY : tests/test_assembly_ui.cpp.o
+
+tests/test_assembly_ui.i: tests/test_assembly_ui.cpp.i
+.PHONY : tests/test_assembly_ui.i
+
+# target to preprocess a source file
+tests/test_assembly_ui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_assembly_ui.dir/build.make CMakeFiles/test_assembly_ui.dir/tests/test_assembly_ui.cpp.i
+.PHONY : tests/test_assembly_ui.cpp.i
+
+tests/test_assembly_ui.s: tests/test_assembly_ui.cpp.s
+.PHONY : tests/test_assembly_ui.s
+
+# target to generate assembly for a file
+tests/test_assembly_ui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_assembly_ui.dir/build.make CMakeFiles/test_assembly_ui.dir/tests/test_assembly_ui.cpp.s
+.PHONY : tests/test_assembly_ui.cpp.s
+
 tests/test_atomic_save.o: tests/test_atomic_save.cpp.o
 .PHONY : tests/test_atomic_save.o
 
@@ -2976,6 +3037,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_acceptance"
+	@echo "... test_assembly_ui"
 	@echo "... test_atomic_save"
 	@echo "... test_bend_calculator"
 	@echo "... test_brep"
@@ -3012,6 +3074,9 @@ help:
 	@echo "... test_surface_features"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
+	@echo "... src/assembly/assembly_ui.o"
+	@echo "... src/assembly/assembly_ui.i"
+	@echo "... src/assembly/assembly_ui.s"
 	@echo "... src/assembly/mate_solver.o"
 	@echo "... src/assembly/mate_solver.i"
 	@echo "... src/assembly/mate_solver.s"
@@ -3135,6 +3200,9 @@ help:
 	@echo "... tests/test_acceptance.o"
 	@echo "... tests/test_acceptance.i"
 	@echo "... tests/test_acceptance.s"
+	@echo "... tests/test_assembly_ui.o"
+	@echo "... tests/test_assembly_ui.i"
+	@echo "... tests/test_assembly_ui.s"
 	@echo "... tests/test_atomic_save.o"
 	@echo "... tests/test_atomic_save.i"
 	@echo "... tests/test_atomic_save.s"

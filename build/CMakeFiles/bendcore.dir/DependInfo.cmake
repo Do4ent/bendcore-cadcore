@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/tmp/bendcore-cadcore/src/assembly/assembly_ui.cpp" "CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o.d"
   "/tmp/bendcore-cadcore/src/assembly/mate_solver.cpp" "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o.d"
   "/tmp/bendcore-cadcore/src/atomic_save.cpp" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o.d"
   "/tmp/bendcore-cadcore/src/bend_calculator.cpp" "CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o.d"

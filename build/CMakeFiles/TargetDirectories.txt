@@ -36,6 +36,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_surface_features.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_occt_wrapper.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_mate_solver.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_assembly_ui.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

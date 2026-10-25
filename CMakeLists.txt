@@ -52,6 +52,8 @@ set(BENDCORE_SOURCES
     src/geometry/occt_wrapper.cpp
     # Phase M7: Assembly Solver
     src/assembly/mate_solver.cpp
+    # Phase M8: Assembly UI/UX
+    src/assembly/assembly_ui.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -379,3 +381,12 @@ add_test(NAME OccWrapper COMMAND test_occt_wrapper)
 add_executable(test_mate_solver tests/test_mate_solver.cpp)
 target_link_libraries(test_mate_solver bendcore gtest_main)
 add_test(NAME MateSolver COMMAND test_mate_solver)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M8: Assembly UI/UX
+# ═════════════════════════════════════════════════════════════════
+
+# Assembly UI Tests (CAD-DEV-043 to CAD-DEV-050)
+add_executable(test_assembly_ui tests/test_assembly_ui.cpp)
+target_link_libraries(test_assembly_ui bendcore gtest_main)
+add_test(NAME AssemblyUI COMMAND test_assembly_ui)

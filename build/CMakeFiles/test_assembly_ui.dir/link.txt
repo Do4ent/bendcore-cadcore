@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_assembly_ui.dir/tests/test_assembly_ui.cpp.o -o test_assembly_ui  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
