@@ -1,10 +1,10 @@
-Start testing: Oct 25 14:20 CET
+Start testing: Oct 25 14:54 CET
 ----------------------------------------------------------
-1/34 Testing: EntityId
-1/34 Test: EntityId
+1/36 Testing: EntityId
+1/36 Test: EntityId
 Command: "/tmp/bendcore-cadcore/build/test_entity_id"
 Directory: /tmp/bendcore-cadcore/build
-"EntityId" start time: Oct 25 14:20 CET
+"EntityId" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 15 tests from 1 test suite.
@@ -25,11 +25,11 @@ Output:
 [ RUN      ] EntityIdTest.SerializationWithoutLoss
 [       OK ] EntityIdTest.SerializationWithoutLoss (0 ms)
 [ RUN      ] EntityIdTest.GenerateUniqueIds
-[       OK ] EntityIdTest.GenerateUniqueIds (162 ms)
+[       OK ] EntityIdTest.GenerateUniqueIds (109 ms)
 [ RUN      ] EntityIdTest.RoundTripSerialization
 [       OK ] EntityIdTest.RoundTripSerialization (0 ms)
 [ RUN      ] EntityIdTest.InvalidIdsRejected
-[       OK ] EntityIdTest.InvalidIdsRejected (1 ms)
+[       OK ] EntityIdTest.InvalidIdsRejected (0 ms)
 [ RUN      ] EntityIdTest.UsableInStandardContainers
 [       OK ] EntityIdTest.UsableInStandardContainers (0 ms)
 [ RUN      ] EntityIdTest.DuplicateDetectionInDocument
@@ -40,24 +40,24 @@ Output:
 [       OK ] EntityIdTest.NullIdDetection (0 ms)
 [ RUN      ] EntityIdTest.ComparisonOperators
 [       OK ] EntityIdTest.ComparisonOperators (0 ms)
-[----------] 15 tests from EntityIdTest (163 ms total)
+[----------] 15 tests from EntityIdTest (109 ms total)
 
 [----------] Global test environment tear-down
-[==========] 15 tests from 1 test suite ran. (164 ms total)
+[==========] 15 tests from 1 test suite ran. (109 ms total)
 [  PASSED  ] 15 tests.
 <end of output>
-Test time =   0.17 sec
+Test time =   0.11 sec
 ----------------------------------------------------------
 Test Passed.
-"EntityId" end time: Oct 25 14:20 CET
+"EntityId" end time: Oct 25 14:54 CET
 "EntityId" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/34 Testing: CadDocument
-2/34 Test: CadDocument
+2/36 Testing: CadDocument
+2/36 Test: CadDocument
 Command: "/tmp/bendcore-cadcore/build/test_cad_document"
 Directory: /tmp/bendcore-cadcore/build
-"CadDocument" start time: Oct 25 14:20 CET
+"CadDocument" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -76,7 +76,7 @@ Output:
 [ RUN      ] CadDocumentTest.SequentialChangesIncreaseRevision
 [       OK ] CadDocumentTest.SequentialChangesIncreaseRevision (0 ms)
 [ RUN      ] CadDocumentTest.LargeSequentialChanges
-[       OK ] CadDocumentTest.LargeSequentialChanges (14 ms)
+[       OK ] CadDocumentTest.LargeSequentialChanges (10 ms)
 [ RUN      ] CadDocumentTest.RemoveEntityMarksDeleted
 [       OK ] CadDocumentTest.RemoveEntityMarksDeleted (0 ms)
 [ RUN      ] CadDocumentTest.DocumentMaintainsInternalReferences
@@ -103,24 +103,24 @@ Output:
 [       OK ] CadDocumentTest.GetAllEntityIds (0 ms)
 [ RUN      ] CadDocumentTest.DocumentRevisionScopedCorrectly
 [       OK ] CadDocumentTest.DocumentRevisionScopedCorrectly (0 ms)
-[----------] 20 tests from CadDocumentTest (15 ms total)
+[----------] 20 tests from CadDocumentTest (10 ms total)
 
 [----------] Global test environment tear-down
-[==========] 20 tests from 1 test suite ran. (15 ms total)
+[==========] 20 tests from 1 test suite ran. (10 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"CadDocument" end time: Oct 25 14:20 CET
+"CadDocument" end time: Oct 25 14:54 CET
 "CadDocument" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/34 Testing: EntityTree
-3/34 Test: EntityTree
+3/36 Testing: EntityTree
+3/36 Test: EntityTree
 Command: "/tmp/bendcore-cadcore/build/test_entity_tree"
 Directory: /tmp/bendcore-cadcore/build
-"EntityTree" start time: Oct 25 14:20 CET
+"EntityTree" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -166,24 +166,24 @@ Output:
 [       OK ] EntityTreeTest.LargeHierarchy (0 ms)
 [ RUN      ] EntityTreeTest.PathConsistency
 [       OK ] EntityTreeTest.PathConsistency (0 ms)
-[----------] 20 tests from EntityTreeTest (1 ms total)
+[----------] 20 tests from EntityTreeTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 20 tests from 1 test suite ran. (1 ms total)
+[==========] 20 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EntityTree" end time: Oct 25 14:20 CET
+"EntityTree" end time: Oct 25 14:54 CET
 "EntityTree" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/34 Testing: CommandManager
-4/34 Test: CommandManager
+4/36 Testing: CommandManager
+4/36 Test: CommandManager
 Command: "/tmp/bendcore-cadcore/build/test_command_manager"
 Directory: /tmp/bendcore-cadcore/build
-"CommandManager" start time: Oct 25 14:20 CET
+"CommandManager" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -235,18 +235,18 @@ Output:
 [==========] 20 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CommandManager" end time: Oct 25 14:20 CET
+"CommandManager" end time: Oct 25 14:54 CET
 "CommandManager" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/34 Testing: Transaction
-5/34 Test: Transaction
+5/36 Testing: Transaction
+5/36 Test: Transaction
 Command: "/tmp/bendcore-cadcore/build/test_transaction"
 Directory: /tmp/bendcore-cadcore/build
-"Transaction" start time: Oct 25 14:20 CET
+"Transaction" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -298,18 +298,18 @@ Output:
 [==========] 20 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Transaction" end time: Oct 25 14:20 CET
+"Transaction" end time: Oct 25 14:54 CET
 "Transaction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/34 Testing: HistoryStack
-6/34 Test: HistoryStack
+6/36 Testing: HistoryStack
+6/36 Test: HistoryStack
 Command: "/tmp/bendcore-cadcore/build/test_history_stack"
 Directory: /tmp/bendcore-cadcore/build
-"HistoryStack" start time: Oct 25 14:20 CET
+"HistoryStack" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 8 tests from 1 test suite.
@@ -337,18 +337,18 @@ Output:
 [==========] 8 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 8 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"HistoryStack" end time: Oct 25 14:20 CET
+"HistoryStack" end time: Oct 25 14:54 CET
 "HistoryStack" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/34 Testing: DocumentEventBus
-7/34 Test: DocumentEventBus
+7/36 Testing: DocumentEventBus
+7/36 Test: DocumentEventBus
 Command: "/tmp/bendcore-cadcore/build/test_document_event_bus"
 Directory: /tmp/bendcore-cadcore/build
-"DocumentEventBus" start time: Oct 25 14:20 CET
+"DocumentEventBus" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 6 tests from 1 test suite.
@@ -372,18 +372,18 @@ Output:
 [==========] 6 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 6 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DocumentEventBus" end time: Oct 25 14:20 CET
+"DocumentEventBus" end time: Oct 25 14:54 CET
 "DocumentEventBus" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/34 Testing: ParameterStore
-8/34 Test: ParameterStore
+8/36 Testing: ParameterStore
+8/36 Test: ParameterStore
 Command: "/tmp/bendcore-cadcore/build/test_parameter_store"
 Directory: /tmp/bendcore-cadcore/build
-"ParameterStore" start time: Oct 25 14:20 CET
+"ParameterStore" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -405,18 +405,18 @@ Output:
 [==========] 5 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ParameterStore" end time: Oct 25 14:20 CET
+"ParameterStore" end time: Oct 25 14:54 CET
 "ParameterStore" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/34 Testing: DependencyGraph
-9/34 Test: DependencyGraph
+9/36 Testing: DependencyGraph
+9/36 Test: DependencyGraph
 Command: "/tmp/bendcore-cadcore/build/test_dependency_graph"
 Directory: /tmp/bendcore-cadcore/build
-"DependencyGraph" start time: Oct 25 14:20 CET
+"DependencyGraph" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -436,18 +436,18 @@ Output:
 [==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DependencyGraph" end time: Oct 25 14:20 CET
+"DependencyGraph" end time: Oct 25 14:54 CET
 "DependencyGraph" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/34 Testing: RebuildEngine
-10/34 Test: RebuildEngine
+10/36 Testing: RebuildEngine
+10/36 Test: RebuildEngine
 Command: "/tmp/bendcore-cadcore/build/test_rebuild_engine"
 Directory: /tmp/bendcore-cadcore/build
-"RebuildEngine" start time: Oct 25 14:20 CET
+"RebuildEngine" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 3 tests from 1 test suite.
@@ -465,18 +465,18 @@ Output:
 [==========] 3 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 3 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"RebuildEngine" end time: Oct 25 14:20 CET
+"RebuildEngine" end time: Oct 25 14:54 CET
 "RebuildEngine" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-11/34 Testing: GeometryEngine
-11/34 Test: GeometryEngine
+11/36 Testing: GeometryEngine
+11/36 Test: GeometryEngine
 Command: "/tmp/bendcore-cadcore/build/test_geometry_engine"
 Directory: /tmp/bendcore-cadcore/build
-"GeometryEngine" start time: Oct 25 14:20 CET
+"GeometryEngine" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 9 tests from 1 test suite.
@@ -506,18 +506,18 @@ Output:
 [==========] 9 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 9 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GeometryEngine" end time: Oct 25 14:20 CET
+"GeometryEngine" end time: Oct 25 14:54 CET
 "GeometryEngine" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-12/34 Testing: BRep
-12/34 Test: BRep
+12/36 Testing: BRep
+12/36 Test: BRep
 Command: "/tmp/bendcore-cadcore/build/test_brep"
 Directory: /tmp/bendcore-cadcore/build
-"BRep" start time: Oct 25 14:20 CET
+"BRep" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -539,18 +539,18 @@ Output:
 [==========] 5 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"BRep" end time: Oct 25 14:20 CET
+"BRep" end time: Oct 25 14:54 CET
 "BRep" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-13/34 Testing: FeatureSystem
-13/34 Test: FeatureSystem
+13/36 Testing: FeatureSystem
+13/36 Test: FeatureSystem
 Command: "/tmp/bendcore-cadcore/build/test_feature_system"
 Directory: /tmp/bendcore-cadcore/build
-"FeatureSystem" start time: Oct 25 14:20 CET
+"FeatureSystem" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -575,15 +575,15 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FeatureSystem" end time: Oct 25 14:20 CET
+"FeatureSystem" end time: Oct 25 14:54 CET
 "FeatureSystem" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-14/34 Testing: GeometryCache
-14/34 Test: GeometryCache
+14/36 Testing: GeometryCache
+14/36 Test: GeometryCache
 Command: "/tmp/bendcore-cadcore/build/test_geometry_cache"
 Directory: /tmp/bendcore-cadcore/build
-"GeometryCache" start time: Oct 25 14:20 CET
+"GeometryCache" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -603,18 +603,18 @@ Output:
 [==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"GeometryCache" end time: Oct 25 14:20 CET
+"GeometryCache" end time: Oct 25 14:54 CET
 "GeometryCache" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-15/34 Testing: ProjectFormat
-15/34 Test: ProjectFormat
+15/36 Testing: ProjectFormat
+15/36 Test: ProjectFormat
 Command: "/tmp/bendcore-cadcore/build/test_project_format"
 Directory: /tmp/bendcore-cadcore/build
-"ProjectFormat" start time: Oct 25 14:20 CET
+"ProjectFormat" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -634,18 +634,18 @@ Output:
 [==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ProjectFormat" end time: Oct 25 14:20 CET
+"ProjectFormat" end time: Oct 25 14:54 CET
 "ProjectFormat" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-16/34 Testing: Serializer
-16/34 Test: Serializer
+16/36 Testing: Serializer
+16/36 Test: Serializer
 Command: "/tmp/bendcore-cadcore/build/test_serializer"
 Directory: /tmp/bendcore-cadcore/build
-"Serializer" start time: Oct 25 14:20 CET
+"Serializer" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -665,18 +665,18 @@ Output:
 [==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Serializer" end time: Oct 25 14:20 CET
+"Serializer" end time: Oct 25 14:54 CET
 "Serializer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-17/34 Testing: AtomicSave
-17/34 Test: AtomicSave
+17/36 Testing: AtomicSave
+17/36 Test: AtomicSave
 Command: "/tmp/bendcore-cadcore/build/test_atomic_save"
 Directory: /tmp/bendcore-cadcore/build
-"AtomicSave" start time: Oct 25 14:20 CET
+"AtomicSave" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -685,29 +685,29 @@ Output:
 [ RUN      ] AtomicSaveTest.CreateAtomicSave
 [       OK ] AtomicSaveTest.CreateAtomicSave (0 ms)
 [ RUN      ] AtomicSaveTest.Begin
-[       OK ] AtomicSaveTest.Begin (1 ms)
+[       OK ] AtomicSaveTest.Begin (0 ms)
 [ RUN      ] AtomicSaveTest.Write
 [       OK ] AtomicSaveTest.Write (0 ms)
 [ RUN      ] AtomicSaveTest.GetTempPath
 [       OK ] AtomicSaveTest.GetTempPath (0 ms)
-[----------] 4 tests from AtomicSaveTest (1 ms total)
+[----------] 4 tests from AtomicSaveTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (1 ms total)
+[==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"AtomicSave" end time: Oct 25 14:20 CET
+"AtomicSave" end time: Oct 25 14:54 CET
 "AtomicSave" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-18/34 Testing: Recovery
-18/34 Test: Recovery
+18/36 Testing: Recovery
+18/36 Test: Recovery
 Command: "/tmp/bendcore-cadcore/build/test_recovery"
 Directory: /tmp/bendcore-cadcore/build
-"Recovery" start time: Oct 25 14:20 CET
+"Recovery" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -718,27 +718,27 @@ Output:
 [ RUN      ] RecoveryTest.CreateCheckpoint
 [       OK ] RecoveryTest.CreateCheckpoint (0 ms)
 [ RUN      ] RecoveryTest.GetRecoveryPoints
-[       OK ] RecoveryTest.GetRecoveryPoints (1 ms)
+[       OK ] RecoveryTest.GetRecoveryPoints (0 ms)
 [ RUN      ] RecoveryTest.NeedsRecovery
 [       OK ] RecoveryTest.NeedsRecovery (0 ms)
-[----------] 4 tests from RecoveryTest (2 ms total)
+[----------] 4 tests from RecoveryTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test suite ran. (2 ms total)
+[==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Recovery" end time: Oct 25 14:20 CET
+"Recovery" end time: Oct 25 14:54 CET
 "Recovery" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-19/34 Testing: LegacyAdapter
-19/34 Test: LegacyAdapter
+19/36 Testing: LegacyAdapter
+19/36 Test: LegacyAdapter
 Command: "/tmp/bendcore-cadcore/build/test_legacy_adapter"
 Directory: /tmp/bendcore-cadcore/build
-"LegacyAdapter" start time: Oct 25 14:20 CET
+"LegacyAdapter" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -760,18 +760,18 @@ Output:
 [==========] 5 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"LegacyAdapter" end time: Oct 25 14:20 CET
+"LegacyAdapter" end time: Oct 25 14:54 CET
 "LegacyAdapter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-20/34 Testing: E2E
-20/34 Test: E2E
+20/36 Testing: E2E
+20/36 Test: E2E
 Command: "/tmp/bendcore-cadcore/build/test_e2e"
 Directory: /tmp/bendcore-cadcore/build
-"E2E" start time: Oct 25 14:20 CET
+"E2E" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 4 tests from 1 test suite.
@@ -791,18 +791,18 @@ Output:
 [==========] 4 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 4 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"E2E" end time: Oct 25 14:20 CET
+"E2E" end time: Oct 25 14:54 CET
 "E2E" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/34 Testing: Acceptance
-21/34 Test: Acceptance
+21/36 Testing: Acceptance
+21/36 Test: Acceptance
 Command: "/tmp/bendcore-cadcore/build/test_acceptance"
 Directory: /tmp/bendcore-cadcore/build
-"Acceptance" start time: Oct 25 14:20 CET
+"Acceptance" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 5 tests from 1 test suite.
@@ -824,18 +824,18 @@ Output:
 [==========] 5 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Acceptance" end time: Oct 25 14:20 CET
+"Acceptance" end time: Oct 25 14:54 CET
 "Acceptance" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-22/34 Testing: PipeComponents
-22/34 Test: PipeComponents
+22/36 Testing: PipeComponents
+22/36 Test: PipeComponents
 Command: "/tmp/bendcore-cadcore/build/test_pipe_components"
 Directory: /tmp/bendcore-cadcore/build
-"PipeComponents" start time: Oct 25 14:20 CET
+"PipeComponents" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 11 tests from 4 test suites.
@@ -881,15 +881,15 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"PipeComponents" end time: Oct 25 14:20 CET
+"PipeComponents" end time: Oct 25 14:54 CET
 "PipeComponents" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-23/34 Testing: BendCalculator
-23/34 Test: BendCalculator
+23/36 Testing: BendCalculator
+23/36 Test: BendCalculator
 Command: "/tmp/bendcore-cadcore/build/test_bend_calculator"
 Directory: /tmp/bendcore-cadcore/build
-"BendCalculator" start time: Oct 25 14:20 CET
+"BendCalculator" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 12 tests from 2 test suites.
@@ -928,18 +928,18 @@ Output:
 [==========] 12 tests from 2 test suites ran. (0 ms total)
 [  PASSED  ] 12 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"BendCalculator" end time: Oct 25 14:20 CET
+"BendCalculator" end time: Oct 25 14:54 CET
 "BendCalculator" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-24/34 Testing: FormatExporters
-24/34 Test: FormatExporters
+24/36 Testing: FormatExporters
+24/36 Test: FormatExporters
 Command: "/tmp/bendcore-cadcore/build/test_format_exporters"
 Directory: /tmp/bendcore-cadcore/build
-"FormatExporters" start time: Oct 25 14:20 CET
+"FormatExporters" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 7 tests from 6 test suites.
@@ -980,18 +980,18 @@ Output:
 [==========] 7 tests from 6 test suites ran. (0 ms total)
 [  PASSED  ] 7 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"FormatExporters" end time: Oct 25 14:20 CET
+"FormatExporters" end time: Oct 25 14:54 CET
 "FormatExporters" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-25/34 Testing: Manufacturing
-25/34 Test: Manufacturing
+25/36 Testing: Manufacturing
+25/36 Test: Manufacturing
 Command: "/tmp/bendcore-cadcore/build/test_manufacturing"
 Directory: /tmp/bendcore-cadcore/build
-"Manufacturing" start time: Oct 25 14:20 CET
+"Manufacturing" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 9 tests from 6 test suites.
@@ -1036,18 +1036,18 @@ Output:
 [==========] 9 tests from 6 test suites ran. (0 ms total)
 [  PASSED  ] 9 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Manufacturing" end time: Oct 25 14:20 CET
+"Manufacturing" end time: Oct 25 14:54 CET
 "Manufacturing" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-26/34 Testing: DatabaseManager
-26/34 Test: DatabaseManager
+26/36 Testing: DatabaseManager
+26/36 Test: DatabaseManager
 Command: "/tmp/bendcore-cadcore/build/test_database_manager"
 Directory: /tmp/bendcore-cadcore/build
-"DatabaseManager" start time: Oct 25 14:20 CET
+"DatabaseManager" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 4 test suites.
@@ -1111,15 +1111,15 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"DatabaseManager" end time: Oct 25 14:20 CET
+"DatabaseManager" end time: Oct 25 14:54 CET
 "DatabaseManager" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-27/34 Testing: MatrixOps
-27/34 Test: MatrixOps
+27/36 Testing: MatrixOps
+27/36 Test: MatrixOps
 Command: "/tmp/bendcore-cadcore/build/test_matrix_ops"
 Directory: /tmp/bendcore-cadcore/build
-"MatrixOps" start time: Oct 25 14:20 CET
+"MatrixOps" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1157,15 +1157,15 @@ Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MatrixOps" end time: Oct 25 14:20 CET
+"MatrixOps" end time: Oct 25 14:54 CET
 "MatrixOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-28/34 Testing: GeometryOps
-28/34 Test: GeometryOps
+28/36 Testing: GeometryOps
+28/36 Test: GeometryOps
 Command: "/tmp/bendcore-cadcore/build/test_geometry_ops"
 Directory: /tmp/bendcore-cadcore/build
-"GeometryOps" start time: Oct 25 14:20 CET
+"GeometryOps" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1208,18 +1208,18 @@ Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/
 [==========] 15 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 15 tests.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"GeometryOps" end time: Oct 25 14:20 CET
+"GeometryOps" end time: Oct 25 14:54 CET
 "GeometryOps" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-29/34 Testing: ModelImporter
-29/34 Test: ModelImporter
+29/36 Testing: ModelImporter
+29/36 Test: ModelImporter
 Command: "/tmp/bendcore-cadcore/build/test_model_importer"
 Directory: /tmp/bendcore-cadcore/build
-"ModelImporter" start time: Oct 25 14:20 CET
+"ModelImporter" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1253,7 +1253,7 @@ Assimp loading skipped: Assimp library not available - model loading disabled.
 [       OK ] ModelImporterTest.GetVertexData (0 ms)
 [ RUN      ] ModelImporterTest.GetFaceIndices
 [       OK ] ModelImporterTest.GetFaceIndices (0 ms)
-[----------] 12 tests from ModelImporterTest (0 ms total)
+[----------] 12 tests from ModelImporterTest (1 ms total)
 
 [----------] Global test environment tear-down
 [==========] 12 tests from 1 test suite ran. (1 ms total)
@@ -1264,15 +1264,15 @@ Assimp loading skipped: Assimp library not available - model loading disabled.
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"ModelImporter" end time: Oct 25 14:20 CET
+"ModelImporter" end time: Oct 25 14:54 CET
 "ModelImporter" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-30/34 Testing: ParallelExecutor
-30/34 Test: ParallelExecutor
+30/36 Testing: ParallelExecutor
+30/36 Test: ParallelExecutor
 Command: "/tmp/bendcore-cadcore/build/test_parallel_executor"
 Directory: /tmp/bendcore-cadcore/build
-"ParallelExecutor" start time: Oct 25 14:20 CET
+"ParallelExecutor" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1318,15 +1318,15 @@ Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"ParallelExecutor" end time: Oct 25 14:20 CET
+"ParallelExecutor" end time: Oct 25 14:54 CET
 "ParallelExecutor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-31/34 Testing: ProtobufSerializer
-31/34 Test: ProtobufSerializer
+31/36 Testing: ProtobufSerializer
+31/36 Test: ProtobufSerializer
 Command: "/tmp/bendcore-cadcore/build/test_protobuf_serializer"
 Directory: /tmp/bendcore-cadcore/build
-"ProtobufSerializer" start time: Oct 25 14:20 CET
+"ProtobufSerializer" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -1377,18 +1377,18 @@ Running main() from /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/
 [==========] 19 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 19 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ProtobufSerializer" end time: Oct 25 14:20 CET
+"ProtobufSerializer" end time: Oct 25 14:54 CET
 "ProtobufSerializer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-32/34 Testing: LoftFeature
-32/34 Test: LoftFeature
+32/36 Testing: LoftFeature
+32/36 Test: LoftFeature
 Command: "/tmp/bendcore-cadcore/build/test_loft_feature"
 Directory: /tmp/bendcore-cadcore/build
-"LoftFeature" start time: Oct 25 14:20 CET
+"LoftFeature" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 10 tests from 1 test suite.
@@ -1423,15 +1423,15 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"LoftFeature" end time: Oct 25 14:20 CET
+"LoftFeature" end time: Oct 25 14:54 CET
 "LoftFeature" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-33/34 Testing: SweepFeature
-33/34 Test: SweepFeature
+33/36 Testing: SweepFeature
+33/36 Test: SweepFeature
 Command: "/tmp/bendcore-cadcore/build/test_sweep_feature"
 Directory: /tmp/bendcore-cadcore/build
-"SweepFeature" start time: Oct 25 14:20 CET
+"SweepFeature" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 12 tests from 1 test suite.
@@ -1470,15 +1470,15 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SweepFeature" end time: Oct 25 14:20 CET
+"SweepFeature" end time: Oct 25 14:54 CET
 "SweepFeature" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-34/34 Testing: RevolveFeature
-34/34 Test: RevolveFeature
+34/36 Testing: RevolveFeature
+34/36 Test: RevolveFeature
 Command: "/tmp/bendcore-cadcore/build/test_revolve_feature"
 Directory: /tmp/bendcore-cadcore/build
-"RevolveFeature" start time: Oct 25 14:20 CET
+"RevolveFeature" start time: Oct 25 14:54 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 19 tests from 1 test suite.
@@ -1531,8 +1531,112 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"RevolveFeature" end time: Oct 25 14:20 CET
+"RevolveFeature" end time: Oct 25 14:54 CET
 "RevolveFeature" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 25 14:20 CET
+35/36 Testing: OccWrapper
+35/36 Test: OccWrapper
+Command: "/tmp/bendcore-cadcore/build/test_occt_wrapper"
+Directory: /tmp/bendcore-cadcore/build
+"OccWrapper" start time: Oct 25 14:54 CET
+Output:
+----------------------------------------------------------
+[==========] Running 15 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 15 tests from OccWrapperTest
+[ RUN      ] OccWrapperTest.OccAvailability
+[       OK ] OccWrapperTest.OccAvailability (0 ms)
+[ RUN      ] OccWrapperTest.GetVersion
+[       OK ] OccWrapperTest.GetVersion (0 ms)
+[ RUN      ] OccWrapperTest.StepExportShape
+[       OK ] OccWrapperTest.StepExportShape (0 ms)
+[ RUN      ] OccWrapperTest.StepExportAssembly
+[       OK ] OccWrapperTest.StepExportAssembly (0 ms)
+[ RUN      ] OccWrapperTest.IgesExportShape
+[       OK ] OccWrapperTest.IgesExportShape (0 ms)
+[ RUN      ] OccWrapperTest.StepImportShape
+[       OK ] OccWrapperTest.StepImportShape (0 ms)
+[ RUN      ] OccWrapperTest.HealShape
+[       OK ] OccWrapperTest.HealShape (0 ms)
+[ RUN      ] OccWrapperTest.RemoveFaces
+[       OK ] OccWrapperTest.RemoveFaces (0 ms)
+[ RUN      ] OccWrapperTest.OffsetFace
+[       OK ] OccWrapperTest.OffsetFace (0 ms)
+[ RUN      ] OccWrapperTest.LoftProfiles
+[       OK ] OccWrapperTest.LoftProfiles (0 ms)
+[ RUN      ] OccWrapperTest.SweepProfile
+[       OK ] OccWrapperTest.SweepProfile (0 ms)
+[ RUN      ] OccWrapperTest.BooleanUnion
+[       OK ] OccWrapperTest.BooleanUnion (0 ms)
+[ RUN      ] OccWrapperTest.BooleanCut
+[       OK ] OccWrapperTest.BooleanCut (0 ms)
+[ RUN      ] OccWrapperTest.BooleanIntersect
+[       OK ] OccWrapperTest.BooleanIntersect (0 ms)
+[ RUN      ] OccWrapperTest.MultipleOperations
+[       OK ] OccWrapperTest.MultipleOperations (0 ms)
+[----------] 15 tests from OccWrapperTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 15 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OccWrapper" end time: Oct 25 14:54 CET
+"OccWrapper" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/36 Testing: MateSolver
+36/36 Test: MateSolver
+Command: "/tmp/bendcore-cadcore/build/test_mate_solver"
+Directory: /tmp/bendcore-cadcore/build
+"MateSolver" start time: Oct 25 14:54 CET
+Output:
+----------------------------------------------------------
+[==========] Running 14 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 14 tests from MateSolverTest
+[ RUN      ] MateSolverTest.CreateMateConstraint
+[       OK ] MateSolverTest.CreateMateConstraint (0 ms)
+[ RUN      ] MateSolverTest.AddConstraint
+[       OK ] MateSolverTest.AddConstraint (0 ms)
+[ RUN      ] MateSolverTest.FixedConstraint
+[       OK ] MateSolverTest.FixedConstraint (0 ms)
+[ RUN      ] MateSolverTest.CoincidentConstraint
+[       OK ] MateSolverTest.CoincidentConstraint (0 ms)
+[ RUN      ] MateSolverTest.DistanceConstraint
+[       OK ] MateSolverTest.DistanceConstraint (0 ms)
+[ RUN      ] MateSolverTest.ParallelConstraint
+[       OK ] MateSolverTest.ParallelConstraint (0 ms)
+[ RUN      ] MateSolverTest.RemoveConstraint
+[       OK ] MateSolverTest.RemoveConstraint (0 ms)
+[ RUN      ] MateSolverTest.MultipleConstraints
+[       OK ] MateSolverTest.MultipleConstraints (0 ms)
+[ RUN      ] MateSolverTest.ConstraintValidation
+[       OK ] MateSolverTest.ConstraintValidation (0 ms)
+[ RUN      ] MateSolverTest.UnderConstrainedDetection
+[       OK ] MateSolverTest.UnderConstrainedDetection (0 ms)
+[ RUN      ] MateSolverTest.Diagnose
+[       OK ] MateSolverTest.Diagnose (0 ms)
+[ RUN      ] MateSolverTest.ClearConstraints
+[       OK ] MateSolverTest.ClearConstraints (0 ms)
+[ RUN      ] MateSolverTest.AngleConstraint
+[       OK ] MateSolverTest.AngleConstraint (0 ms)
+[ RUN      ] MateSolverTest.SymmetricConstraint
+[       OK ] MateSolverTest.SymmetricConstraint (0 ms)
+[----------] 14 tests from MateSolverTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 14 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MateSolver" end time: Oct 25 14:54 CET
+"MateSolver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 14:54 CET

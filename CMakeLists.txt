@@ -46,6 +46,10 @@ set(BENDCORE_SOURCES
     src/loft.cpp
     src/sweep.cpp
     src/revolve.cpp
+    # Phase M6.5: OCCT Integration
+    src/geometry/occt_wrapper.cpp
+    # Phase M7: Assembly Solver
+    src/assembly/mate_solver.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -346,3 +350,21 @@ add_test(NAME SweepFeature COMMAND test_sweep_feature)
 add_executable(test_revolve_feature tests/test_revolve_feature.cpp)
 target_link_libraries(test_revolve_feature bendcore gtest_main)
 add_test(NAME RevolveFeature COMMAND test_revolve_feature)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M6.5: OCCT Integration
+# ═════════════════════════════════════════════════════════════════
+
+# OCCT Wrapper Tests (CAD-DEV-051 to CAD-DEV-030)
+add_executable(test_occt_wrapper tests/test_occt_wrapper.cpp)
+target_link_libraries(test_occt_wrapper bendcore gtest_main)
+add_test(NAME OccWrapper COMMAND test_occt_wrapper)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M7: Assembly Solver
+# ═════════════════════════════════════════════════════════════════
+
+# Mate Solver Tests (CAD-DEV-031 to CAD-DEV-040)
+add_executable(test_mate_solver tests/test_mate_solver.cpp)
+target_link_libraries(test_mate_solver bendcore gtest_main)
+add_test(NAME MateSolver COMMAND test_mate_solver)

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o"
+  "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o"
   "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o"
@@ -29,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o"
   "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o"
+  "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o"
   "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o"

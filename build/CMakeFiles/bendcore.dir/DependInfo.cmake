@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/tmp/bendcore-cadcore/src/assembly/mate_solver.cpp" "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o.d"
   "/tmp/bendcore-cadcore/src/atomic_save.cpp" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o.d"
   "/tmp/bendcore-cadcore/src/bend_calculator.cpp" "CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o.d"
   "/tmp/bendcore-cadcore/src/bezier_curve.cpp" "CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o.d"
@@ -23,6 +24,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/entity_tree.cpp" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
   "/tmp/bendcore-cadcore/src/feature_system.cpp" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
   "/tmp/bendcore-cadcore/src/format_exporters.cpp" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/geometry/occt_wrapper.cpp" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_cache.cpp" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_engine.cpp" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"

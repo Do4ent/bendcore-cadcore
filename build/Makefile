@@ -627,6 +627,32 @@ test_revolve_feature/fast:
 .PHONY : test_revolve_feature/fast
 
 #=============================================================================
+# Target rules for targets named test_occt_wrapper
+
+# Build rule for target.
+test_occt_wrapper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_occt_wrapper
+.PHONY : test_occt_wrapper
+
+# fast build rule for target.
+test_occt_wrapper/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_occt_wrapper.dir/build.make CMakeFiles/test_occt_wrapper.dir/build
+.PHONY : test_occt_wrapper/fast
+
+#=============================================================================
+# Target rules for targets named test_mate_solver
+
+# Build rule for target.
+test_mate_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_mate_solver
+.PHONY : test_mate_solver
+
+# fast build rule for target.
+test_mate_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mate_solver.dir/build.make CMakeFiles/test_mate_solver.dir/build
+.PHONY : test_mate_solver/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1042,6 +1068,30 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+src/assembly/mate_solver.o: src/assembly/mate_solver.cpp.o
+.PHONY : src/assembly/mate_solver.o
+
+# target to build an object file
+src/assembly/mate_solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o
+.PHONY : src/assembly/mate_solver.cpp.o
+
+src/assembly/mate_solver.i: src/assembly/mate_solver.cpp.i
+.PHONY : src/assembly/mate_solver.i
+
+# target to preprocess a source file
+src/assembly/mate_solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.i
+.PHONY : src/assembly/mate_solver.cpp.i
+
+src/assembly/mate_solver.s: src/assembly/mate_solver.cpp.s
+.PHONY : src/assembly/mate_solver.s
+
+# target to generate assembly for a file
+src/assembly/mate_solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.s
+.PHONY : src/assembly/mate_solver.cpp.s
+
 src/atomic_save.o: src/atomic_save.cpp.o
 .PHONY : src/atomic_save.o
 
@@ -1401,6 +1451,30 @@ src/format_exporters.s: src/format_exporters.cpp.s
 src/format_exporters.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.s
 .PHONY : src/format_exporters.cpp.s
+
+src/geometry/occt_wrapper.o: src/geometry/occt_wrapper.cpp.o
+.PHONY : src/geometry/occt_wrapper.o
+
+# target to build an object file
+src/geometry/occt_wrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o
+.PHONY : src/geometry/occt_wrapper.cpp.o
+
+src/geometry/occt_wrapper.i: src/geometry/occt_wrapper.cpp.i
+.PHONY : src/geometry/occt_wrapper.i
+
+# target to preprocess a source file
+src/geometry/occt_wrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.i
+.PHONY : src/geometry/occt_wrapper.cpp.i
+
+src/geometry/occt_wrapper.s: src/geometry/occt_wrapper.cpp.s
+.PHONY : src/geometry/occt_wrapper.s
+
+# target to generate assembly for a file
+src/geometry/occt_wrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.s
+.PHONY : src/geometry/occt_wrapper.cpp.s
 
 src/geometry_cache.o: src/geometry_cache.cpp.o
 .PHONY : src/geometry_cache.o
@@ -2434,6 +2508,30 @@ tests/test_manufacturing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/tests/test_manufacturing.cpp.s
 .PHONY : tests/test_manufacturing.cpp.s
 
+tests/test_mate_solver.o: tests/test_mate_solver.cpp.o
+.PHONY : tests/test_mate_solver.o
+
+# target to build an object file
+tests/test_mate_solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mate_solver.dir/build.make CMakeFiles/test_mate_solver.dir/tests/test_mate_solver.cpp.o
+.PHONY : tests/test_mate_solver.cpp.o
+
+tests/test_mate_solver.i: tests/test_mate_solver.cpp.i
+.PHONY : tests/test_mate_solver.i
+
+# target to preprocess a source file
+tests/test_mate_solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mate_solver.dir/build.make CMakeFiles/test_mate_solver.dir/tests/test_mate_solver.cpp.i
+.PHONY : tests/test_mate_solver.cpp.i
+
+tests/test_mate_solver.s: tests/test_mate_solver.cpp.s
+.PHONY : tests/test_mate_solver.s
+
+# target to generate assembly for a file
+tests/test_mate_solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_mate_solver.dir/build.make CMakeFiles/test_mate_solver.dir/tests/test_mate_solver.cpp.s
+.PHONY : tests/test_mate_solver.cpp.s
+
 tests/test_matrix_ops.o: tests/test_matrix_ops.cpp.o
 .PHONY : tests/test_matrix_ops.o
 
@@ -2481,6 +2579,30 @@ tests/test_model_importer.s: tests/test_model_importer.cpp.s
 tests/test_model_importer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.s
 .PHONY : tests/test_model_importer.cpp.s
+
+tests/test_occt_wrapper.o: tests/test_occt_wrapper.cpp.o
+.PHONY : tests/test_occt_wrapper.o
+
+# target to build an object file
+tests/test_occt_wrapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_occt_wrapper.dir/build.make CMakeFiles/test_occt_wrapper.dir/tests/test_occt_wrapper.cpp.o
+.PHONY : tests/test_occt_wrapper.cpp.o
+
+tests/test_occt_wrapper.i: tests/test_occt_wrapper.cpp.i
+.PHONY : tests/test_occt_wrapper.i
+
+# target to preprocess a source file
+tests/test_occt_wrapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_occt_wrapper.dir/build.make CMakeFiles/test_occt_wrapper.dir/tests/test_occt_wrapper.cpp.i
+.PHONY : tests/test_occt_wrapper.cpp.i
+
+tests/test_occt_wrapper.s: tests/test_occt_wrapper.cpp.s
+.PHONY : tests/test_occt_wrapper.s
+
+# target to generate assembly for a file
+tests/test_occt_wrapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_occt_wrapper.dir/build.make CMakeFiles/test_occt_wrapper.dir/tests/test_occt_wrapper.cpp.s
+.PHONY : tests/test_occt_wrapper.cpp.s
 
 tests/test_parallel_executor.o: tests/test_parallel_executor.cpp.o
 .PHONY : tests/test_parallel_executor.o
@@ -2813,8 +2935,10 @@ help:
 	@echo "... test_legacy_adapter"
 	@echo "... test_loft_feature"
 	@echo "... test_manufacturing"
+	@echo "... test_mate_solver"
 	@echo "... test_matrix_ops"
 	@echo "... test_model_importer"
+	@echo "... test_occt_wrapper"
 	@echo "... test_parallel_executor"
 	@echo "... test_parameter_store"
 	@echo "... test_pipe_components"
@@ -2826,6 +2950,9 @@ help:
 	@echo "... test_serializer"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
+	@echo "... src/assembly/mate_solver.o"
+	@echo "... src/assembly/mate_solver.i"
+	@echo "... src/assembly/mate_solver.s"
 	@echo "... src/atomic_save.o"
 	@echo "... src/atomic_save.i"
 	@echo "... src/atomic_save.s"
@@ -2871,6 +2998,9 @@ help:
 	@echo "... src/format_exporters.o"
 	@echo "... src/format_exporters.i"
 	@echo "... src/format_exporters.s"
+	@echo "... src/geometry/occt_wrapper.o"
+	@echo "... src/geometry/occt_wrapper.i"
+	@echo "... src/geometry/occt_wrapper.s"
 	@echo "... src/geometry_cache.o"
 	@echo "... src/geometry_cache.i"
 	@echo "... src/geometry_cache.s"
@@ -3000,12 +3130,18 @@ help:
 	@echo "... tests/test_manufacturing.o"
 	@echo "... tests/test_manufacturing.i"
 	@echo "... tests/test_manufacturing.s"
+	@echo "... tests/test_mate_solver.o"
+	@echo "... tests/test_mate_solver.i"
+	@echo "... tests/test_mate_solver.s"
 	@echo "... tests/test_matrix_ops.o"
 	@echo "... tests/test_matrix_ops.i"
 	@echo "... tests/test_matrix_ops.s"
 	@echo "... tests/test_model_importer.o"
 	@echo "... tests/test_model_importer.i"
 	@echo "... tests/test_model_importer.s"
+	@echo "... tests/test_occt_wrapper.o"
+	@echo "... tests/test_occt_wrapper.i"
+	@echo "... tests/test_occt_wrapper.s"
 	@echo "... tests/test_parallel_executor.o"
 	@echo "... tests/test_parallel_executor.i"
 	@echo "... tests/test_parallel_executor.s"
