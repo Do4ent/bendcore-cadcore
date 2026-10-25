@@ -835,6 +835,19 @@ test_cloud_sync/fast:
 .PHONY : test_cloud_sync/fast
 
 #=============================================================================
+# Target rules for targets named bendcore_app
+
+# Build rule for target.
+bendcore_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bendcore_app
+.PHONY : bendcore_app
+
+# fast build rule for target.
+bendcore_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/build
+.PHONY : bendcore_app/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1256,6 +1269,7 @@ src/analysis/inspection_tools.o: src/analysis/inspection_tools.cpp.o
 # target to build an object file
 src/analysis/inspection_tools.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/analysis/inspection_tools.cpp.o
 .PHONY : src/analysis/inspection_tools.cpp.o
 
 src/analysis/inspection_tools.i: src/analysis/inspection_tools.cpp.i
@@ -1264,6 +1278,7 @@ src/analysis/inspection_tools.i: src/analysis/inspection_tools.cpp.i
 # target to preprocess a source file
 src/analysis/inspection_tools.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/analysis/inspection_tools.cpp.i
 .PHONY : src/analysis/inspection_tools.cpp.i
 
 src/analysis/inspection_tools.s: src/analysis/inspection_tools.cpp.s
@@ -1272,6 +1287,7 @@ src/analysis/inspection_tools.s: src/analysis/inspection_tools.cpp.s
 # target to generate assembly for a file
 src/analysis/inspection_tools.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/analysis/inspection_tools.cpp.s
 .PHONY : src/analysis/inspection_tools.cpp.s
 
 src/api/rest_api_handler.o: src/api/rest_api_handler.cpp.o
@@ -1280,6 +1296,7 @@ src/api/rest_api_handler.o: src/api/rest_api_handler.cpp.o
 # target to build an object file
 src/api/rest_api_handler.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/api/rest_api_handler.cpp.o
 .PHONY : src/api/rest_api_handler.cpp.o
 
 src/api/rest_api_handler.i: src/api/rest_api_handler.cpp.i
@@ -1288,6 +1305,7 @@ src/api/rest_api_handler.i: src/api/rest_api_handler.cpp.i
 # target to preprocess a source file
 src/api/rest_api_handler.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/api/rest_api_handler.cpp.i
 .PHONY : src/api/rest_api_handler.cpp.i
 
 src/api/rest_api_handler.s: src/api/rest_api_handler.cpp.s
@@ -1296,6 +1314,7 @@ src/api/rest_api_handler.s: src/api/rest_api_handler.cpp.s
 # target to generate assembly for a file
 src/api/rest_api_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/api/rest_api_handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/api/rest_api_handler.cpp.s
 .PHONY : src/api/rest_api_handler.cpp.s
 
 src/assembly/assembly_ui.o: src/assembly/assembly_ui.cpp.o
@@ -1304,6 +1323,7 @@ src/assembly/assembly_ui.o: src/assembly/assembly_ui.cpp.o
 # target to build an object file
 src/assembly/assembly_ui.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/assembly_ui.cpp.o
 .PHONY : src/assembly/assembly_ui.cpp.o
 
 src/assembly/assembly_ui.i: src/assembly/assembly_ui.cpp.i
@@ -1312,6 +1332,7 @@ src/assembly/assembly_ui.i: src/assembly/assembly_ui.cpp.i
 # target to preprocess a source file
 src/assembly/assembly_ui.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/assembly_ui.cpp.i
 .PHONY : src/assembly/assembly_ui.cpp.i
 
 src/assembly/assembly_ui.s: src/assembly/assembly_ui.cpp.s
@@ -1320,6 +1341,7 @@ src/assembly/assembly_ui.s: src/assembly/assembly_ui.cpp.s
 # target to generate assembly for a file
 src/assembly/assembly_ui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/assembly_ui.cpp.s
 .PHONY : src/assembly/assembly_ui.cpp.s
 
 src/assembly/mate_solver.o: src/assembly/mate_solver.cpp.o
@@ -1328,6 +1350,7 @@ src/assembly/mate_solver.o: src/assembly/mate_solver.cpp.o
 # target to build an object file
 src/assembly/mate_solver.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/mate_solver.cpp.o
 .PHONY : src/assembly/mate_solver.cpp.o
 
 src/assembly/mate_solver.i: src/assembly/mate_solver.cpp.i
@@ -1336,6 +1359,7 @@ src/assembly/mate_solver.i: src/assembly/mate_solver.cpp.i
 # target to preprocess a source file
 src/assembly/mate_solver.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/mate_solver.cpp.i
 .PHONY : src/assembly/mate_solver.cpp.i
 
 src/assembly/mate_solver.s: src/assembly/mate_solver.cpp.s
@@ -1344,6 +1368,7 @@ src/assembly/mate_solver.s: src/assembly/mate_solver.cpp.s
 # target to generate assembly for a file
 src/assembly/mate_solver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/assembly/mate_solver.cpp.s
 .PHONY : src/assembly/mate_solver.cpp.s
 
 src/atomic_save.o: src/atomic_save.cpp.o
@@ -1352,6 +1377,7 @@ src/atomic_save.o: src/atomic_save.cpp.o
 # target to build an object file
 src/atomic_save.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/atomic_save.cpp.o
 .PHONY : src/atomic_save.cpp.o
 
 src/atomic_save.i: src/atomic_save.cpp.i
@@ -1360,6 +1386,7 @@ src/atomic_save.i: src/atomic_save.cpp.i
 # target to preprocess a source file
 src/atomic_save.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/atomic_save.cpp.i
 .PHONY : src/atomic_save.cpp.i
 
 src/atomic_save.s: src/atomic_save.cpp.s
@@ -1368,6 +1395,7 @@ src/atomic_save.s: src/atomic_save.cpp.s
 # target to generate assembly for a file
 src/atomic_save.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/atomic_save.cpp.s
 .PHONY : src/atomic_save.cpp.s
 
 src/bend_calculator.o: src/bend_calculator.cpp.o
@@ -1376,6 +1404,7 @@ src/bend_calculator.o: src/bend_calculator.cpp.o
 # target to build an object file
 src/bend_calculator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bend_calculator.cpp.o
 .PHONY : src/bend_calculator.cpp.o
 
 src/bend_calculator.i: src/bend_calculator.cpp.i
@@ -1384,6 +1413,7 @@ src/bend_calculator.i: src/bend_calculator.cpp.i
 # target to preprocess a source file
 src/bend_calculator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bend_calculator.cpp.i
 .PHONY : src/bend_calculator.cpp.i
 
 src/bend_calculator.s: src/bend_calculator.cpp.s
@@ -1392,6 +1422,7 @@ src/bend_calculator.s: src/bend_calculator.cpp.s
 # target to generate assembly for a file
 src/bend_calculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bend_calculator.cpp.s
 .PHONY : src/bend_calculator.cpp.s
 
 src/bezier_curve.o: src/bezier_curve.cpp.o
@@ -1400,6 +1431,7 @@ src/bezier_curve.o: src/bezier_curve.cpp.o
 # target to build an object file
 src/bezier_curve.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bezier_curve.cpp.o
 .PHONY : src/bezier_curve.cpp.o
 
 src/bezier_curve.i: src/bezier_curve.cpp.i
@@ -1408,6 +1440,7 @@ src/bezier_curve.i: src/bezier_curve.cpp.i
 # target to preprocess a source file
 src/bezier_curve.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bezier_curve.cpp.i
 .PHONY : src/bezier_curve.cpp.i
 
 src/bezier_curve.s: src/bezier_curve.cpp.s
@@ -1416,6 +1449,7 @@ src/bezier_curve.s: src/bezier_curve.cpp.s
 # target to generate assembly for a file
 src/bezier_curve.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/bezier_curve.cpp.s
 .PHONY : src/bezier_curve.cpp.s
 
 src/boolean_operations.o: src/boolean_operations.cpp.o
@@ -1424,6 +1458,7 @@ src/boolean_operations.o: src/boolean_operations.cpp.o
 # target to build an object file
 src/boolean_operations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/boolean_operations.cpp.o
 .PHONY : src/boolean_operations.cpp.o
 
 src/boolean_operations.i: src/boolean_operations.cpp.i
@@ -1432,6 +1467,7 @@ src/boolean_operations.i: src/boolean_operations.cpp.i
 # target to preprocess a source file
 src/boolean_operations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/boolean_operations.cpp.i
 .PHONY : src/boolean_operations.cpp.i
 
 src/boolean_operations.s: src/boolean_operations.cpp.s
@@ -1440,6 +1476,7 @@ src/boolean_operations.s: src/boolean_operations.cpp.s
 # target to generate assembly for a file
 src/boolean_operations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/boolean_operations.cpp.s
 .PHONY : src/boolean_operations.cpp.s
 
 src/brep.o: src/brep.cpp.o
@@ -1448,6 +1485,7 @@ src/brep.o: src/brep.cpp.o
 # target to build an object file
 src/brep.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/brep.cpp.o
 .PHONY : src/brep.cpp.o
 
 src/brep.i: src/brep.cpp.i
@@ -1456,6 +1494,7 @@ src/brep.i: src/brep.cpp.i
 # target to preprocess a source file
 src/brep.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/brep.cpp.i
 .PHONY : src/brep.cpp.i
 
 src/brep.s: src/brep.cpp.s
@@ -1464,6 +1503,7 @@ src/brep.s: src/brep.cpp.s
 # target to generate assembly for a file
 src/brep.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/brep.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/brep.cpp.s
 .PHONY : src/brep.cpp.s
 
 src/cad_document.o: src/cad_document.cpp.o
@@ -1472,6 +1512,7 @@ src/cad_document.o: src/cad_document.cpp.o
 # target to build an object file
 src/cad_document.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cad_document.cpp.o
 .PHONY : src/cad_document.cpp.o
 
 src/cad_document.i: src/cad_document.cpp.i
@@ -1480,6 +1521,7 @@ src/cad_document.i: src/cad_document.cpp.i
 # target to preprocess a source file
 src/cad_document.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cad_document.cpp.i
 .PHONY : src/cad_document.cpp.i
 
 src/cad_document.s: src/cad_document.cpp.s
@@ -1488,6 +1530,7 @@ src/cad_document.s: src/cad_document.cpp.s
 # target to generate assembly for a file
 src/cad_document.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cad_document.cpp.s
 .PHONY : src/cad_document.cpp.s
 
 src/cloud/cloud_sync_manager.o: src/cloud/cloud_sync_manager.cpp.o
@@ -1496,6 +1539,7 @@ src/cloud/cloud_sync_manager.o: src/cloud/cloud_sync_manager.cpp.o
 # target to build an object file
 src/cloud/cloud_sync_manager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cloud/cloud_sync_manager.cpp.o
 .PHONY : src/cloud/cloud_sync_manager.cpp.o
 
 src/cloud/cloud_sync_manager.i: src/cloud/cloud_sync_manager.cpp.i
@@ -1504,6 +1548,7 @@ src/cloud/cloud_sync_manager.i: src/cloud/cloud_sync_manager.cpp.i
 # target to preprocess a source file
 src/cloud/cloud_sync_manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cloud/cloud_sync_manager.cpp.i
 .PHONY : src/cloud/cloud_sync_manager.cpp.i
 
 src/cloud/cloud_sync_manager.s: src/cloud/cloud_sync_manager.cpp.s
@@ -1512,6 +1557,7 @@ src/cloud/cloud_sync_manager.s: src/cloud/cloud_sync_manager.cpp.s
 # target to generate assembly for a file
 src/cloud/cloud_sync_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cloud/cloud_sync_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/cloud/cloud_sync_manager.cpp.s
 .PHONY : src/cloud/cloud_sync_manager.cpp.s
 
 src/collaboration/session_manager.o: src/collaboration/session_manager.cpp.o
@@ -1520,6 +1566,7 @@ src/collaboration/session_manager.o: src/collaboration/session_manager.cpp.o
 # target to build an object file
 src/collaboration/session_manager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/collaboration/session_manager.cpp.o
 .PHONY : src/collaboration/session_manager.cpp.o
 
 src/collaboration/session_manager.i: src/collaboration/session_manager.cpp.i
@@ -1528,6 +1575,7 @@ src/collaboration/session_manager.i: src/collaboration/session_manager.cpp.i
 # target to preprocess a source file
 src/collaboration/session_manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/collaboration/session_manager.cpp.i
 .PHONY : src/collaboration/session_manager.cpp.i
 
 src/collaboration/session_manager.s: src/collaboration/session_manager.cpp.s
@@ -1536,6 +1584,7 @@ src/collaboration/session_manager.s: src/collaboration/session_manager.cpp.s
 # target to generate assembly for a file
 src/collaboration/session_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/collaboration/session_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/collaboration/session_manager.cpp.s
 .PHONY : src/collaboration/session_manager.cpp.s
 
 src/command_manager.o: src/command_manager.cpp.o
@@ -1544,6 +1593,7 @@ src/command_manager.o: src/command_manager.cpp.o
 # target to build an object file
 src/command_manager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/command_manager.cpp.o
 .PHONY : src/command_manager.cpp.o
 
 src/command_manager.i: src/command_manager.cpp.i
@@ -1552,6 +1602,7 @@ src/command_manager.i: src/command_manager.cpp.i
 # target to preprocess a source file
 src/command_manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/command_manager.cpp.i
 .PHONY : src/command_manager.cpp.i
 
 src/command_manager.s: src/command_manager.cpp.s
@@ -1560,6 +1611,7 @@ src/command_manager.s: src/command_manager.cpp.s
 # target to generate assembly for a file
 src/command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/command_manager.cpp.s
 .PHONY : src/command_manager.cpp.s
 
 src/constraint_system.o: src/constraint_system.cpp.o
@@ -1568,6 +1620,7 @@ src/constraint_system.o: src/constraint_system.cpp.o
 # target to build an object file
 src/constraint_system.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/constraint_system.cpp.o
 .PHONY : src/constraint_system.cpp.o
 
 src/constraint_system.i: src/constraint_system.cpp.i
@@ -1576,6 +1629,7 @@ src/constraint_system.i: src/constraint_system.cpp.i
 # target to preprocess a source file
 src/constraint_system.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/constraint_system.cpp.i
 .PHONY : src/constraint_system.cpp.i
 
 src/constraint_system.s: src/constraint_system.cpp.s
@@ -1584,6 +1638,7 @@ src/constraint_system.s: src/constraint_system.cpp.s
 # target to generate assembly for a file
 src/constraint_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/constraint_system.cpp.s
 .PHONY : src/constraint_system.cpp.s
 
 src/database_manager.o: src/database_manager.cpp.o
@@ -1592,6 +1647,7 @@ src/database_manager.o: src/database_manager.cpp.o
 # target to build an object file
 src/database_manager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/database_manager.cpp.o
 .PHONY : src/database_manager.cpp.o
 
 src/database_manager.i: src/database_manager.cpp.i
@@ -1600,6 +1656,7 @@ src/database_manager.i: src/database_manager.cpp.i
 # target to preprocess a source file
 src/database_manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/database_manager.cpp.i
 .PHONY : src/database_manager.cpp.i
 
 src/database_manager.s: src/database_manager.cpp.s
@@ -1608,6 +1665,7 @@ src/database_manager.s: src/database_manager.cpp.s
 # target to generate assembly for a file
 src/database_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/database_manager.cpp.s
 .PHONY : src/database_manager.cpp.s
 
 src/dependency_graph.o: src/dependency_graph.cpp.o
@@ -1616,6 +1674,7 @@ src/dependency_graph.o: src/dependency_graph.cpp.o
 # target to build an object file
 src/dependency_graph.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/dependency_graph.cpp.o
 .PHONY : src/dependency_graph.cpp.o
 
 src/dependency_graph.i: src/dependency_graph.cpp.i
@@ -1624,6 +1683,7 @@ src/dependency_graph.i: src/dependency_graph.cpp.i
 # target to preprocess a source file
 src/dependency_graph.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/dependency_graph.cpp.i
 .PHONY : src/dependency_graph.cpp.i
 
 src/dependency_graph.s: src/dependency_graph.cpp.s
@@ -1632,6 +1692,7 @@ src/dependency_graph.s: src/dependency_graph.cpp.s
 # target to generate assembly for a file
 src/dependency_graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/dependency_graph.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/dependency_graph.cpp.s
 .PHONY : src/dependency_graph.cpp.s
 
 src/document_event_bus.o: src/document_event_bus.cpp.o
@@ -1640,6 +1701,7 @@ src/document_event_bus.o: src/document_event_bus.cpp.o
 # target to build an object file
 src/document_event_bus.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/document_event_bus.cpp.o
 .PHONY : src/document_event_bus.cpp.o
 
 src/document_event_bus.i: src/document_event_bus.cpp.i
@@ -1648,6 +1710,7 @@ src/document_event_bus.i: src/document_event_bus.cpp.i
 # target to preprocess a source file
 src/document_event_bus.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/document_event_bus.cpp.i
 .PHONY : src/document_event_bus.cpp.i
 
 src/document_event_bus.s: src/document_event_bus.cpp.s
@@ -1656,6 +1719,7 @@ src/document_event_bus.s: src/document_event_bus.cpp.s
 # target to generate assembly for a file
 src/document_event_bus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/document_event_bus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/document_event_bus.cpp.s
 .PHONY : src/document_event_bus.cpp.s
 
 src/documentation/help_system.o: src/documentation/help_system.cpp.o
@@ -1664,6 +1728,7 @@ src/documentation/help_system.o: src/documentation/help_system.cpp.o
 # target to build an object file
 src/documentation/help_system.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/documentation/help_system.cpp.o
 .PHONY : src/documentation/help_system.cpp.o
 
 src/documentation/help_system.i: src/documentation/help_system.cpp.i
@@ -1672,6 +1737,7 @@ src/documentation/help_system.i: src/documentation/help_system.cpp.i
 # target to preprocess a source file
 src/documentation/help_system.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/documentation/help_system.cpp.i
 .PHONY : src/documentation/help_system.cpp.i
 
 src/documentation/help_system.s: src/documentation/help_system.cpp.s
@@ -1680,6 +1746,7 @@ src/documentation/help_system.s: src/documentation/help_system.cpp.s
 # target to generate assembly for a file
 src/documentation/help_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/documentation/help_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/documentation/help_system.cpp.s
 .PHONY : src/documentation/help_system.cpp.s
 
 src/entity_id.o: src/entity_id.cpp.o
@@ -1688,6 +1755,7 @@ src/entity_id.o: src/entity_id.cpp.o
 # target to build an object file
 src/entity_id.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_id.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_id.cpp.o
 .PHONY : src/entity_id.cpp.o
 
 src/entity_id.i: src/entity_id.cpp.i
@@ -1696,6 +1764,7 @@ src/entity_id.i: src/entity_id.cpp.i
 # target to preprocess a source file
 src/entity_id.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_id.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_id.cpp.i
 .PHONY : src/entity_id.cpp.i
 
 src/entity_id.s: src/entity_id.cpp.s
@@ -1704,6 +1773,7 @@ src/entity_id.s: src/entity_id.cpp.s
 # target to generate assembly for a file
 src/entity_id.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_id.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_id.cpp.s
 .PHONY : src/entity_id.cpp.s
 
 src/entity_tree.o: src/entity_tree.cpp.o
@@ -1712,6 +1782,7 @@ src/entity_tree.o: src/entity_tree.cpp.o
 # target to build an object file
 src/entity_tree.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_tree.cpp.o
 .PHONY : src/entity_tree.cpp.o
 
 src/entity_tree.i: src/entity_tree.cpp.i
@@ -1720,6 +1791,7 @@ src/entity_tree.i: src/entity_tree.cpp.i
 # target to preprocess a source file
 src/entity_tree.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_tree.cpp.i
 .PHONY : src/entity_tree.cpp.i
 
 src/entity_tree.s: src/entity_tree.cpp.s
@@ -1728,6 +1800,7 @@ src/entity_tree.s: src/entity_tree.cpp.s
 # target to generate assembly for a file
 src/entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/entity_tree.cpp.s
 .PHONY : src/entity_tree.cpp.s
 
 src/feature_system.o: src/feature_system.cpp.o
@@ -1736,6 +1809,7 @@ src/feature_system.o: src/feature_system.cpp.o
 # target to build an object file
 src/feature_system.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/feature_system.cpp.o
 .PHONY : src/feature_system.cpp.o
 
 src/feature_system.i: src/feature_system.cpp.i
@@ -1744,6 +1818,7 @@ src/feature_system.i: src/feature_system.cpp.i
 # target to preprocess a source file
 src/feature_system.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/feature_system.cpp.i
 .PHONY : src/feature_system.cpp.i
 
 src/feature_system.s: src/feature_system.cpp.s
@@ -1752,6 +1827,7 @@ src/feature_system.s: src/feature_system.cpp.s
 # target to generate assembly for a file
 src/feature_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/feature_system.cpp.s
 .PHONY : src/feature_system.cpp.s
 
 src/format_exporters.o: src/format_exporters.cpp.o
@@ -1760,6 +1836,7 @@ src/format_exporters.o: src/format_exporters.cpp.o
 # target to build an object file
 src/format_exporters.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/format_exporters.cpp.o
 .PHONY : src/format_exporters.cpp.o
 
 src/format_exporters.i: src/format_exporters.cpp.i
@@ -1768,6 +1845,7 @@ src/format_exporters.i: src/format_exporters.cpp.i
 # target to preprocess a source file
 src/format_exporters.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/format_exporters.cpp.i
 .PHONY : src/format_exporters.cpp.i
 
 src/format_exporters.s: src/format_exporters.cpp.s
@@ -1776,6 +1854,7 @@ src/format_exporters.s: src/format_exporters.cpp.s
 # target to generate assembly for a file
 src/format_exporters.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/format_exporters.cpp.s
 .PHONY : src/format_exporters.cpp.s
 
 src/geometry/direct_editing.o: src/geometry/direct_editing.cpp.o
@@ -1784,6 +1863,7 @@ src/geometry/direct_editing.o: src/geometry/direct_editing.cpp.o
 # target to build an object file
 src/geometry/direct_editing.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/direct_editing.cpp.o
 .PHONY : src/geometry/direct_editing.cpp.o
 
 src/geometry/direct_editing.i: src/geometry/direct_editing.cpp.i
@@ -1792,6 +1872,7 @@ src/geometry/direct_editing.i: src/geometry/direct_editing.cpp.i
 # target to preprocess a source file
 src/geometry/direct_editing.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/direct_editing.cpp.i
 .PHONY : src/geometry/direct_editing.cpp.i
 
 src/geometry/direct_editing.s: src/geometry/direct_editing.cpp.s
@@ -1800,6 +1881,7 @@ src/geometry/direct_editing.s: src/geometry/direct_editing.cpp.s
 # target to generate assembly for a file
 src/geometry/direct_editing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/direct_editing.cpp.s
 .PHONY : src/geometry/direct_editing.cpp.s
 
 src/geometry/occt_wrapper.o: src/geometry/occt_wrapper.cpp.o
@@ -1808,6 +1890,7 @@ src/geometry/occt_wrapper.o: src/geometry/occt_wrapper.cpp.o
 # target to build an object file
 src/geometry/occt_wrapper.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/occt_wrapper.cpp.o
 .PHONY : src/geometry/occt_wrapper.cpp.o
 
 src/geometry/occt_wrapper.i: src/geometry/occt_wrapper.cpp.i
@@ -1816,6 +1899,7 @@ src/geometry/occt_wrapper.i: src/geometry/occt_wrapper.cpp.i
 # target to preprocess a source file
 src/geometry/occt_wrapper.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/occt_wrapper.cpp.i
 .PHONY : src/geometry/occt_wrapper.cpp.i
 
 src/geometry/occt_wrapper.s: src/geometry/occt_wrapper.cpp.s
@@ -1824,6 +1908,7 @@ src/geometry/occt_wrapper.s: src/geometry/occt_wrapper.cpp.s
 # target to generate assembly for a file
 src/geometry/occt_wrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/occt_wrapper.cpp.s
 .PHONY : src/geometry/occt_wrapper.cpp.s
 
 src/geometry/sheet_metal_ops.o: src/geometry/sheet_metal_ops.cpp.o
@@ -1832,6 +1917,7 @@ src/geometry/sheet_metal_ops.o: src/geometry/sheet_metal_ops.cpp.o
 # target to build an object file
 src/geometry/sheet_metal_ops.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/sheet_metal_ops.cpp.o
 .PHONY : src/geometry/sheet_metal_ops.cpp.o
 
 src/geometry/sheet_metal_ops.i: src/geometry/sheet_metal_ops.cpp.i
@@ -1840,6 +1926,7 @@ src/geometry/sheet_metal_ops.i: src/geometry/sheet_metal_ops.cpp.i
 # target to preprocess a source file
 src/geometry/sheet_metal_ops.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/sheet_metal_ops.cpp.i
 .PHONY : src/geometry/sheet_metal_ops.cpp.i
 
 src/geometry/sheet_metal_ops.s: src/geometry/sheet_metal_ops.cpp.s
@@ -1848,6 +1935,7 @@ src/geometry/sheet_metal_ops.s: src/geometry/sheet_metal_ops.cpp.s
 # target to generate assembly for a file
 src/geometry/sheet_metal_ops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/sheet_metal_ops.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/sheet_metal_ops.cpp.s
 .PHONY : src/geometry/sheet_metal_ops.cpp.s
 
 src/geometry/surface_features.o: src/geometry/surface_features.cpp.o
@@ -1856,6 +1944,7 @@ src/geometry/surface_features.o: src/geometry/surface_features.cpp.o
 # target to build an object file
 src/geometry/surface_features.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/surface_features.cpp.o
 .PHONY : src/geometry/surface_features.cpp.o
 
 src/geometry/surface_features.i: src/geometry/surface_features.cpp.i
@@ -1864,6 +1953,7 @@ src/geometry/surface_features.i: src/geometry/surface_features.cpp.i
 # target to preprocess a source file
 src/geometry/surface_features.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/surface_features.cpp.i
 .PHONY : src/geometry/surface_features.cpp.i
 
 src/geometry/surface_features.s: src/geometry/surface_features.cpp.s
@@ -1872,6 +1962,7 @@ src/geometry/surface_features.s: src/geometry/surface_features.cpp.s
 # target to generate assembly for a file
 src/geometry/surface_features.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry/surface_features.cpp.s
 .PHONY : src/geometry/surface_features.cpp.s
 
 src/geometry_cache.o: src/geometry_cache.cpp.o
@@ -1880,6 +1971,7 @@ src/geometry_cache.o: src/geometry_cache.cpp.o
 # target to build an object file
 src/geometry_cache.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_cache.cpp.o
 .PHONY : src/geometry_cache.cpp.o
 
 src/geometry_cache.i: src/geometry_cache.cpp.i
@@ -1888,6 +1980,7 @@ src/geometry_cache.i: src/geometry_cache.cpp.i
 # target to preprocess a source file
 src/geometry_cache.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_cache.cpp.i
 .PHONY : src/geometry_cache.cpp.i
 
 src/geometry_cache.s: src/geometry_cache.cpp.s
@@ -1896,6 +1989,7 @@ src/geometry_cache.s: src/geometry_cache.cpp.s
 # target to generate assembly for a file
 src/geometry_cache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_cache.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_cache.cpp.s
 .PHONY : src/geometry_cache.cpp.s
 
 src/geometry_engine.o: src/geometry_engine.cpp.o
@@ -1904,6 +1998,7 @@ src/geometry_engine.o: src/geometry_engine.cpp.o
 # target to build an object file
 src/geometry_engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_engine.cpp.o
 .PHONY : src/geometry_engine.cpp.o
 
 src/geometry_engine.i: src/geometry_engine.cpp.i
@@ -1912,6 +2007,7 @@ src/geometry_engine.i: src/geometry_engine.cpp.i
 # target to preprocess a source file
 src/geometry_engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_engine.cpp.i
 .PHONY : src/geometry_engine.cpp.i
 
 src/geometry_engine.s: src/geometry_engine.cpp.s
@@ -1920,6 +2016,7 @@ src/geometry_engine.s: src/geometry_engine.cpp.s
 # target to generate assembly for a file
 src/geometry_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/geometry_engine.cpp.s
 .PHONY : src/geometry_engine.cpp.s
 
 src/history_stack.o: src/history_stack.cpp.o
@@ -1928,6 +2025,7 @@ src/history_stack.o: src/history_stack.cpp.o
 # target to build an object file
 src/history_stack.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/history_stack.cpp.o
 .PHONY : src/history_stack.cpp.o
 
 src/history_stack.i: src/history_stack.cpp.i
@@ -1936,6 +2034,7 @@ src/history_stack.i: src/history_stack.cpp.i
 # target to preprocess a source file
 src/history_stack.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/history_stack.cpp.i
 .PHONY : src/history_stack.cpp.i
 
 src/history_stack.s: src/history_stack.cpp.s
@@ -1944,6 +2043,7 @@ src/history_stack.s: src/history_stack.cpp.s
 # target to generate assembly for a file
 src/history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/history_stack.cpp.s
 .PHONY : src/history_stack.cpp.s
 
 src/io/model_importer.o: src/io/model_importer.cpp.o
@@ -1952,6 +2052,7 @@ src/io/model_importer.o: src/io/model_importer.cpp.o
 # target to build an object file
 src/io/model_importer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/io/model_importer.cpp.o
 .PHONY : src/io/model_importer.cpp.o
 
 src/io/model_importer.i: src/io/model_importer.cpp.i
@@ -1960,6 +2061,7 @@ src/io/model_importer.i: src/io/model_importer.cpp.i
 # target to preprocess a source file
 src/io/model_importer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/io/model_importer.cpp.i
 .PHONY : src/io/model_importer.cpp.i
 
 src/io/model_importer.s: src/io/model_importer.cpp.s
@@ -1968,6 +2070,7 @@ src/io/model_importer.s: src/io/model_importer.cpp.s
 # target to generate assembly for a file
 src/io/model_importer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/io/model_importer.cpp.s
 .PHONY : src/io/model_importer.cpp.s
 
 src/legacy_adapter.o: src/legacy_adapter.cpp.o
@@ -1976,6 +2079,7 @@ src/legacy_adapter.o: src/legacy_adapter.cpp.o
 # target to build an object file
 src/legacy_adapter.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/legacy_adapter.cpp.o
 .PHONY : src/legacy_adapter.cpp.o
 
 src/legacy_adapter.i: src/legacy_adapter.cpp.i
@@ -1984,6 +2088,7 @@ src/legacy_adapter.i: src/legacy_adapter.cpp.i
 # target to preprocess a source file
 src/legacy_adapter.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/legacy_adapter.cpp.i
 .PHONY : src/legacy_adapter.cpp.i
 
 src/legacy_adapter.s: src/legacy_adapter.cpp.s
@@ -1992,6 +2097,7 @@ src/legacy_adapter.s: src/legacy_adapter.cpp.s
 # target to generate assembly for a file
 src/legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/legacy_adapter.cpp.s
 .PHONY : src/legacy_adapter.cpp.s
 
 src/loft.o: src/loft.cpp.o
@@ -2000,6 +2106,7 @@ src/loft.o: src/loft.cpp.o
 # target to build an object file
 src/loft.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/loft.cpp.o
 .PHONY : src/loft.cpp.o
 
 src/loft.i: src/loft.cpp.i
@@ -2008,6 +2115,7 @@ src/loft.i: src/loft.cpp.i
 # target to preprocess a source file
 src/loft.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/loft.cpp.i
 .PHONY : src/loft.cpp.i
 
 src/loft.s: src/loft.cpp.s
@@ -2016,7 +2124,32 @@ src/loft.s: src/loft.cpp.s
 # target to generate assembly for a file
 src/loft.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/loft.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/loft.cpp.s
 .PHONY : src/loft.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 src/manufacturing.o: src/manufacturing.cpp.o
 .PHONY : src/manufacturing.o
@@ -2024,6 +2157,7 @@ src/manufacturing.o: src/manufacturing.cpp.o
 # target to build an object file
 src/manufacturing.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing.cpp.o
 .PHONY : src/manufacturing.cpp.o
 
 src/manufacturing.i: src/manufacturing.cpp.i
@@ -2032,6 +2166,7 @@ src/manufacturing.i: src/manufacturing.cpp.i
 # target to preprocess a source file
 src/manufacturing.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing.cpp.i
 .PHONY : src/manufacturing.cpp.i
 
 src/manufacturing.s: src/manufacturing.cpp.s
@@ -2040,6 +2175,7 @@ src/manufacturing.s: src/manufacturing.cpp.s
 # target to generate assembly for a file
 src/manufacturing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing.cpp.s
 .PHONY : src/manufacturing.cpp.s
 
 src/manufacturing/nc_generator.o: src/manufacturing/nc_generator.cpp.o
@@ -2048,6 +2184,7 @@ src/manufacturing/nc_generator.o: src/manufacturing/nc_generator.cpp.o
 # target to build an object file
 src/manufacturing/nc_generator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing/nc_generator.cpp.o
 .PHONY : src/manufacturing/nc_generator.cpp.o
 
 src/manufacturing/nc_generator.i: src/manufacturing/nc_generator.cpp.i
@@ -2056,6 +2193,7 @@ src/manufacturing/nc_generator.i: src/manufacturing/nc_generator.cpp.i
 # target to preprocess a source file
 src/manufacturing/nc_generator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing/nc_generator.cpp.i
 .PHONY : src/manufacturing/nc_generator.cpp.i
 
 src/manufacturing/nc_generator.s: src/manufacturing/nc_generator.cpp.s
@@ -2064,6 +2202,7 @@ src/manufacturing/nc_generator.s: src/manufacturing/nc_generator.cpp.s
 # target to generate assembly for a file
 src/manufacturing/nc_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing/nc_generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/manufacturing/nc_generator.cpp.s
 .PHONY : src/manufacturing/nc_generator.cpp.s
 
 src/math/geometry_ops.o: src/math/geometry_ops.cpp.o
@@ -2072,6 +2211,7 @@ src/math/geometry_ops.o: src/math/geometry_ops.cpp.o
 # target to build an object file
 src/math/geometry_ops.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/geometry_ops.cpp.o
 .PHONY : src/math/geometry_ops.cpp.o
 
 src/math/geometry_ops.i: src/math/geometry_ops.cpp.i
@@ -2080,6 +2220,7 @@ src/math/geometry_ops.i: src/math/geometry_ops.cpp.i
 # target to preprocess a source file
 src/math/geometry_ops.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/geometry_ops.cpp.i
 .PHONY : src/math/geometry_ops.cpp.i
 
 src/math/geometry_ops.s: src/math/geometry_ops.cpp.s
@@ -2088,6 +2229,7 @@ src/math/geometry_ops.s: src/math/geometry_ops.cpp.s
 # target to generate assembly for a file
 src/math/geometry_ops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/geometry_ops.cpp.s
 .PHONY : src/math/geometry_ops.cpp.s
 
 src/math/matrix_ops.o: src/math/matrix_ops.cpp.o
@@ -2096,6 +2238,7 @@ src/math/matrix_ops.o: src/math/matrix_ops.cpp.o
 # target to build an object file
 src/math/matrix_ops.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/matrix_ops.cpp.o
 .PHONY : src/math/matrix_ops.cpp.o
 
 src/math/matrix_ops.i: src/math/matrix_ops.cpp.i
@@ -2104,6 +2247,7 @@ src/math/matrix_ops.i: src/math/matrix_ops.cpp.i
 # target to preprocess a source file
 src/math/matrix_ops.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/matrix_ops.cpp.i
 .PHONY : src/math/matrix_ops.cpp.i
 
 src/math/matrix_ops.s: src/math/matrix_ops.cpp.s
@@ -2112,6 +2256,7 @@ src/math/matrix_ops.s: src/math/matrix_ops.cpp.s
 # target to generate assembly for a file
 src/math/matrix_ops.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/math/matrix_ops.cpp.s
 .PHONY : src/math/matrix_ops.cpp.s
 
 src/mesh_generator.o: src/mesh_generator.cpp.o
@@ -2120,6 +2265,7 @@ src/mesh_generator.o: src/mesh_generator.cpp.o
 # target to build an object file
 src/mesh_generator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/mesh_generator.cpp.o
 .PHONY : src/mesh_generator.cpp.o
 
 src/mesh_generator.i: src/mesh_generator.cpp.i
@@ -2128,6 +2274,7 @@ src/mesh_generator.i: src/mesh_generator.cpp.i
 # target to preprocess a source file
 src/mesh_generator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/mesh_generator.cpp.i
 .PHONY : src/mesh_generator.cpp.i
 
 src/mesh_generator.s: src/mesh_generator.cpp.s
@@ -2136,6 +2283,7 @@ src/mesh_generator.s: src/mesh_generator.cpp.s
 # target to generate assembly for a file
 src/mesh_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/mesh_generator.cpp.s
 .PHONY : src/mesh_generator.cpp.s
 
 src/optimization/cache_manager.o: src/optimization/cache_manager.cpp.o
@@ -2144,6 +2292,7 @@ src/optimization/cache_manager.o: src/optimization/cache_manager.cpp.o
 # target to build an object file
 src/optimization/cache_manager.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/optimization/cache_manager.cpp.o
 .PHONY : src/optimization/cache_manager.cpp.o
 
 src/optimization/cache_manager.i: src/optimization/cache_manager.cpp.i
@@ -2152,6 +2301,7 @@ src/optimization/cache_manager.i: src/optimization/cache_manager.cpp.i
 # target to preprocess a source file
 src/optimization/cache_manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/optimization/cache_manager.cpp.i
 .PHONY : src/optimization/cache_manager.cpp.i
 
 src/optimization/cache_manager.s: src/optimization/cache_manager.cpp.s
@@ -2160,6 +2310,7 @@ src/optimization/cache_manager.s: src/optimization/cache_manager.cpp.s
 # target to generate assembly for a file
 src/optimization/cache_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/optimization/cache_manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/optimization/cache_manager.cpp.s
 .PHONY : src/optimization/cache_manager.cpp.s
 
 src/parallel/parallel_executor.o: src/parallel/parallel_executor.cpp.o
@@ -2168,6 +2319,7 @@ src/parallel/parallel_executor.o: src/parallel/parallel_executor.cpp.o
 # target to build an object file
 src/parallel/parallel_executor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parallel/parallel_executor.cpp.o
 .PHONY : src/parallel/parallel_executor.cpp.o
 
 src/parallel/parallel_executor.i: src/parallel/parallel_executor.cpp.i
@@ -2176,6 +2328,7 @@ src/parallel/parallel_executor.i: src/parallel/parallel_executor.cpp.i
 # target to preprocess a source file
 src/parallel/parallel_executor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parallel/parallel_executor.cpp.i
 .PHONY : src/parallel/parallel_executor.cpp.i
 
 src/parallel/parallel_executor.s: src/parallel/parallel_executor.cpp.s
@@ -2184,6 +2337,7 @@ src/parallel/parallel_executor.s: src/parallel/parallel_executor.cpp.s
 # target to generate assembly for a file
 src/parallel/parallel_executor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parallel/parallel_executor.cpp.s
 .PHONY : src/parallel/parallel_executor.cpp.s
 
 src/parameter_store.o: src/parameter_store.cpp.o
@@ -2192,6 +2346,7 @@ src/parameter_store.o: src/parameter_store.cpp.o
 # target to build an object file
 src/parameter_store.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parameter_store.cpp.o
 .PHONY : src/parameter_store.cpp.o
 
 src/parameter_store.i: src/parameter_store.cpp.i
@@ -2200,6 +2355,7 @@ src/parameter_store.i: src/parameter_store.cpp.i
 # target to preprocess a source file
 src/parameter_store.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parameter_store.cpp.i
 .PHONY : src/parameter_store.cpp.i
 
 src/parameter_store.s: src/parameter_store.cpp.s
@@ -2208,6 +2364,7 @@ src/parameter_store.s: src/parameter_store.cpp.s
 # target to generate assembly for a file
 src/parameter_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/parameter_store.cpp.s
 .PHONY : src/parameter_store.cpp.s
 
 src/pipe_fittings.o: src/pipe_fittings.cpp.o
@@ -2216,6 +2373,7 @@ src/pipe_fittings.o: src/pipe_fittings.cpp.o
 # target to build an object file
 src/pipe_fittings.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_fittings.cpp.o
 .PHONY : src/pipe_fittings.cpp.o
 
 src/pipe_fittings.i: src/pipe_fittings.cpp.i
@@ -2224,6 +2382,7 @@ src/pipe_fittings.i: src/pipe_fittings.cpp.i
 # target to preprocess a source file
 src/pipe_fittings.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_fittings.cpp.i
 .PHONY : src/pipe_fittings.cpp.i
 
 src/pipe_fittings.s: src/pipe_fittings.cpp.s
@@ -2232,6 +2391,7 @@ src/pipe_fittings.s: src/pipe_fittings.cpp.s
 # target to generate assembly for a file
 src/pipe_fittings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_fittings.cpp.s
 .PHONY : src/pipe_fittings.cpp.s
 
 src/pipe_profile.o: src/pipe_profile.cpp.o
@@ -2240,6 +2400,7 @@ src/pipe_profile.o: src/pipe_profile.cpp.o
 # target to build an object file
 src/pipe_profile.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_profile.cpp.o
 .PHONY : src/pipe_profile.cpp.o
 
 src/pipe_profile.i: src/pipe_profile.cpp.i
@@ -2248,6 +2409,7 @@ src/pipe_profile.i: src/pipe_profile.cpp.i
 # target to preprocess a source file
 src/pipe_profile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_profile.cpp.i
 .PHONY : src/pipe_profile.cpp.i
 
 src/pipe_profile.s: src/pipe_profile.cpp.s
@@ -2256,6 +2418,7 @@ src/pipe_profile.s: src/pipe_profile.cpp.s
 # target to generate assembly for a file
 src/pipe_profile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/pipe_profile.cpp.s
 .PHONY : src/pipe_profile.cpp.s
 
 src/project_format.o: src/project_format.cpp.o
@@ -2264,6 +2427,7 @@ src/project_format.o: src/project_format.cpp.o
 # target to build an object file
 src/project_format.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/project_format.cpp.o
 .PHONY : src/project_format.cpp.o
 
 src/project_format.i: src/project_format.cpp.i
@@ -2272,6 +2436,7 @@ src/project_format.i: src/project_format.cpp.i
 # target to preprocess a source file
 src/project_format.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/project_format.cpp.i
 .PHONY : src/project_format.cpp.i
 
 src/project_format.s: src/project_format.cpp.s
@@ -2280,6 +2445,7 @@ src/project_format.s: src/project_format.cpp.s
 # target to generate assembly for a file
 src/project_format.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/project_format.cpp.s
 .PHONY : src/project_format.cpp.s
 
 src/rebuild_engine.o: src/rebuild_engine.cpp.o
@@ -2288,6 +2454,7 @@ src/rebuild_engine.o: src/rebuild_engine.cpp.o
 # target to build an object file
 src/rebuild_engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rebuild_engine.cpp.o
 .PHONY : src/rebuild_engine.cpp.o
 
 src/rebuild_engine.i: src/rebuild_engine.cpp.i
@@ -2296,6 +2463,7 @@ src/rebuild_engine.i: src/rebuild_engine.cpp.i
 # target to preprocess a source file
 src/rebuild_engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rebuild_engine.cpp.i
 .PHONY : src/rebuild_engine.cpp.i
 
 src/rebuild_engine.s: src/rebuild_engine.cpp.s
@@ -2304,6 +2472,7 @@ src/rebuild_engine.s: src/rebuild_engine.cpp.s
 # target to generate assembly for a file
 src/rebuild_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rebuild_engine.cpp.s
 .PHONY : src/rebuild_engine.cpp.s
 
 src/recovery.o: src/recovery.cpp.o
@@ -2312,6 +2481,7 @@ src/recovery.o: src/recovery.cpp.o
 # target to build an object file
 src/recovery.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/recovery.cpp.o
 .PHONY : src/recovery.cpp.o
 
 src/recovery.i: src/recovery.cpp.i
@@ -2320,6 +2490,7 @@ src/recovery.i: src/recovery.cpp.i
 # target to preprocess a source file
 src/recovery.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/recovery.cpp.i
 .PHONY : src/recovery.cpp.i
 
 src/recovery.s: src/recovery.cpp.s
@@ -2328,6 +2499,7 @@ src/recovery.s: src/recovery.cpp.s
 # target to generate assembly for a file
 src/recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/recovery.cpp.s
 .PHONY : src/recovery.cpp.s
 
 src/rendering/visualization_engine.o: src/rendering/visualization_engine.cpp.o
@@ -2336,6 +2508,7 @@ src/rendering/visualization_engine.o: src/rendering/visualization_engine.cpp.o
 # target to build an object file
 src/rendering/visualization_engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rendering/visualization_engine.cpp.o
 .PHONY : src/rendering/visualization_engine.cpp.o
 
 src/rendering/visualization_engine.i: src/rendering/visualization_engine.cpp.i
@@ -2344,6 +2517,7 @@ src/rendering/visualization_engine.i: src/rendering/visualization_engine.cpp.i
 # target to preprocess a source file
 src/rendering/visualization_engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rendering/visualization_engine.cpp.i
 .PHONY : src/rendering/visualization_engine.cpp.i
 
 src/rendering/visualization_engine.s: src/rendering/visualization_engine.cpp.s
@@ -2352,6 +2526,7 @@ src/rendering/visualization_engine.s: src/rendering/visualization_engine.cpp.s
 # target to generate assembly for a file
 src/rendering/visualization_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rendering/visualization_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/rendering/visualization_engine.cpp.s
 .PHONY : src/rendering/visualization_engine.cpp.s
 
 src/revolve.o: src/revolve.cpp.o
@@ -2360,6 +2535,7 @@ src/revolve.o: src/revolve.cpp.o
 # target to build an object file
 src/revolve.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/revolve.cpp.o
 .PHONY : src/revolve.cpp.o
 
 src/revolve.i: src/revolve.cpp.i
@@ -2368,6 +2544,7 @@ src/revolve.i: src/revolve.cpp.i
 # target to preprocess a source file
 src/revolve.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/revolve.cpp.i
 .PHONY : src/revolve.cpp.i
 
 src/revolve.s: src/revolve.cpp.s
@@ -2376,6 +2553,7 @@ src/revolve.s: src/revolve.cpp.s
 # target to generate assembly for a file
 src/revolve.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/revolve.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/revolve.cpp.s
 .PHONY : src/revolve.cpp.s
 
 src/serialization/protobuf_serializer.o: src/serialization/protobuf_serializer.cpp.o
@@ -2384,6 +2562,7 @@ src/serialization/protobuf_serializer.o: src/serialization/protobuf_serializer.c
 # target to build an object file
 src/serialization/protobuf_serializer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serialization/protobuf_serializer.cpp.o
 .PHONY : src/serialization/protobuf_serializer.cpp.o
 
 src/serialization/protobuf_serializer.i: src/serialization/protobuf_serializer.cpp.i
@@ -2392,6 +2571,7 @@ src/serialization/protobuf_serializer.i: src/serialization/protobuf_serializer.c
 # target to preprocess a source file
 src/serialization/protobuf_serializer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serialization/protobuf_serializer.cpp.i
 .PHONY : src/serialization/protobuf_serializer.cpp.i
 
 src/serialization/protobuf_serializer.s: src/serialization/protobuf_serializer.cpp.s
@@ -2400,6 +2580,7 @@ src/serialization/protobuf_serializer.s: src/serialization/protobuf_serializer.c
 # target to generate assembly for a file
 src/serialization/protobuf_serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serialization/protobuf_serializer.cpp.s
 .PHONY : src/serialization/protobuf_serializer.cpp.s
 
 src/serializer.o: src/serializer.cpp.o
@@ -2408,6 +2589,7 @@ src/serializer.o: src/serializer.cpp.o
 # target to build an object file
 src/serializer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serializer.cpp.o
 .PHONY : src/serializer.cpp.o
 
 src/serializer.i: src/serializer.cpp.i
@@ -2416,6 +2598,7 @@ src/serializer.i: src/serializer.cpp.i
 # target to preprocess a source file
 src/serializer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serializer.cpp.i
 .PHONY : src/serializer.cpp.i
 
 src/serializer.s: src/serializer.cpp.s
@@ -2424,6 +2607,7 @@ src/serializer.s: src/serializer.cpp.s
 # target to generate assembly for a file
 src/serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/serializer.cpp.s
 .PHONY : src/serializer.cpp.s
 
 src/simulation/stress_analyzer.o: src/simulation/stress_analyzer.cpp.o
@@ -2432,6 +2616,7 @@ src/simulation/stress_analyzer.o: src/simulation/stress_analyzer.cpp.o
 # target to build an object file
 src/simulation/stress_analyzer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/simulation/stress_analyzer.cpp.o
 .PHONY : src/simulation/stress_analyzer.cpp.o
 
 src/simulation/stress_analyzer.i: src/simulation/stress_analyzer.cpp.i
@@ -2440,6 +2625,7 @@ src/simulation/stress_analyzer.i: src/simulation/stress_analyzer.cpp.i
 # target to preprocess a source file
 src/simulation/stress_analyzer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/simulation/stress_analyzer.cpp.i
 .PHONY : src/simulation/stress_analyzer.cpp.i
 
 src/simulation/stress_analyzer.s: src/simulation/stress_analyzer.cpp.s
@@ -2448,6 +2634,7 @@ src/simulation/stress_analyzer.s: src/simulation/stress_analyzer.cpp.s
 # target to generate assembly for a file
 src/simulation/stress_analyzer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/simulation/stress_analyzer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/simulation/stress_analyzer.cpp.s
 .PHONY : src/simulation/stress_analyzer.cpp.s
 
 src/sketch/advanced_sketcher.o: src/sketch/advanced_sketcher.cpp.o
@@ -2456,6 +2643,7 @@ src/sketch/advanced_sketcher.o: src/sketch/advanced_sketcher.cpp.o
 # target to build an object file
 src/sketch/advanced_sketcher.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sketch/advanced_sketcher.cpp.o
 .PHONY : src/sketch/advanced_sketcher.cpp.o
 
 src/sketch/advanced_sketcher.i: src/sketch/advanced_sketcher.cpp.i
@@ -2464,6 +2652,7 @@ src/sketch/advanced_sketcher.i: src/sketch/advanced_sketcher.cpp.i
 # target to preprocess a source file
 src/sketch/advanced_sketcher.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sketch/advanced_sketcher.cpp.i
 .PHONY : src/sketch/advanced_sketcher.cpp.i
 
 src/sketch/advanced_sketcher.s: src/sketch/advanced_sketcher.cpp.s
@@ -2472,6 +2661,7 @@ src/sketch/advanced_sketcher.s: src/sketch/advanced_sketcher.cpp.s
 # target to generate assembly for a file
 src/sketch/advanced_sketcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sketch/advanced_sketcher.cpp.s
 .PHONY : src/sketch/advanced_sketcher.cpp.s
 
 src/sweep.o: src/sweep.cpp.o
@@ -2480,6 +2670,7 @@ src/sweep.o: src/sweep.cpp.o
 # target to build an object file
 src/sweep.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sweep.cpp.o
 .PHONY : src/sweep.cpp.o
 
 src/sweep.i: src/sweep.cpp.i
@@ -2488,6 +2679,7 @@ src/sweep.i: src/sweep.cpp.i
 # target to preprocess a source file
 src/sweep.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sweep.cpp.i
 .PHONY : src/sweep.cpp.i
 
 src/sweep.s: src/sweep.cpp.s
@@ -2496,6 +2688,7 @@ src/sweep.s: src/sweep.cpp.s
 # target to generate assembly for a file
 src/sweep.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sweep.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/sweep.cpp.s
 .PHONY : src/sweep.cpp.s
 
 src/transaction.o: src/transaction.cpp.o
@@ -2504,6 +2697,7 @@ src/transaction.o: src/transaction.cpp.o
 # target to build an object file
 src/transaction.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/transaction.cpp.o
 .PHONY : src/transaction.cpp.o
 
 src/transaction.i: src/transaction.cpp.i
@@ -2512,6 +2706,7 @@ src/transaction.i: src/transaction.cpp.i
 # target to preprocess a source file
 src/transaction.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/transaction.cpp.i
 .PHONY : src/transaction.cpp.i
 
 src/transaction.s: src/transaction.cpp.s
@@ -2520,6 +2715,7 @@ src/transaction.s: src/transaction.cpp.s
 # target to generate assembly for a file
 src/transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore_app.dir/build.make CMakeFiles/bendcore_app.dir/src/transaction.cpp.s
 .PHONY : src/transaction.cpp.s
 
 tests/test_acceptance.o: tests/test_acceptance.cpp.o
@@ -3764,6 +3960,7 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... bendcore"
+	@echo "... bendcore_app"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -3914,6 +4111,9 @@ help:
 	@echo "... src/loft.o"
 	@echo "... src/loft.i"
 	@echo "... src/loft.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/manufacturing.o"
 	@echo "... src/manufacturing.i"
 	@echo "... src/manufacturing.s"

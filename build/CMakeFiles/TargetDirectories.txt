@@ -49,6 +49,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_rest_api.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_help_system.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_cloud_sync.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/bendcore_app.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

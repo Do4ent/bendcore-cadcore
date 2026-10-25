@@ -153,6 +153,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_rest_api.dir/DependInfo.cmake"
   "CMakeFiles/test_help_system.dir/DependInfo.cmake"
   "CMakeFiles/test_cloud_sync.dir/DependInfo.cmake"
+  "CMakeFiles/bendcore_app.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

@@ -508,3 +508,10 @@ add_test(NAME HelpSystem COMMAND test_help_system)
 add_executable(test_cloud_sync tests/test_cloud_sync.cpp)
 target_link_libraries(test_cloud_sync bendcore gtest_main)
 add_test(NAME CloudSync COMMAND test_cloud_sync)
+
+# ═════════════════════════════════════════════════════════════════
+# Executable Application
+# ═════════════════════════════════════════════════════════════════
+
+add_executable(bendcore_app src/main.cpp ${BENDCORE_SOURCES})
+target_include_directories(bendcore_app PRIVATE include)
