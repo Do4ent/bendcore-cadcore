@@ -31,6 +31,13 @@ set(BENDCORE_SOURCES
     src/bezier_curve.cpp
     src/boolean_operations.cpp
     src/mesh_generator.cpp
+    src/pipe_profile.cpp
+    src/pipe_fittings.cpp
+    src/constraint_system.cpp
+    src/bend_calculator.cpp
+    src/format_exporters.cpp
+    src/manufacturing.cpp
+    src/database_manager.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -156,3 +163,28 @@ add_test(NAME Acceptance COMMAND test_acceptance)
 
 # Advanced Geometry Features (CAD-CORE-026, CAD-CORE-027)
 # Tests are placeholder implementations for future development
+
+# Pipe Components Tests (PIPE-001)
+add_executable(test_pipe_components tests/test_pipe_components.cpp)
+target_link_libraries(test_pipe_components bendcore gtest_main)
+add_test(NAME PipeComponents COMMAND test_pipe_components)
+
+# Bend Calculator Tests (BEND-001)
+add_executable(test_bend_calculator tests/test_bend_calculator.cpp)
+target_link_libraries(test_bend_calculator bendcore gtest_main)
+add_test(NAME BendCalculator COMMAND test_bend_calculator)
+
+# Format Exporters Tests (IO-001)
+add_executable(test_format_exporters tests/test_format_exporters.cpp)
+target_link_libraries(test_format_exporters bendcore gtest_main)
+add_test(NAME FormatExporters COMMAND test_format_exporters)
+
+# Manufacturing Tests (MFG-001)
+add_executable(test_manufacturing tests/test_manufacturing.cpp)
+target_link_libraries(test_manufacturing bendcore gtest_main)
+add_test(NAME Manufacturing COMMAND test_manufacturing)
+
+# Database Manager Tests (DB-001)
+add_executable(test_database_manager tests/test_database_manager.cpp)
+target_link_libraries(test_database_manager bendcore gtest_main)
+add_test(NAME DatabaseManager COMMAND test_database_manager)
