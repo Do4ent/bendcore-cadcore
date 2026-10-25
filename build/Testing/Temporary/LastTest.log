@@ -1,10 +1,10 @@
-Start testing: Oct 25 10:35 CET
+Start testing: Oct 25 10:37 CET
 ----------------------------------------------------------
-1/2 Testing: EntityId
-1/2 Test: EntityId
+1/3 Testing: EntityId
+1/3 Test: EntityId
 Command: "/tmp/bendcore-cadcore/build/test_entity_id"
 Directory: /tmp/bendcore-cadcore/build
-"EntityId" start time: Oct 25 10:35 CET
+"EntityId" start time: Oct 25 10:37 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 15 tests from 1 test suite.
@@ -25,7 +25,7 @@ Output:
 [ RUN      ] EntityIdTest.SerializationWithoutLoss
 [       OK ] EntityIdTest.SerializationWithoutLoss (0 ms)
 [ RUN      ] EntityIdTest.GenerateUniqueIds
-[       OK ] EntityIdTest.GenerateUniqueIds (275 ms)
+[       OK ] EntityIdTest.GenerateUniqueIds (309 ms)
 [ RUN      ] EntityIdTest.RoundTripSerialization
 [       OK ] EntityIdTest.RoundTripSerialization (0 ms)
 [ RUN      ] EntityIdTest.InvalidIdsRejected
@@ -40,24 +40,24 @@ Output:
 [       OK ] EntityIdTest.NullIdDetection (0 ms)
 [ RUN      ] EntityIdTest.ComparisonOperators
 [       OK ] EntityIdTest.ComparisonOperators (0 ms)
-[----------] 15 tests from EntityIdTest (276 ms total)
+[----------] 15 tests from EntityIdTest (310 ms total)
 
 [----------] Global test environment tear-down
-[==========] 15 tests from 1 test suite ran. (276 ms total)
+[==========] 15 tests from 1 test suite ran. (310 ms total)
 [  PASSED  ] 15 tests.
 <end of output>
-Test time =   0.28 sec
+Test time =   0.31 sec
 ----------------------------------------------------------
 Test Passed.
-"EntityId" end time: Oct 25 10:35 CET
+"EntityId" end time: Oct 25 10:37 CET
 "EntityId" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: CadDocument
-2/2 Test: CadDocument
+2/3 Testing: CadDocument
+2/3 Test: CadDocument
 Command: "/tmp/bendcore-cadcore/build/test_cad_document"
 Directory: /tmp/bendcore-cadcore/build
-"CadDocument" start time: Oct 25 10:35 CET
+"CadDocument" start time: Oct 25 10:37 CET
 Output:
 ----------------------------------------------------------
 [==========] Running 20 tests from 1 test suite.
@@ -76,7 +76,7 @@ Output:
 [ RUN      ] CadDocumentTest.SequentialChangesIncreaseRevision
 [       OK ] CadDocumentTest.SequentialChangesIncreaseRevision (0 ms)
 [ RUN      ] CadDocumentTest.LargeSequentialChanges
-[       OK ] CadDocumentTest.LargeSequentialChanges (39 ms)
+[       OK ] CadDocumentTest.LargeSequentialChanges (40 ms)
 [ RUN      ] CadDocumentTest.RemoveEntityMarksDeleted
 [       OK ] CadDocumentTest.RemoveEntityMarksDeleted (0 ms)
 [ RUN      ] CadDocumentTest.DocumentMaintainsInternalReferences
@@ -103,17 +103,80 @@ Output:
 [       OK ] CadDocumentTest.GetAllEntityIds (0 ms)
 [ RUN      ] CadDocumentTest.DocumentRevisionScopedCorrectly
 [       OK ] CadDocumentTest.DocumentRevisionScopedCorrectly (0 ms)
-[----------] 20 tests from CadDocumentTest (40 ms total)
+[----------] 20 tests from CadDocumentTest (41 ms total)
 
 [----------] Global test environment tear-down
-[==========] 20 tests from 1 test suite ran. (40 ms total)
+[==========] 20 tests from 1 test suite ran. (41 ms total)
 [  PASSED  ] 20 tests.
 <end of output>
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"CadDocument" end time: Oct 25 10:35 CET
+"CadDocument" end time: Oct 25 10:37 CET
 "CadDocument" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 25 10:35 CET
+3/3 Testing: EntityTree
+3/3 Test: EntityTree
+Command: "/tmp/bendcore-cadcore/build/test_entity_tree"
+Directory: /tmp/bendcore-cadcore/build
+"EntityTree" start time: Oct 25 10:37 CET
+Output:
+----------------------------------------------------------
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from EntityTreeTest
+[ RUN      ] EntityTreeTest.CreateRootObjects
+[       OK ] EntityTreeTest.CreateRootObjects (0 ms)
+[ RUN      ] EntityTreeTest.AddChildren
+[       OK ] EntityTreeTest.AddChildren (0 ms)
+[ RUN      ] EntityTreeTest.NoCyclesAllowed
+[       OK ] EntityTreeTest.NoCyclesAllowed (0 ms)
+[ RUN      ] EntityTreeTest.CantAssignSelfAsParent
+[       OK ] EntityTreeTest.CantAssignSelfAsParent (0 ms)
+[ RUN      ] EntityTreeTest.CantPutParentInChild
+[       OK ] EntityTreeTest.CantPutParentInChild (0 ms)
+[ RUN      ] EntityTreeTest.MovingDoesntChangeId
+[       OK ] EntityTreeTest.MovingDoesntChangeId (0 ms)
+[ RUN      ] EntityTreeTest.GetEntityPath
+[       OK ] EntityTreeTest.GetEntityPath (0 ms)
+[ RUN      ] EntityTreeTest.GetPathString
+[       OK ] EntityTreeTest.GetPathString (0 ms)
+[ RUN      ] EntityTreeTest.DeleteSubtree
+[       OK ] EntityTreeTest.DeleteSubtree (0 ms)
+[ RUN      ] EntityTreeTest.ValidateTree
+[       OK ] EntityTreeTest.ValidateTree (0 ms)
+[ RUN      ] EntityTreeTest.GetDepth
+[       OK ] EntityTreeTest.GetDepth (0 ms)
+[ RUN      ] EntityTreeTest.GetDescendants
+[       OK ] EntityTreeTest.GetDescendants (0 ms)
+[ RUN      ] EntityTreeTest.AncestorDescendantRelationships
+[       OK ] EntityTreeTest.AncestorDescendantRelationships (0 ms)
+[ RUN      ] EntityTreeTest.GetAllRoots
+[       OK ] EntityTreeTest.GetAllRoots (0 ms)
+[ RUN      ] EntityTreeTest.ComplexHierarchy
+[       OK ] EntityTreeTest.ComplexHierarchy (0 ms)
+[ RUN      ] EntityTreeTest.DetectCycles
+[       OK ] EntityTreeTest.DetectCycles (0 ms)
+[ RUN      ] EntityTreeTest.MoveBetweenBranches
+[       OK ] EntityTreeTest.MoveBetweenBranches (0 ms)
+[ RUN      ] EntityTreeTest.HierarchyAfterOperations
+[       OK ] EntityTreeTest.HierarchyAfterOperations (0 ms)
+[ RUN      ] EntityTreeTest.LargeHierarchy
+[       OK ] EntityTreeTest.LargeHierarchy (1 ms)
+[ RUN      ] EntityTreeTest.PathConsistency
+[       OK ] EntityTreeTest.PathConsistency (0 ms)
+[----------] 20 tests from EntityTreeTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 20 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EntityTree" end time: Oct 25 10:37 CET
+"EntityTree" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 10:37 CET

@@ -1,6 +1,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/bendcore.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_entity_id.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_cad_document.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_entity_tree.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

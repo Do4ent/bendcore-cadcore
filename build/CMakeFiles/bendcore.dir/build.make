@@ -97,19 +97,35 @@ CMakeFiles/bendcore.dir/src/cad_document.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/cad_document.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/cad_document.cpp -o CMakeFiles/bendcore.dir/src/cad_document.cpp.s
 
+CMakeFiles/bendcore.dir/src/entity_tree.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/entity_tree.cpp.o: /tmp/bendcore-cadcore/src/entity_tree.cpp
+CMakeFiles/bendcore.dir/src/entity_tree.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bendcore.dir/src/entity_tree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/entity_tree.cpp.o -MF CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d -o CMakeFiles/bendcore.dir/src/entity_tree.cpp.o -c /tmp/bendcore-cadcore/src/entity_tree.cpp
+
+CMakeFiles/bendcore.dir/src/entity_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/entity_tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/entity_tree.cpp > CMakeFiles/bendcore.dir/src/entity_tree.cpp.i
+
+CMakeFiles/bendcore.dir/src/entity_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/entity_tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/entity_tree.cpp -o CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
+
 # Object files for target bendcore
 bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" \
-"CMakeFiles/bendcore.dir/src/cad_document.cpp.o"
+"CMakeFiles/bendcore.dir/src/cad_document.cpp.o" \
+"CMakeFiles/bendcore.dir/src/entity_tree.cpp.o"
 
 # External object files for target bendcore
 bendcore_EXTERNAL_OBJECTS =
 
 libbendcore.a: CMakeFiles/bendcore.dir/src/entity_id.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/cad_document.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/entity_tree.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/build.make
 libbendcore.a: CMakeFiles/bendcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbendcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libbendcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bendcore.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bendcore.dir/link.txt --verbose=$(VERBOSE)
 

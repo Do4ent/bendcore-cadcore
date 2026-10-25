@@ -211,6 +211,19 @@ test_cad_document/fast:
 .PHONY : test_cad_document/fast
 
 #=============================================================================
+# Target rules for targets named test_entity_tree
+
+# Build rule for target.
+test_entity_tree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_entity_tree
+.PHONY : test_entity_tree
+
+# fast build rule for target.
+test_entity_tree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/build
+.PHONY : test_entity_tree/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -310,6 +323,30 @@ src/entity_id.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_id.cpp.s
 .PHONY : src/entity_id.cpp.s
 
+src/entity_tree.o: src/entity_tree.cpp.o
+.PHONY : src/entity_tree.o
+
+# target to build an object file
+src/entity_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.o
+.PHONY : src/entity_tree.cpp.o
+
+src/entity_tree.i: src/entity_tree.cpp.i
+.PHONY : src/entity_tree.i
+
+# target to preprocess a source file
+src/entity_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.i
+.PHONY : src/entity_tree.cpp.i
+
+src/entity_tree.s: src/entity_tree.cpp.s
+.PHONY : src/entity_tree.s
+
+# target to generate assembly for a file
+src/entity_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
+.PHONY : src/entity_tree.cpp.s
+
 tests/test_cad_document.o: tests/test_cad_document.cpp.o
 .PHONY : tests/test_cad_document.o
 
@@ -358,6 +395,30 @@ tests/test_entity_id.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_id.dir/build.make CMakeFiles/test_entity_id.dir/tests/test_entity_id.cpp.s
 .PHONY : tests/test_entity_id.cpp.s
 
+tests/test_entity_tree.o: tests/test_entity_tree.cpp.o
+.PHONY : tests/test_entity_tree.o
+
+# target to build an object file
+tests/test_entity_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.o
+.PHONY : tests/test_entity_tree.cpp.o
+
+tests/test_entity_tree.i: tests/test_entity_tree.cpp.i
+.PHONY : tests/test_entity_tree.i
+
+# target to preprocess a source file
+tests/test_entity_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.i
+.PHONY : tests/test_entity_tree.cpp.i
+
+tests/test_entity_tree.s: tests/test_entity_tree.cpp.s
+.PHONY : tests/test_entity_tree.s
+
+# target to generate assembly for a file
+tests/test_entity_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.s
+.PHONY : tests/test_entity_tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -378,18 +439,25 @@ help:
 	@echo "... gtest_main"
 	@echo "... test_cad_document"
 	@echo "... test_entity_id"
+	@echo "... test_entity_tree"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
 	@echo "... src/cad_document.s"
 	@echo "... src/entity_id.o"
 	@echo "... src/entity_id.i"
 	@echo "... src/entity_id.s"
+	@echo "... src/entity_tree.o"
+	@echo "... src/entity_tree.i"
+	@echo "... src/entity_tree.s"
 	@echo "... tests/test_cad_document.o"
 	@echo "... tests/test_cad_document.i"
 	@echo "... tests/test_cad_document.s"
 	@echo "... tests/test_entity_id.o"
 	@echo "... tests/test_entity_id.i"
 	@echo "... tests/test_entity_id.s"
+	@echo "... tests/test_entity_tree.o"
+	@echo "... tests/test_entity_tree.i"
+	@echo "... tests/test_entity_tree.s"
 .PHONY : help
 
 
