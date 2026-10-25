@@ -41,6 +41,7 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_nc_generator.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_sheet_metal_ops.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_advanced_sketcher.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_inspection_tools.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

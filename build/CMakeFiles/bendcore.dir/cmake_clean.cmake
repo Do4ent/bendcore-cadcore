@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.o"
+  "CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o"
   "CMakeFiles/bendcore.dir/src/assembly/assembly_ui.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/assembly/mate_solver.cpp.o"

@@ -62,6 +62,8 @@ set(BENDCORE_SOURCES
     src/geometry/sheet_metal_ops.cpp
     # Phase M12: Advanced Sketcher Tools
     src/sketch/advanced_sketcher.cpp
+    # Phase M13: Inspection & Quality Analysis
+    src/analysis/inspection_tools.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -434,3 +436,12 @@ add_test(NAME SheetMetalOps COMMAND test_sheet_metal_ops)
 add_executable(test_advanced_sketcher tests/test_advanced_sketcher.cpp)
 target_link_libraries(test_advanced_sketcher bendcore gtest_main)
 add_test(NAME AdvancedSketcher COMMAND test_advanced_sketcher)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M13: Inspection & Quality Analysis
+# ═════════════════════════════════════════════════════════════════
+
+# Inspection Tests (CAD-DEV-151 to CAD-DEV-175)
+add_executable(test_inspection_tools tests/test_inspection_tools.cpp)
+target_link_libraries(test_inspection_tools bendcore gtest_main)
+add_test(NAME InspectionTools COMMAND test_inspection_tools)

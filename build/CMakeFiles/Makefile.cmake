@@ -145,6 +145,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_nc_generator.dir/DependInfo.cmake"
   "CMakeFiles/test_sheet_metal_ops.dir/DependInfo.cmake"
   "CMakeFiles/test_advanced_sketcher.dir/DependInfo.cmake"
+  "CMakeFiles/test_inspection_tools.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

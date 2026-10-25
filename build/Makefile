@@ -731,6 +731,19 @@ test_advanced_sketcher/fast:
 .PHONY : test_advanced_sketcher/fast
 
 #=============================================================================
+# Target rules for targets named test_inspection_tools
+
+# Build rule for target.
+test_inspection_tools: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_inspection_tools
+.PHONY : test_inspection_tools
+
+# fast build rule for target.
+test_inspection_tools/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_inspection_tools.dir/build.make CMakeFiles/test_inspection_tools.dir/build
+.PHONY : test_inspection_tools/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1145,6 +1158,30 @@ ContinuousSubmit: cmake_check_build_system
 ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
+
+src/analysis/inspection_tools.o: src/analysis/inspection_tools.cpp.o
+.PHONY : src/analysis/inspection_tools.o
+
+# target to build an object file
+src/analysis/inspection_tools.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.o
+.PHONY : src/analysis/inspection_tools.cpp.o
+
+src/analysis/inspection_tools.i: src/analysis/inspection_tools.cpp.i
+.PHONY : src/analysis/inspection_tools.i
+
+# target to preprocess a source file
+src/analysis/inspection_tools.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.i
+.PHONY : src/analysis/inspection_tools.cpp.i
+
+src/analysis/inspection_tools.s: src/analysis/inspection_tools.cpp.s
+.PHONY : src/analysis/inspection_tools.s
+
+# target to generate assembly for a file
+src/analysis/inspection_tools.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/analysis/inspection_tools.cpp.s
+.PHONY : src/analysis/inspection_tools.cpp.s
 
 src/assembly/assembly_ui.o: src/assembly/assembly_ui.cpp.o
 .PHONY : src/assembly/assembly_ui.o
@@ -2730,6 +2767,30 @@ tests/test_history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_history_stack.dir/build.make CMakeFiles/test_history_stack.dir/tests/test_history_stack.cpp.s
 .PHONY : tests/test_history_stack.cpp.s
 
+tests/test_inspection_tools.o: tests/test_inspection_tools.cpp.o
+.PHONY : tests/test_inspection_tools.o
+
+# target to build an object file
+tests/test_inspection_tools.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_inspection_tools.dir/build.make CMakeFiles/test_inspection_tools.dir/tests/test_inspection_tools.cpp.o
+.PHONY : tests/test_inspection_tools.cpp.o
+
+tests/test_inspection_tools.i: tests/test_inspection_tools.cpp.i
+.PHONY : tests/test_inspection_tools.i
+
+# target to preprocess a source file
+tests/test_inspection_tools.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_inspection_tools.dir/build.make CMakeFiles/test_inspection_tools.dir/tests/test_inspection_tools.cpp.i
+.PHONY : tests/test_inspection_tools.cpp.i
+
+tests/test_inspection_tools.s: tests/test_inspection_tools.cpp.s
+.PHONY : tests/test_inspection_tools.s
+
+# target to generate assembly for a file
+tests/test_inspection_tools.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_inspection_tools.dir/build.make CMakeFiles/test_inspection_tools.dir/tests/test_inspection_tools.cpp.s
+.PHONY : tests/test_inspection_tools.cpp.s
+
 tests/test_legacy_adapter.o: tests/test_legacy_adapter.cpp.o
 .PHONY : tests/test_legacy_adapter.o
 
@@ -3301,6 +3362,7 @@ help:
 	@echo "... test_geometry_engine"
 	@echo "... test_geometry_ops"
 	@echo "... test_history_stack"
+	@echo "... test_inspection_tools"
 	@echo "... test_legacy_adapter"
 	@echo "... test_loft_feature"
 	@echo "... test_manufacturing"
@@ -3322,6 +3384,9 @@ help:
 	@echo "... test_surface_features"
 	@echo "... test_sweep_feature"
 	@echo "... test_transaction"
+	@echo "... src/analysis/inspection_tools.o"
+	@echo "... src/analysis/inspection_tools.i"
+	@echo "... src/analysis/inspection_tools.s"
 	@echo "... src/assembly/assembly_ui.o"
 	@echo "... src/assembly/assembly_ui.i"
 	@echo "... src/assembly/assembly_ui.s"
@@ -3520,6 +3585,9 @@ help:
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"
+	@echo "... tests/test_inspection_tools.o"
+	@echo "... tests/test_inspection_tools.i"
+	@echo "... tests/test_inspection_tools.s"
 	@echo "... tests/test_legacy_adapter.o"
 	@echo "... tests/test_legacy_adapter.i"
 	@echo "... tests/test_legacy_adapter.s"
