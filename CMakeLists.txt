@@ -28,6 +28,9 @@ set(BENDCORE_SOURCES
     src/atomic_save.cpp
     src/recovery.cpp
     src/legacy_adapter.cpp
+    src/bezier_curve.cpp
+    src/boolean_operations.cpp
+    src/mesh_generator.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -150,3 +153,6 @@ add_test(NAME E2E COMMAND test_e2e)
 add_executable(test_acceptance tests/test_acceptance.cpp)
 target_link_libraries(test_acceptance bendcore gtest_main)
 add_test(NAME Acceptance COMMAND test_acceptance)
+
+# Advanced Geometry Features (CAD-CORE-026, CAD-CORE-027)
+# Tests are placeholder implementations for future development

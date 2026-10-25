@@ -1,0 +1,180 @@
+.property-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-left: 1px solid #ddd;
+  max-width: 400px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.property-panel.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+.entity-header {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid #4f46e5;
+}
+
+.entity-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.entity-type {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.entity-id {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  color: #999;
+  font-family: monospace;
+}
+
+.parameters-section {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.parameters-section h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 0.5rem;
+}
+
+.parameters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.parameter-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.parameter-item label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.parameter-item input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-family: monospace;
+}
+
+.parameter-item input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.no-parameters {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.quick-params {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.quick-params h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 0.5rem;
+}
+
+.quick-param-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quick-param-btn {
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.quick-param-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.entity-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #e0e0e0;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}

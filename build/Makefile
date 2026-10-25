@@ -533,6 +533,54 @@ src/atomic_save.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.s
 .PHONY : src/atomic_save.cpp.s
 
+src/bezier_curve.o: src/bezier_curve.cpp.o
+.PHONY : src/bezier_curve.o
+
+# target to build an object file
+src/bezier_curve.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o
+.PHONY : src/bezier_curve.cpp.o
+
+src/bezier_curve.i: src/bezier_curve.cpp.i
+.PHONY : src/bezier_curve.i
+
+# target to preprocess a source file
+src/bezier_curve.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.i
+.PHONY : src/bezier_curve.cpp.i
+
+src/bezier_curve.s: src/bezier_curve.cpp.s
+.PHONY : src/bezier_curve.s
+
+# target to generate assembly for a file
+src/bezier_curve.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bezier_curve.cpp.s
+.PHONY : src/bezier_curve.cpp.s
+
+src/boolean_operations.o: src/boolean_operations.cpp.o
+.PHONY : src/boolean_operations.o
+
+# target to build an object file
+src/boolean_operations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.o
+.PHONY : src/boolean_operations.cpp.o
+
+src/boolean_operations.i: src/boolean_operations.cpp.i
+.PHONY : src/boolean_operations.i
+
+# target to preprocess a source file
+src/boolean_operations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.i
+.PHONY : src/boolean_operations.cpp.i
+
+src/boolean_operations.s: src/boolean_operations.cpp.s
+.PHONY : src/boolean_operations.s
+
+# target to generate assembly for a file
+src/boolean_operations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/boolean_operations.cpp.s
+.PHONY : src/boolean_operations.cpp.s
+
 src/brep.o: src/brep.cpp.o
 .PHONY : src/brep.o
 
@@ -820,6 +868,30 @@ src/legacy_adapter.s: src/legacy_adapter.cpp.s
 src/legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
 .PHONY : src/legacy_adapter.cpp.s
+
+src/mesh_generator.o: src/mesh_generator.cpp.o
+.PHONY : src/mesh_generator.o
+
+# target to build an object file
+src/mesh_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o
+.PHONY : src/mesh_generator.cpp.o
+
+src/mesh_generator.i: src/mesh_generator.cpp.i
+.PHONY : src/mesh_generator.i
+
+# target to preprocess a source file
+src/mesh_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.i
+.PHONY : src/mesh_generator.cpp.i
+
+src/mesh_generator.s: src/mesh_generator.cpp.s
+.PHONY : src/mesh_generator.s
+
+# target to generate assembly for a file
+src/mesh_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s
+.PHONY : src/mesh_generator.cpp.s
 
 src/parameter_store.o: src/parameter_store.cpp.o
 .PHONY : src/parameter_store.o
@@ -1511,6 +1583,12 @@ help:
 	@echo "... src/atomic_save.o"
 	@echo "... src/atomic_save.i"
 	@echo "... src/atomic_save.s"
+	@echo "... src/bezier_curve.o"
+	@echo "... src/bezier_curve.i"
+	@echo "... src/bezier_curve.s"
+	@echo "... src/boolean_operations.o"
+	@echo "... src/boolean_operations.i"
+	@echo "... src/boolean_operations.s"
 	@echo "... src/brep.o"
 	@echo "... src/brep.i"
 	@echo "... src/brep.s"
@@ -1547,6 +1625,9 @@ help:
 	@echo "... src/legacy_adapter.o"
 	@echo "... src/legacy_adapter.i"
 	@echo "... src/legacy_adapter.s"
+	@echo "... src/mesh_generator.o"
+	@echo "... src/mesh_generator.i"
+	@echo "... src/mesh_generator.s"
 	@echo "... src/parameter_store.o"
 	@echo "... src/parameter_store.i"
 	@echo "... src/parameter_store.s"

@@ -1,0 +1,80 @@
+cmake_minimum_required(VERSION 3.20)
+project(BendCore-CAD-CORE-WASM VERSION 0.1.0 LANGUAGES CXX)
+
+# Emscripten settings
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -pedantic -fPIC")
+
+# WASM-specific flags
+set(EMSCRIPTEN_FLAGS "-s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='[\"ccall\",\"cwrap\",\"getValue\",\"setValue\"]'")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EMSCRIPTEN_FLAGS}")
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+# Core library sources (same as native build)
+set(BENDCORE_SOURCES
+    src/entity_id.cpp
+    src/cad_document.cpp
+    src/entity_tree.cpp
+    src/command_manager.cpp
+    src/transaction.cpp
+    src/history_stack.cpp
+    src/document_event_bus.cpp
+    src/parameter_store.cpp
+    src/dependency_graph.cpp
+    src/rebuild_engine.cpp
+    src/geometry_engine.cpp
+    src/brep.cpp
+    src/feature_system.cpp
+    src/geometry_cache.cpp
+    src/project_format.cpp
+    src/serializer.cpp
+    src/atomic_save.cpp
+    src/recovery.cpp
+    src/legacy_adapter.cpp
+)
+
+# Add WebAssembly bindings source
+list(APPEND BENDCORE_SOURCES src/wasm_bindings.cpp)
+
+# Create WASM library
+add_executable(bendcore_wasm.js ${BENDCORE_SOURCES})
+
+# Emscripten-specific linking
+target_link_options(bendcore_wasm.js PRIVATE
+    -s WASM=1
+    -s ALLOW_MEMORY_GROWTH=1
+    -s EXTRA_EXPORTED_RUNTIME_METHODS="['ccall','cwrap','getValue','setValue']"
+    -s EXPORT_NAME="BendCoreModule"
+    -s MODULARIZE=1
+    -s ENVIRONMENT=web,webworker
+    --bind
+)
+
+# Optimize for production
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    target_link_options(bendcore_wasm.js PRIVATE
+        -O3
+        -s AGGRESSIVE_VARIABLE_ELIMINATION=1
+    )
+endif()
+
+# Set output directory
+set_target_properties(bendcore_wasm.js PROPERTIES
+    SUFFIX ".js"
+    PREFIX ""
+)
+
+# Copy generated files to web directory
+add_custom_command(TARGET bendcore_wasm.js POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_BINARY_DIR}/bendcore_wasm.js
+        ${CMAKE_CURRENT_SOURCE_DIR}/web/public/lib/bendcore_wasm.js
+    COMMAND ${CMAKE_COMMAND} -E copy
+        ${CMAKE_CURRENT_BINARY_DIR}/bendcore_wasm.wasm
+        ${CMAKE_CURRENT_SOURCE_DIR}/web/public/lib/bendcore_wasm.wasm
+)
+
+message(STATUS "WebAssembly build configured")
+message(STATUS "Output: bendcore_wasm.js and bendcore_wasm.wasm")
