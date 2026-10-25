@@ -13,6 +13,7 @@ set(BENDCORE_SOURCES
     src/cad_document.cpp
     src/entity_tree.cpp
     src/command_manager.cpp
+    src/transaction.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -50,3 +51,8 @@ add_test(NAME EntityTree COMMAND test_entity_tree)
 add_executable(test_command_manager tests/test_command_manager.cpp)
 target_link_libraries(test_command_manager bendcore gtest_main)
 add_test(NAME CommandManager COMMAND test_command_manager)
+
+# CAD-CORE-006: Transaction tests
+add_executable(test_transaction tests/test_transaction.cpp)
+target_link_libraries(test_transaction bendcore gtest_main)
+add_test(NAME Transaction COMMAND test_transaction)

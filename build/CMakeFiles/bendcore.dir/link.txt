@@ -1,2 +1,2 @@
-/usr/bin/ar qc libbendcore.a CMakeFiles/bendcore.dir/src/entity_id.cpp.o CMakeFiles/bendcore.dir/src/cad_document.cpp.o CMakeFiles/bendcore.dir/src/entity_tree.cpp.o CMakeFiles/bendcore.dir/src/command_manager.cpp.o
+/usr/bin/ar qc libbendcore.a CMakeFiles/bendcore.dir/src/entity_id.cpp.o CMakeFiles/bendcore.dir/src/cad_document.cpp.o CMakeFiles/bendcore.dir/src/entity_tree.cpp.o CMakeFiles/bendcore.dir/src/command_manager.cpp.o CMakeFiles/bendcore.dir/src/transaction.cpp.o
 /usr/bin/ranlib libbendcore.a

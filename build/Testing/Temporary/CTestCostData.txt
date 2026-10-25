@@ -1,5 +1,6 @@
-EntityId 4 0.07266
-CadDocument 4 0.01231
-EntityTree 3 0.00194646
-CommandManager 1 0.00437774
+EntityId 8 0.0431036
+CadDocument 8 0.00810054
+EntityTree 7 0.00106462
+CommandManager 5 0.000885311
+Transaction 1 0.0038028
 ---

@@ -237,6 +237,19 @@ test_command_manager/fast:
 .PHONY : test_command_manager/fast
 
 #=============================================================================
+# Target rules for targets named test_transaction
+
+# Build rule for target.
+test_transaction: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_transaction
+.PHONY : test_transaction
+
+# fast build rule for target.
+test_transaction/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_transaction.dir/build.make CMakeFiles/test_transaction.dir/build
+.PHONY : test_transaction/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -384,6 +397,30 @@ src/entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_tree.cpp.s
 .PHONY : src/entity_tree.cpp.s
 
+src/transaction.o: src/transaction.cpp.o
+.PHONY : src/transaction.o
+
+# target to build an object file
+src/transaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.o
+.PHONY : src/transaction.cpp.o
+
+src/transaction.i: src/transaction.cpp.i
+.PHONY : src/transaction.i
+
+# target to preprocess a source file
+src/transaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.i
+.PHONY : src/transaction.cpp.i
+
+src/transaction.s: src/transaction.cpp.s
+.PHONY : src/transaction.s
+
+# target to generate assembly for a file
+src/transaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.s
+.PHONY : src/transaction.cpp.s
+
 tests/test_cad_document.o: tests/test_cad_document.cpp.o
 .PHONY : tests/test_cad_document.o
 
@@ -480,6 +517,30 @@ tests/test_entity_tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_entity_tree.dir/build.make CMakeFiles/test_entity_tree.dir/tests/test_entity_tree.cpp.s
 .PHONY : tests/test_entity_tree.cpp.s
 
+tests/test_transaction.o: tests/test_transaction.cpp.o
+.PHONY : tests/test_transaction.o
+
+# target to build an object file
+tests/test_transaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_transaction.dir/build.make CMakeFiles/test_transaction.dir/tests/test_transaction.cpp.o
+.PHONY : tests/test_transaction.cpp.o
+
+tests/test_transaction.i: tests/test_transaction.cpp.i
+.PHONY : tests/test_transaction.i
+
+# target to preprocess a source file
+tests/test_transaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_transaction.dir/build.make CMakeFiles/test_transaction.dir/tests/test_transaction.cpp.i
+.PHONY : tests/test_transaction.cpp.i
+
+tests/test_transaction.s: tests/test_transaction.cpp.s
+.PHONY : tests/test_transaction.s
+
+# target to generate assembly for a file
+tests/test_transaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_transaction.dir/build.make CMakeFiles/test_transaction.dir/tests/test_transaction.cpp.s
+.PHONY : tests/test_transaction.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -502,6 +563,7 @@ help:
 	@echo "... test_command_manager"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
+	@echo "... test_transaction"
 	@echo "... src/cad_document.o"
 	@echo "... src/cad_document.i"
 	@echo "... src/cad_document.s"
@@ -514,6 +576,9 @@ help:
 	@echo "... src/entity_tree.o"
 	@echo "... src/entity_tree.i"
 	@echo "... src/entity_tree.s"
+	@echo "... src/transaction.o"
+	@echo "... src/transaction.i"
+	@echo "... src/transaction.s"
 	@echo "... tests/test_cad_document.o"
 	@echo "... tests/test_cad_document.i"
 	@echo "... tests/test_cad_document.s"
@@ -526,6 +591,9 @@ help:
 	@echo "... tests/test_entity_tree.o"
 	@echo "... tests/test_entity_tree.i"
 	@echo "... tests/test_entity_tree.s"
+	@echo "... tests/test_transaction.o"
+	@echo "... tests/test_transaction.i"
+	@echo "... tests/test_transaction.s"
 .PHONY : help
 
 

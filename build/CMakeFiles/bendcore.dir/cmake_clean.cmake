@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/entity_id.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o"
   "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/transaction.cpp.o"
+  "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   "libbendcore.a"
   "libbendcore.pdb"
 )

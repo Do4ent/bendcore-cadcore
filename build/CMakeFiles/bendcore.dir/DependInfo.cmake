@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/command_manager.cpp" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_id.cpp" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_id.cpp.o.d"
   "/tmp/bendcore-cadcore/src/entity_tree.cpp" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/transaction.cpp" "CMakeFiles/bendcore.dir/src/transaction.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
