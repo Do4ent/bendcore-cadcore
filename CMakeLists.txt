@@ -23,6 +23,10 @@ set(BENDCORE_SOURCES
     src/brep.cpp
     src/feature_system.cpp
     src/geometry_cache.cpp
+    src/project_format.cpp
+    src/serializer.cpp
+    src/atomic_save.cpp
+    src/recovery.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -110,3 +114,23 @@ add_test(NAME FeatureSystem COMMAND test_feature_system)
 add_executable(test_geometry_cache tests/test_geometry_cache.cpp)
 target_link_libraries(test_geometry_cache bendcore gtest_main)
 add_test(NAME GeometryCache COMMAND test_geometry_cache)
+
+# CAD-CORE-017: Project Format tests
+add_executable(test_project_format tests/test_project_format.cpp)
+target_link_libraries(test_project_format bendcore gtest_main)
+add_test(NAME ProjectFormat COMMAND test_project_format)
+
+# CAD-CORE-018: Serialization tests
+add_executable(test_serializer tests/test_serializer.cpp)
+target_link_libraries(test_serializer bendcore gtest_main)
+add_test(NAME Serializer COMMAND test_serializer)
+
+# CAD-CORE-019: Atomic Save tests
+add_executable(test_atomic_save tests/test_atomic_save.cpp)
+target_link_libraries(test_atomic_save bendcore gtest_main)
+add_test(NAME AtomicSave COMMAND test_atomic_save)
+
+# CAD-CORE-020: Recovery tests
+add_executable(test_recovery tests/test_recovery.cpp)
+target_link_libraries(test_recovery bendcore gtest_main)
+add_test(NAME Recovery COMMAND test_recovery)

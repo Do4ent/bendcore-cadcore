@@ -13,6 +13,10 @@
 /tmp/bendcore-cadcore/build/CMakeFiles/test_brep.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_feature_system.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test_geometry_cache.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_project_format.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_serializer.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_atomic_save.dir
+/tmp/bendcore-cadcore/build/CMakeFiles/test_recovery.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/test.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/edit_cache.dir
 /tmp/bendcore-cadcore/build/CMakeFiles/rebuild_cache.dir

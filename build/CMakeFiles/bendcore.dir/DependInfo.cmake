@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/tmp/bendcore-cadcore/src/atomic_save.cpp" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/atomic_save.cpp.o.d"
   "/tmp/bendcore-cadcore/src/brep.cpp" "CMakeFiles/bendcore.dir/src/brep.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/brep.cpp.o.d"
   "/tmp/bendcore-cadcore/src/cad_document.cpp" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/cad_document.cpp.o.d"
   "/tmp/bendcore-cadcore/src/command_manager.cpp" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/command_manager.cpp.o.d"
@@ -20,7 +21,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/geometry_engine.cpp" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_engine.cpp.o.d"
   "/tmp/bendcore-cadcore/src/history_stack.cpp" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/history_stack.cpp.o.d"
   "/tmp/bendcore-cadcore/src/parameter_store.cpp" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/parameter_store.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/project_format.cpp" "CMakeFiles/bendcore.dir/src/project_format.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/project_format.cpp.o.d"
   "/tmp/bendcore-cadcore/src/rebuild_engine.cpp" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/recovery.cpp" "CMakeFiles/bendcore.dir/src/recovery.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/recovery.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/serializer.cpp" "CMakeFiles/bendcore.dir/src/serializer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/serializer.cpp.o.d"
   "/tmp/bendcore-cadcore/src/transaction.cpp" "CMakeFiles/bendcore.dir/src/transaction.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   )
 

@@ -367,6 +367,58 @@ test_geometry_cache/fast:
 .PHONY : test_geometry_cache/fast
 
 #=============================================================================
+# Target rules for targets named test_project_format
+
+# Build rule for target.
+test_project_format: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_project_format
+.PHONY : test_project_format
+
+# fast build rule for target.
+test_project_format/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/build
+.PHONY : test_project_format/fast
+
+#=============================================================================
+# Target rules for targets named test_serializer
+
+# Build rule for target.
+test_serializer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_serializer
+.PHONY : test_serializer
+
+# fast build rule for target.
+test_serializer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/build
+.PHONY : test_serializer/fast
+
+#=============================================================================
+# Target rules for targets named test_atomic_save
+
+# Build rule for target.
+test_atomic_save: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_atomic_save
+.PHONY : test_atomic_save
+
+# fast build rule for target.
+test_atomic_save/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/build
+.PHONY : test_atomic_save/fast
+
+#=============================================================================
+# Target rules for targets named test_recovery
+
+# Build rule for target.
+test_recovery: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_recovery
+.PHONY : test_recovery
+
+# fast build rule for target.
+test_recovery/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/build
+.PHONY : test_recovery/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -417,6 +469,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/atomic_save.o: src/atomic_save.cpp.o
+.PHONY : src/atomic_save.o
+
+# target to build an object file
+src/atomic_save.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.o
+.PHONY : src/atomic_save.cpp.o
+
+src/atomic_save.i: src/atomic_save.cpp.i
+.PHONY : src/atomic_save.i
+
+# target to preprocess a source file
+src/atomic_save.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.i
+.PHONY : src/atomic_save.cpp.i
+
+src/atomic_save.s: src/atomic_save.cpp.s
+.PHONY : src/atomic_save.s
+
+# target to generate assembly for a file
+src/atomic_save.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.s
+.PHONY : src/atomic_save.cpp.s
 
 src/brep.o: src/brep.cpp.o
 .PHONY : src/brep.o
@@ -706,6 +782,30 @@ src/parameter_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.s
 .PHONY : src/parameter_store.cpp.s
 
+src/project_format.o: src/project_format.cpp.o
+.PHONY : src/project_format.o
+
+# target to build an object file
+src/project_format.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.o
+.PHONY : src/project_format.cpp.o
+
+src/project_format.i: src/project_format.cpp.i
+.PHONY : src/project_format.i
+
+# target to preprocess a source file
+src/project_format.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.i
+.PHONY : src/project_format.cpp.i
+
+src/project_format.s: src/project_format.cpp.s
+.PHONY : src/project_format.s
+
+# target to generate assembly for a file
+src/project_format.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/project_format.cpp.s
+.PHONY : src/project_format.cpp.s
+
 src/rebuild_engine.o: src/rebuild_engine.cpp.o
 .PHONY : src/rebuild_engine.o
 
@@ -730,6 +830,54 @@ src/rebuild_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/rebuild_engine.cpp.s
 .PHONY : src/rebuild_engine.cpp.s
 
+src/recovery.o: src/recovery.cpp.o
+.PHONY : src/recovery.o
+
+# target to build an object file
+src/recovery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.o
+.PHONY : src/recovery.cpp.o
+
+src/recovery.i: src/recovery.cpp.i
+.PHONY : src/recovery.i
+
+# target to preprocess a source file
+src/recovery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.i
+.PHONY : src/recovery.cpp.i
+
+src/recovery.s: src/recovery.cpp.s
+.PHONY : src/recovery.s
+
+# target to generate assembly for a file
+src/recovery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.s
+.PHONY : src/recovery.cpp.s
+
+src/serializer.o: src/serializer.cpp.o
+.PHONY : src/serializer.o
+
+# target to build an object file
+src/serializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.o
+.PHONY : src/serializer.cpp.o
+
+src/serializer.i: src/serializer.cpp.i
+.PHONY : src/serializer.i
+
+# target to preprocess a source file
+src/serializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.i
+.PHONY : src/serializer.cpp.i
+
+src/serializer.s: src/serializer.cpp.s
+.PHONY : src/serializer.s
+
+# target to generate assembly for a file
+src/serializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.s
+.PHONY : src/serializer.cpp.s
+
 src/transaction.o: src/transaction.cpp.o
 .PHONY : src/transaction.o
 
@@ -753,6 +901,30 @@ src/transaction.s: src/transaction.cpp.s
 src/transaction.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/transaction.cpp.s
 .PHONY : src/transaction.cpp.s
+
+tests/test_atomic_save.o: tests/test_atomic_save.cpp.o
+.PHONY : tests/test_atomic_save.o
+
+# target to build an object file
+tests/test_atomic_save.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/tests/test_atomic_save.cpp.o
+.PHONY : tests/test_atomic_save.cpp.o
+
+tests/test_atomic_save.i: tests/test_atomic_save.cpp.i
+.PHONY : tests/test_atomic_save.i
+
+# target to preprocess a source file
+tests/test_atomic_save.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/tests/test_atomic_save.cpp.i
+.PHONY : tests/test_atomic_save.cpp.i
+
+tests/test_atomic_save.s: tests/test_atomic_save.cpp.s
+.PHONY : tests/test_atomic_save.s
+
+# target to generate assembly for a file
+tests/test_atomic_save.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/tests/test_atomic_save.cpp.s
+.PHONY : tests/test_atomic_save.cpp.s
 
 tests/test_brep.o: tests/test_brep.cpp.o
 .PHONY : tests/test_brep.o
@@ -1042,6 +1214,30 @@ tests/test_parameter_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/tests/test_parameter_store.cpp.s
 .PHONY : tests/test_parameter_store.cpp.s
 
+tests/test_project_format.o: tests/test_project_format.cpp.o
+.PHONY : tests/test_project_format.o
+
+# target to build an object file
+tests/test_project_format.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/tests/test_project_format.cpp.o
+.PHONY : tests/test_project_format.cpp.o
+
+tests/test_project_format.i: tests/test_project_format.cpp.i
+.PHONY : tests/test_project_format.i
+
+# target to preprocess a source file
+tests/test_project_format.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/tests/test_project_format.cpp.i
+.PHONY : tests/test_project_format.cpp.i
+
+tests/test_project_format.s: tests/test_project_format.cpp.s
+.PHONY : tests/test_project_format.s
+
+# target to generate assembly for a file
+tests/test_project_format.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/tests/test_project_format.cpp.s
+.PHONY : tests/test_project_format.cpp.s
+
 tests/test_rebuild_engine.o: tests/test_rebuild_engine.cpp.o
 .PHONY : tests/test_rebuild_engine.o
 
@@ -1065,6 +1261,54 @@ tests/test_rebuild_engine.s: tests/test_rebuild_engine.cpp.s
 tests/test_rebuild_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rebuild_engine.dir/build.make CMakeFiles/test_rebuild_engine.dir/tests/test_rebuild_engine.cpp.s
 .PHONY : tests/test_rebuild_engine.cpp.s
+
+tests/test_recovery.o: tests/test_recovery.cpp.o
+.PHONY : tests/test_recovery.o
+
+# target to build an object file
+tests/test_recovery.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.o
+.PHONY : tests/test_recovery.cpp.o
+
+tests/test_recovery.i: tests/test_recovery.cpp.i
+.PHONY : tests/test_recovery.i
+
+# target to preprocess a source file
+tests/test_recovery.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.i
+.PHONY : tests/test_recovery.cpp.i
+
+tests/test_recovery.s: tests/test_recovery.cpp.s
+.PHONY : tests/test_recovery.s
+
+# target to generate assembly for a file
+tests/test_recovery.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_recovery.dir/build.make CMakeFiles/test_recovery.dir/tests/test_recovery.cpp.s
+.PHONY : tests/test_recovery.cpp.s
+
+tests/test_serializer.o: tests/test_serializer.cpp.o
+.PHONY : tests/test_serializer.o
+
+# target to build an object file
+tests/test_serializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.o
+.PHONY : tests/test_serializer.cpp.o
+
+tests/test_serializer.i: tests/test_serializer.cpp.i
+.PHONY : tests/test_serializer.i
+
+# target to preprocess a source file
+tests/test_serializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.i
+.PHONY : tests/test_serializer.cpp.i
+
+tests/test_serializer.s: tests/test_serializer.cpp.s
+.PHONY : tests/test_serializer.s
+
+# target to generate assembly for a file
+tests/test_serializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_serializer.dir/build.make CMakeFiles/test_serializer.dir/tests/test_serializer.cpp.s
+.PHONY : tests/test_serializer.cpp.s
 
 tests/test_transaction.o: tests/test_transaction.cpp.o
 .PHONY : tests/test_transaction.o
@@ -1108,6 +1352,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... test_atomic_save"
 	@echo "... test_brep"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
@@ -1120,8 +1365,14 @@ help:
 	@echo "... test_geometry_engine"
 	@echo "... test_history_stack"
 	@echo "... test_parameter_store"
+	@echo "... test_project_format"
 	@echo "... test_rebuild_engine"
+	@echo "... test_recovery"
+	@echo "... test_serializer"
 	@echo "... test_transaction"
+	@echo "... src/atomic_save.o"
+	@echo "... src/atomic_save.i"
+	@echo "... src/atomic_save.s"
 	@echo "... src/brep.o"
 	@echo "... src/brep.i"
 	@echo "... src/brep.s"
@@ -1158,12 +1409,24 @@ help:
 	@echo "... src/parameter_store.o"
 	@echo "... src/parameter_store.i"
 	@echo "... src/parameter_store.s"
+	@echo "... src/project_format.o"
+	@echo "... src/project_format.i"
+	@echo "... src/project_format.s"
 	@echo "... src/rebuild_engine.o"
 	@echo "... src/rebuild_engine.i"
 	@echo "... src/rebuild_engine.s"
+	@echo "... src/recovery.o"
+	@echo "... src/recovery.i"
+	@echo "... src/recovery.s"
+	@echo "... src/serializer.o"
+	@echo "... src/serializer.i"
+	@echo "... src/serializer.s"
 	@echo "... src/transaction.o"
 	@echo "... src/transaction.i"
 	@echo "... src/transaction.s"
+	@echo "... tests/test_atomic_save.o"
+	@echo "... tests/test_atomic_save.i"
+	@echo "... tests/test_atomic_save.s"
 	@echo "... tests/test_brep.o"
 	@echo "... tests/test_brep.i"
 	@echo "... tests/test_brep.s"
@@ -1200,9 +1463,18 @@ help:
 	@echo "... tests/test_parameter_store.o"
 	@echo "... tests/test_parameter_store.i"
 	@echo "... tests/test_parameter_store.s"
+	@echo "... tests/test_project_format.o"
+	@echo "... tests/test_project_format.i"
+	@echo "... tests/test_project_format.s"
 	@echo "... tests/test_rebuild_engine.o"
 	@echo "... tests/test_rebuild_engine.i"
 	@echo "... tests/test_rebuild_engine.s"
+	@echo "... tests/test_recovery.o"
+	@echo "... tests/test_recovery.i"
+	@echo "... tests/test_recovery.s"
+	@echo "... tests/test_serializer.o"
+	@echo "... tests/test_serializer.i"
+	@echo "... tests/test_serializer.s"
 	@echo "... tests/test_transaction.o"
 	@echo "... tests/test_transaction.i"
 	@echo "... tests/test_transaction.s"
