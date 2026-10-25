@@ -1,0 +1,119 @@
+Start testing: Oct 25 10:35 CET
+----------------------------------------------------------
+1/2 Testing: EntityId
+1/2 Test: EntityId
+Command: "/tmp/bendcore-cadcore/build/test_entity_id"
+Directory: /tmp/bendcore-cadcore/build
+"EntityId" start time: Oct 25 10:35 CET
+Output:
+----------------------------------------------------------
+[==========] Running 15 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 15 tests from EntityIdTest
+[ RUN      ] EntityIdTest.IdRemainsSameAfterRenaming
+[       OK ] EntityIdTest.IdRemainsSameAfterRenaming (0 ms)
+[ RUN      ] EntityIdTest.IdRemainsSameAfterTreeMove
+[       OK ] EntityIdTest.IdRemainsSameAfterTreeMove (0 ms)
+[ RUN      ] EntityIdTest.IdPersistenceAcrossSaveLoad
+[       OK ] EntityIdTest.IdPersistenceAcrossSaveLoad (0 ms)
+[ RUN      ] EntityIdTest.IdIndependentOfMemoryAddress
+[       OK ] EntityIdTest.IdIndependentOfMemoryAddress (0 ms)
+[ RUN      ] EntityIdTest.CopyCreatesNewInstanceId
+[       OK ] EntityIdTest.CopyCreatesNewInstanceId (0 ms)
+[ RUN      ] EntityIdTest.FormatValidityCheck
+[       OK ] EntityIdTest.FormatValidityCheck (0 ms)
+[ RUN      ] EntityIdTest.SerializationWithoutLoss
+[       OK ] EntityIdTest.SerializationWithoutLoss (0 ms)
+[ RUN      ] EntityIdTest.GenerateUniqueIds
+[       OK ] EntityIdTest.GenerateUniqueIds (275 ms)
+[ RUN      ] EntityIdTest.RoundTripSerialization
+[       OK ] EntityIdTest.RoundTripSerialization (0 ms)
+[ RUN      ] EntityIdTest.InvalidIdsRejected
+[       OK ] EntityIdTest.InvalidIdsRejected (0 ms)
+[ RUN      ] EntityIdTest.UsableInStandardContainers
+[       OK ] EntityIdTest.UsableInStandardContainers (0 ms)
+[ RUN      ] EntityIdTest.DuplicateDetectionInDocument
+[       OK ] EntityIdTest.DuplicateDetectionInDocument (0 ms)
+[ RUN      ] EntityIdTest.StringRepresentationFormat
+[       OK ] EntityIdTest.StringRepresentationFormat (0 ms)
+[ RUN      ] EntityIdTest.NullIdDetection
+[       OK ] EntityIdTest.NullIdDetection (0 ms)
+[ RUN      ] EntityIdTest.ComparisonOperators
+[       OK ] EntityIdTest.ComparisonOperators (0 ms)
+[----------] 15 tests from EntityIdTest (276 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test suite ran. (276 ms total)
+[  PASSED  ] 15 tests.
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"EntityId" end time: Oct 25 10:35 CET
+"EntityId" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: CadDocument
+2/2 Test: CadDocument
+Command: "/tmp/bendcore-cadcore/build/test_cad_document"
+Directory: /tmp/bendcore-cadcore/build
+"CadDocument" start time: Oct 25 10:35 CET
+Output:
+----------------------------------------------------------
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from CadDocumentTest
+[ RUN      ] CadDocumentTest.CreateEmptyDocument
+[       OK ] CadDocumentTest.CreateEmptyDocument (0 ms)
+[ RUN      ] CadDocumentTest.AddAndRetrieveEntity
+[       OK ] CadDocumentTest.AddAndRetrieveEntity (0 ms)
+[ RUN      ] CadDocumentTest.EntityIdsAreUnique
+[       OK ] CadDocumentTest.EntityIdsAreUnique (0 ms)
+[ RUN      ] CadDocumentTest.DuplicateIdRejected
+[       OK ] CadDocumentTest.DuplicateIdRejected (0 ms)
+[ RUN      ] CadDocumentTest.InvalidOperationsDontCorruptDocument
+[       OK ] CadDocumentTest.InvalidOperationsDontCorruptDocument (0 ms)
+[ RUN      ] CadDocumentTest.SequentialChangesIncreaseRevision
+[       OK ] CadDocumentTest.SequentialChangesIncreaseRevision (0 ms)
+[ RUN      ] CadDocumentTest.LargeSequentialChanges
+[       OK ] CadDocumentTest.LargeSequentialChanges (39 ms)
+[ RUN      ] CadDocumentTest.RemoveEntityMarksDeleted
+[       OK ] CadDocumentTest.RemoveEntityMarksDeleted (0 ms)
+[ RUN      ] CadDocumentTest.DocumentMaintainsInternalReferences
+[       OK ] CadDocumentTest.DocumentMaintainsInternalReferences (0 ms)
+[ RUN      ] CadDocumentTest.QueryEntitiesByType
+[       OK ] CadDocumentTest.QueryEntitiesByType (0 ms)
+[ RUN      ] CadDocumentTest.ParametersStorageAndRetrieval
+[       OK ] CadDocumentTest.ParametersStorageAndRetrieval (0 ms)
+[ RUN      ] CadDocumentTest.ReferencesTracking
+[       OK ] CadDocumentTest.ReferencesTracking (0 ms)
+[ RUN      ] CadDocumentTest.ValidateDocument
+[       OK ] CadDocumentTest.ValidateDocument (0 ms)
+[ RUN      ] CadDocumentTest.DetectDuplicateIds
+[       OK ] CadDocumentTest.DetectDuplicateIds (0 ms)
+[ RUN      ] CadDocumentTest.NonExistentEntityThrows
+[       OK ] CadDocumentTest.NonExistentEntityThrows (0 ms)
+[ RUN      ] CadDocumentTest.ClearDocument
+[       OK ] CadDocumentTest.ClearDocument (0 ms)
+[ RUN      ] CadDocumentTest.MetadataStorage
+[       OK ] CadDocumentTest.MetadataStorage (0 ms)
+[ RUN      ] CadDocumentTest.HierarchyValidation
+[       OK ] CadDocumentTest.HierarchyValidation (0 ms)
+[ RUN      ] CadDocumentTest.GetAllEntityIds
+[       OK ] CadDocumentTest.GetAllEntityIds (0 ms)
+[ RUN      ] CadDocumentTest.DocumentRevisionScopedCorrectly
+[       OK ] CadDocumentTest.DocumentRevisionScopedCorrectly (0 ms)
+[----------] 20 tests from CadDocumentTest (40 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (40 ms total)
+[  PASSED  ] 20 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CadDocument" end time: Oct 25 10:35 CET
+"CadDocument" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 25 10:35 CET

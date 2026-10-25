@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bendcore.dir/src/cad_document.cpp.o"
+  "CMakeFiles/bendcore.dir/src/cad_document.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/entity_id.cpp.o"
   "CMakeFiles/bendcore.dir/src/entity_id.cpp.o.d"
   "libbendcore.a"

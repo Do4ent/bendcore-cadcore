@@ -10,6 +10,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 # Core library sources
 set(BENDCORE_SOURCES
     src/entity_id.cpp
+    src/cad_document.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
@@ -32,3 +33,8 @@ enable_testing()
 add_executable(test_entity_id tests/test_entity_id.cpp)
 target_link_libraries(test_entity_id bendcore gtest_main)
 add_test(NAME EntityId COMMAND test_entity_id)
+
+# CAD-CORE-003: CAD Document tests
+add_executable(test_cad_document tests/test_cad_document.cpp)
+target_link_libraries(test_cad_document bendcore gtest_main)
+add_test(NAME CadDocument COMMAND test_cad_document)

@@ -198,6 +198,19 @@ test_entity_id/fast:
 .PHONY : test_entity_id/fast
 
 #=============================================================================
+# Target rules for targets named test_cad_document
+
+# Build rule for target.
+test_cad_document: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cad_document
+.PHONY : test_cad_document
+
+# fast build rule for target.
+test_cad_document/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/build
+.PHONY : test_cad_document/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -249,6 +262,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/cad_document.o: src/cad_document.cpp.o
+.PHONY : src/cad_document.o
+
+# target to build an object file
+src/cad_document.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.o
+.PHONY : src/cad_document.cpp.o
+
+src/cad_document.i: src/cad_document.cpp.i
+.PHONY : src/cad_document.i
+
+# target to preprocess a source file
+src/cad_document.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.i
+.PHONY : src/cad_document.cpp.i
+
+src/cad_document.s: src/cad_document.cpp.s
+.PHONY : src/cad_document.s
+
+# target to generate assembly for a file
+src/cad_document.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/cad_document.cpp.s
+.PHONY : src/cad_document.cpp.s
+
 src/entity_id.o: src/entity_id.cpp.o
 .PHONY : src/entity_id.o
 
@@ -272,6 +309,30 @@ src/entity_id.s: src/entity_id.cpp.s
 src/entity_id.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/entity_id.cpp.s
 .PHONY : src/entity_id.cpp.s
+
+tests/test_cad_document.o: tests/test_cad_document.cpp.o
+.PHONY : tests/test_cad_document.o
+
+# target to build an object file
+tests/test_cad_document.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/tests/test_cad_document.cpp.o
+.PHONY : tests/test_cad_document.cpp.o
+
+tests/test_cad_document.i: tests/test_cad_document.cpp.i
+.PHONY : tests/test_cad_document.i
+
+# target to preprocess a source file
+tests/test_cad_document.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/tests/test_cad_document.cpp.i
+.PHONY : tests/test_cad_document.cpp.i
+
+tests/test_cad_document.s: tests/test_cad_document.cpp.s
+.PHONY : tests/test_cad_document.s
+
+# target to generate assembly for a file
+tests/test_cad_document.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cad_document.dir/build.make CMakeFiles/test_cad_document.dir/tests/test_cad_document.cpp.s
+.PHONY : tests/test_cad_document.cpp.s
 
 tests/test_entity_id.o: tests/test_entity_id.cpp.o
 .PHONY : tests/test_entity_id.o
@@ -315,10 +376,17 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... test_cad_document"
 	@echo "... test_entity_id"
+	@echo "... src/cad_document.o"
+	@echo "... src/cad_document.i"
+	@echo "... src/cad_document.s"
 	@echo "... src/entity_id.o"
 	@echo "... src/entity_id.i"
 	@echo "... src/entity_id.s"
+	@echo "... tests/test_cad_document.o"
+	@echo "... tests/test_cad_document.i"
+	@echo "... tests/test_cad_document.s"
 	@echo "... tests/test_entity_id.o"
 	@echo "... tests/test_entity_id.i"
 	@echo "... tests/test_entity_id.s"
