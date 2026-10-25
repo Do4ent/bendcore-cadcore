@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Wextra -Werror -pedantic CMakeFiles/test_geometry_cache.dir/tests/test_geometry_cache.cpp.o -o test_geometry_cache  libbendcore.a lib/libgtest_main.a lib/libgtest.a 
+/usr/bin/c++ -Wall -Wextra -Werror -pedantic -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/test_geometry_cache.dir/tests/test_geometry_cache.cpp.o -o test_geometry_cache  libbendcore.a lib/libgtest_main.a lib/libgtest.a 

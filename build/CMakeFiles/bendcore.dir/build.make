@@ -377,6 +377,174 @@ CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/mesh_generator.cpp -o CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s
 
+CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o: /tmp/bendcore-cadcore/src/pipe_profile.cpp
+CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o -MF CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o.d -o CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o -c /tmp/bendcore-cadcore/src/pipe_profile.cpp
+
+CMakeFiles/bendcore.dir/src/pipe_profile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/pipe_profile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/pipe_profile.cpp > CMakeFiles/bendcore.dir/src/pipe_profile.cpp.i
+
+CMakeFiles/bendcore.dir/src/pipe_profile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/pipe_profile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/pipe_profile.cpp -o CMakeFiles/bendcore.dir/src/pipe_profile.cpp.s
+
+CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o: /tmp/bendcore-cadcore/src/pipe_fittings.cpp
+CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o -MF CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o.d -o CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o -c /tmp/bendcore-cadcore/src/pipe_fittings.cpp
+
+CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/pipe_fittings.cpp > CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.i
+
+CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/pipe_fittings.cpp -o CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.s
+
+CMakeFiles/bendcore.dir/src/constraint_system.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/constraint_system.cpp.o: /tmp/bendcore-cadcore/src/constraint_system.cpp
+CMakeFiles/bendcore.dir/src/constraint_system.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/bendcore.dir/src/constraint_system.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/constraint_system.cpp.o -MF CMakeFiles/bendcore.dir/src/constraint_system.cpp.o.d -o CMakeFiles/bendcore.dir/src/constraint_system.cpp.o -c /tmp/bendcore-cadcore/src/constraint_system.cpp
+
+CMakeFiles/bendcore.dir/src/constraint_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/constraint_system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/constraint_system.cpp > CMakeFiles/bendcore.dir/src/constraint_system.cpp.i
+
+CMakeFiles/bendcore.dir/src/constraint_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/constraint_system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/constraint_system.cpp -o CMakeFiles/bendcore.dir/src/constraint_system.cpp.s
+
+CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o: /tmp/bendcore-cadcore/src/bend_calculator.cpp
+CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o -MF CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o.d -o CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o -c /tmp/bendcore-cadcore/src/bend_calculator.cpp
+
+CMakeFiles/bendcore.dir/src/bend_calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/bend_calculator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/bend_calculator.cpp > CMakeFiles/bendcore.dir/src/bend_calculator.cpp.i
+
+CMakeFiles/bendcore.dir/src/bend_calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/bend_calculator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/bend_calculator.cpp -o CMakeFiles/bendcore.dir/src/bend_calculator.cpp.s
+
+CMakeFiles/bendcore.dir/src/format_exporters.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/format_exporters.cpp.o: /tmp/bendcore-cadcore/src/format_exporters.cpp
+CMakeFiles/bendcore.dir/src/format_exporters.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/bendcore.dir/src/format_exporters.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/format_exporters.cpp.o -MF CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d -o CMakeFiles/bendcore.dir/src/format_exporters.cpp.o -c /tmp/bendcore-cadcore/src/format_exporters.cpp
+
+CMakeFiles/bendcore.dir/src/format_exporters.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/format_exporters.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/format_exporters.cpp > CMakeFiles/bendcore.dir/src/format_exporters.cpp.i
+
+CMakeFiles/bendcore.dir/src/format_exporters.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/format_exporters.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/format_exporters.cpp -o CMakeFiles/bendcore.dir/src/format_exporters.cpp.s
+
+CMakeFiles/bendcore.dir/src/manufacturing.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/manufacturing.cpp.o: /tmp/bendcore-cadcore/src/manufacturing.cpp
+CMakeFiles/bendcore.dir/src/manufacturing.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/bendcore.dir/src/manufacturing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/manufacturing.cpp.o -MF CMakeFiles/bendcore.dir/src/manufacturing.cpp.o.d -o CMakeFiles/bendcore.dir/src/manufacturing.cpp.o -c /tmp/bendcore-cadcore/src/manufacturing.cpp
+
+CMakeFiles/bendcore.dir/src/manufacturing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/manufacturing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/manufacturing.cpp > CMakeFiles/bendcore.dir/src/manufacturing.cpp.i
+
+CMakeFiles/bendcore.dir/src/manufacturing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/manufacturing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/manufacturing.cpp -o CMakeFiles/bendcore.dir/src/manufacturing.cpp.s
+
+CMakeFiles/bendcore.dir/src/database_manager.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/database_manager.cpp.o: /tmp/bendcore-cadcore/src/database_manager.cpp
+CMakeFiles/bendcore.dir/src/database_manager.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/bendcore.dir/src/database_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/database_manager.cpp.o -MF CMakeFiles/bendcore.dir/src/database_manager.cpp.o.d -o CMakeFiles/bendcore.dir/src/database_manager.cpp.o -c /tmp/bendcore-cadcore/src/database_manager.cpp
+
+CMakeFiles/bendcore.dir/src/database_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/database_manager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/database_manager.cpp > CMakeFiles/bendcore.dir/src/database_manager.cpp.i
+
+CMakeFiles/bendcore.dir/src/database_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/database_manager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/database_manager.cpp -o CMakeFiles/bendcore.dir/src/database_manager.cpp.s
+
+CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: /tmp/bendcore-cadcore/src/math/matrix_ops.cpp
+CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o -MF CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o.d -o CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o -c /tmp/bendcore-cadcore/src/math/matrix_ops.cpp
+
+CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/math/matrix_ops.cpp > CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i
+
+CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/math/matrix_ops.cpp -o CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s
+
+CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: /tmp/bendcore-cadcore/src/math/geometry_ops.cpp
+CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o -MF CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o.d -o CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o -c /tmp/bendcore-cadcore/src/math/geometry_ops.cpp
+
+CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/math/geometry_ops.cpp > CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i
+
+CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/math/geometry_ops.cpp -o CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s
+
+CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: /tmp/bendcore-cadcore/src/io/model_importer.cpp
+CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o -MF CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o.d -o CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o -c /tmp/bendcore-cadcore/src/io/model_importer.cpp
+
+CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/io/model_importer.cpp > CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i
+
+CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/io/model_importer.cpp -o CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s
+
+CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp
+CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o -MF CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o.d -o CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o -c /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp
+
+CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp > CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i
+
+CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/parallel/parallel_executor.cpp -o CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s
+
+CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: CMakeFiles/bendcore.dir/flags.make
+CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp
+CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o: CMakeFiles/bendcore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o -MF CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o.d -o CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o -c /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp
+
+CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp > CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i
+
+CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp -o CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.s
+
 # Object files for target bendcore
 bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/entity_id.cpp.o" \
@@ -400,7 +568,19 @@ bendcore_OBJECTS = \
 "CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o" \
 "CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o" \
 "CMakeFiles/bendcore.dir/src/boolean_operations.cpp.o" \
-"CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o"
+"CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o" \
+"CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o" \
+"CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o" \
+"CMakeFiles/bendcore.dir/src/constraint_system.cpp.o" \
+"CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o" \
+"CMakeFiles/bendcore.dir/src/format_exporters.cpp.o" \
+"CMakeFiles/bendcore.dir/src/manufacturing.cpp.o" \
+"CMakeFiles/bendcore.dir/src/database_manager.cpp.o" \
+"CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o" \
+"CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o" \
+"CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o" \
+"CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o" \
+"CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o"
 
 # External object files for target bendcore
 bendcore_EXTERNAL_OBJECTS =
@@ -427,9 +607,21 @@ libbendcore.a: CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/bezier_curve.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/boolean_operations.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/src/mesh_generator.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/constraint_system.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/format_exporters.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/manufacturing.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/database_manager.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o
+libbendcore.a: CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o
 libbendcore.a: CMakeFiles/bendcore.dir/build.make
 libbendcore.a: CMakeFiles/bendcore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libbendcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/bendcore-cadcore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX static library libbendcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bendcore.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bendcore.dir/link.txt --verbose=$(VERBOSE)
 

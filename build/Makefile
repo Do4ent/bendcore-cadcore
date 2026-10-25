@@ -97,7 +97,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -458,6 +458,136 @@ test_acceptance/fast:
 .PHONY : test_acceptance/fast
 
 #=============================================================================
+# Target rules for targets named test_pipe_components
+
+# Build rule for target.
+test_pipe_components: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pipe_components
+.PHONY : test_pipe_components
+
+# fast build rule for target.
+test_pipe_components/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/build
+.PHONY : test_pipe_components/fast
+
+#=============================================================================
+# Target rules for targets named test_bend_calculator
+
+# Build rule for target.
+test_bend_calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bend_calculator
+.PHONY : test_bend_calculator
+
+# fast build rule for target.
+test_bend_calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/build
+.PHONY : test_bend_calculator/fast
+
+#=============================================================================
+# Target rules for targets named test_format_exporters
+
+# Build rule for target.
+test_format_exporters: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_format_exporters
+.PHONY : test_format_exporters
+
+# fast build rule for target.
+test_format_exporters/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/build
+.PHONY : test_format_exporters/fast
+
+#=============================================================================
+# Target rules for targets named test_manufacturing
+
+# Build rule for target.
+test_manufacturing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_manufacturing
+.PHONY : test_manufacturing
+
+# fast build rule for target.
+test_manufacturing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/build
+.PHONY : test_manufacturing/fast
+
+#=============================================================================
+# Target rules for targets named test_database_manager
+
+# Build rule for target.
+test_database_manager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_database_manager
+.PHONY : test_database_manager
+
+# fast build rule for target.
+test_database_manager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/build
+.PHONY : test_database_manager/fast
+
+#=============================================================================
+# Target rules for targets named test_matrix_ops
+
+# Build rule for target.
+test_matrix_ops: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_matrix_ops
+.PHONY : test_matrix_ops
+
+# fast build rule for target.
+test_matrix_ops/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/build
+.PHONY : test_matrix_ops/fast
+
+#=============================================================================
+# Target rules for targets named test_geometry_ops
+
+# Build rule for target.
+test_geometry_ops: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_geometry_ops
+.PHONY : test_geometry_ops
+
+# fast build rule for target.
+test_geometry_ops/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/build
+.PHONY : test_geometry_ops/fast
+
+#=============================================================================
+# Target rules for targets named test_model_importer
+
+# Build rule for target.
+test_model_importer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_model_importer
+.PHONY : test_model_importer
+
+# fast build rule for target.
+test_model_importer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/build
+.PHONY : test_model_importer/fast
+
+#=============================================================================
+# Target rules for targets named test_parallel_executor
+
+# Build rule for target.
+test_parallel_executor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_parallel_executor
+.PHONY : test_parallel_executor
+
+# fast build rule for target.
+test_parallel_executor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/build
+.PHONY : test_parallel_executor/fast
+
+#=============================================================================
+# Target rules for targets named test_protobuf_serializer
+
+# Build rule for target.
+test_protobuf_serializer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_protobuf_serializer
+.PHONY : test_protobuf_serializer
+
+# fast build rule for target.
+test_protobuf_serializer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/build
+.PHONY : test_protobuf_serializer/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -509,6 +639,370 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+#=============================================================================
+# Target rules for targets named Experimental
+
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
+
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/Experimental.dir/build.make _deps/taskflow-build/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
+
+#=============================================================================
+# Target rules for targets named Nightly
+
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
+
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/Nightly.dir/build.make _deps/taskflow-build/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
+
+#=============================================================================
+# Target rules for targets named Continuous
+
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Continuous
+.PHONY : Continuous
+
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/Continuous.dir/build.make _deps/taskflow-build/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
+
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlyStart
+
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyStart.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+#=============================================================================
+# Target rules for targets named NightlyUpdate
+
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+#=============================================================================
+# Target rules for targets named NightlyConfigure
+
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+#=============================================================================
+# Target rules for targets named NightlyBuild
+
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyBuild.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+#=============================================================================
+# Target rules for targets named NightlyTest
+
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyTest
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyTest.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+#=============================================================================
+# Target rules for targets named NightlyCoverage
+
+# Build rule for target.
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
+
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/taskflow-build/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named NightlySubmit
+
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlySubmit
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/NightlySubmit.dir/build.make _deps/taskflow-build/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalStart
+
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalUpdate
+
+# Build rule for target.
+ExperimentalUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalUpdate
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalConfigure
+
+# Build rule for target.
+ExperimentalConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalConfigure
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalBuild
+
+# Build rule for target.
+ExperimentalBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalBuild
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalCoverage
+
+# Build rule for target.
+ExperimentalCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalCoverage
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/taskflow-build/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousStart
+
+# Build rule for target.
+ContinuousStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousStart
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousStart.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousBuild
+
+# Build rule for target.
+ContinuousBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousBuild
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousTest
+
+# Build rule for target.
+ContinuousTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousTest
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousTest.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/taskflow-build/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
 src/atomic_save.o: src/atomic_save.cpp.o
 .PHONY : src/atomic_save.o
 
@@ -532,6 +1026,30 @@ src/atomic_save.s: src/atomic_save.cpp.s
 src/atomic_save.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/atomic_save.cpp.s
 .PHONY : src/atomic_save.cpp.s
+
+src/bend_calculator.o: src/bend_calculator.cpp.o
+.PHONY : src/bend_calculator.o
+
+# target to build an object file
+src/bend_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.o
+.PHONY : src/bend_calculator.cpp.o
+
+src/bend_calculator.i: src/bend_calculator.cpp.i
+.PHONY : src/bend_calculator.i
+
+# target to preprocess a source file
+src/bend_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.i
+.PHONY : src/bend_calculator.cpp.i
+
+src/bend_calculator.s: src/bend_calculator.cpp.s
+.PHONY : src/bend_calculator.s
+
+# target to generate assembly for a file
+src/bend_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/bend_calculator.cpp.s
+.PHONY : src/bend_calculator.cpp.s
 
 src/bezier_curve.o: src/bezier_curve.cpp.o
 .PHONY : src/bezier_curve.o
@@ -653,6 +1171,54 @@ src/command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/command_manager.cpp.s
 .PHONY : src/command_manager.cpp.s
 
+src/constraint_system.o: src/constraint_system.cpp.o
+.PHONY : src/constraint_system.o
+
+# target to build an object file
+src/constraint_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.o
+.PHONY : src/constraint_system.cpp.o
+
+src/constraint_system.i: src/constraint_system.cpp.i
+.PHONY : src/constraint_system.i
+
+# target to preprocess a source file
+src/constraint_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.i
+.PHONY : src/constraint_system.cpp.i
+
+src/constraint_system.s: src/constraint_system.cpp.s
+.PHONY : src/constraint_system.s
+
+# target to generate assembly for a file
+src/constraint_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/constraint_system.cpp.s
+.PHONY : src/constraint_system.cpp.s
+
+src/database_manager.o: src/database_manager.cpp.o
+.PHONY : src/database_manager.o
+
+# target to build an object file
+src/database_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.o
+.PHONY : src/database_manager.cpp.o
+
+src/database_manager.i: src/database_manager.cpp.i
+.PHONY : src/database_manager.i
+
+# target to preprocess a source file
+src/database_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.i
+.PHONY : src/database_manager.cpp.i
+
+src/database_manager.s: src/database_manager.cpp.s
+.PHONY : src/database_manager.s
+
+# target to generate assembly for a file
+src/database_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/database_manager.cpp.s
+.PHONY : src/database_manager.cpp.s
+
 src/dependency_graph.o: src/dependency_graph.cpp.o
 .PHONY : src/dependency_graph.o
 
@@ -773,6 +1339,30 @@ src/feature_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/feature_system.cpp.s
 .PHONY : src/feature_system.cpp.s
 
+src/format_exporters.o: src/format_exporters.cpp.o
+.PHONY : src/format_exporters.o
+
+# target to build an object file
+src/format_exporters.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.o
+.PHONY : src/format_exporters.cpp.o
+
+src/format_exporters.i: src/format_exporters.cpp.i
+.PHONY : src/format_exporters.i
+
+# target to preprocess a source file
+src/format_exporters.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.i
+.PHONY : src/format_exporters.cpp.i
+
+src/format_exporters.s: src/format_exporters.cpp.s
+.PHONY : src/format_exporters.s
+
+# target to generate assembly for a file
+src/format_exporters.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.s
+.PHONY : src/format_exporters.cpp.s
+
 src/geometry_cache.o: src/geometry_cache.cpp.o
 .PHONY : src/geometry_cache.o
 
@@ -845,6 +1435,30 @@ src/history_stack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/history_stack.cpp.s
 .PHONY : src/history_stack.cpp.s
 
+src/io/model_importer.o: src/io/model_importer.cpp.o
+.PHONY : src/io/model_importer.o
+
+# target to build an object file
+src/io/model_importer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.o
+.PHONY : src/io/model_importer.cpp.o
+
+src/io/model_importer.i: src/io/model_importer.cpp.i
+.PHONY : src/io/model_importer.i
+
+# target to preprocess a source file
+src/io/model_importer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.i
+.PHONY : src/io/model_importer.cpp.i
+
+src/io/model_importer.s: src/io/model_importer.cpp.s
+.PHONY : src/io/model_importer.s
+
+# target to generate assembly for a file
+src/io/model_importer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/io/model_importer.cpp.s
+.PHONY : src/io/model_importer.cpp.s
+
 src/legacy_adapter.o: src/legacy_adapter.cpp.o
 .PHONY : src/legacy_adapter.o
 
@@ -868,6 +1482,78 @@ src/legacy_adapter.s: src/legacy_adapter.cpp.s
 src/legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/legacy_adapter.cpp.s
 .PHONY : src/legacy_adapter.cpp.s
+
+src/manufacturing.o: src/manufacturing.cpp.o
+.PHONY : src/manufacturing.o
+
+# target to build an object file
+src/manufacturing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.o
+.PHONY : src/manufacturing.cpp.o
+
+src/manufacturing.i: src/manufacturing.cpp.i
+.PHONY : src/manufacturing.i
+
+# target to preprocess a source file
+src/manufacturing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.i
+.PHONY : src/manufacturing.cpp.i
+
+src/manufacturing.s: src/manufacturing.cpp.s
+.PHONY : src/manufacturing.s
+
+# target to generate assembly for a file
+src/manufacturing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/manufacturing.cpp.s
+.PHONY : src/manufacturing.cpp.s
+
+src/math/geometry_ops.o: src/math/geometry_ops.cpp.o
+.PHONY : src/math/geometry_ops.o
+
+# target to build an object file
+src/math/geometry_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.o
+.PHONY : src/math/geometry_ops.cpp.o
+
+src/math/geometry_ops.i: src/math/geometry_ops.cpp.i
+.PHONY : src/math/geometry_ops.i
+
+# target to preprocess a source file
+src/math/geometry_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.i
+.PHONY : src/math/geometry_ops.cpp.i
+
+src/math/geometry_ops.s: src/math/geometry_ops.cpp.s
+.PHONY : src/math/geometry_ops.s
+
+# target to generate assembly for a file
+src/math/geometry_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/geometry_ops.cpp.s
+.PHONY : src/math/geometry_ops.cpp.s
+
+src/math/matrix_ops.o: src/math/matrix_ops.cpp.o
+.PHONY : src/math/matrix_ops.o
+
+# target to build an object file
+src/math/matrix_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.o
+.PHONY : src/math/matrix_ops.cpp.o
+
+src/math/matrix_ops.i: src/math/matrix_ops.cpp.i
+.PHONY : src/math/matrix_ops.i
+
+# target to preprocess a source file
+src/math/matrix_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.i
+.PHONY : src/math/matrix_ops.cpp.i
+
+src/math/matrix_ops.s: src/math/matrix_ops.cpp.s
+.PHONY : src/math/matrix_ops.s
+
+# target to generate assembly for a file
+src/math/matrix_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/math/matrix_ops.cpp.s
+.PHONY : src/math/matrix_ops.cpp.s
 
 src/mesh_generator.o: src/mesh_generator.cpp.o
 .PHONY : src/mesh_generator.o
@@ -893,6 +1579,30 @@ src/mesh_generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/mesh_generator.cpp.s
 .PHONY : src/mesh_generator.cpp.s
 
+src/parallel/parallel_executor.o: src/parallel/parallel_executor.cpp.o
+.PHONY : src/parallel/parallel_executor.o
+
+# target to build an object file
+src/parallel/parallel_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.o
+.PHONY : src/parallel/parallel_executor.cpp.o
+
+src/parallel/parallel_executor.i: src/parallel/parallel_executor.cpp.i
+.PHONY : src/parallel/parallel_executor.i
+
+# target to preprocess a source file
+src/parallel/parallel_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.i
+.PHONY : src/parallel/parallel_executor.cpp.i
+
+src/parallel/parallel_executor.s: src/parallel/parallel_executor.cpp.s
+.PHONY : src/parallel/parallel_executor.s
+
+# target to generate assembly for a file
+src/parallel/parallel_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parallel/parallel_executor.cpp.s
+.PHONY : src/parallel/parallel_executor.cpp.s
+
 src/parameter_store.o: src/parameter_store.cpp.o
 .PHONY : src/parameter_store.o
 
@@ -916,6 +1626,54 @@ src/parameter_store.s: src/parameter_store.cpp.s
 src/parameter_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/parameter_store.cpp.s
 .PHONY : src/parameter_store.cpp.s
+
+src/pipe_fittings.o: src/pipe_fittings.cpp.o
+.PHONY : src/pipe_fittings.o
+
+# target to build an object file
+src/pipe_fittings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.o
+.PHONY : src/pipe_fittings.cpp.o
+
+src/pipe_fittings.i: src/pipe_fittings.cpp.i
+.PHONY : src/pipe_fittings.i
+
+# target to preprocess a source file
+src/pipe_fittings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.i
+.PHONY : src/pipe_fittings.cpp.i
+
+src/pipe_fittings.s: src/pipe_fittings.cpp.s
+.PHONY : src/pipe_fittings.s
+
+# target to generate assembly for a file
+src/pipe_fittings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_fittings.cpp.s
+.PHONY : src/pipe_fittings.cpp.s
+
+src/pipe_profile.o: src/pipe_profile.cpp.o
+.PHONY : src/pipe_profile.o
+
+# target to build an object file
+src/pipe_profile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.o
+.PHONY : src/pipe_profile.cpp.o
+
+src/pipe_profile.i: src/pipe_profile.cpp.i
+.PHONY : src/pipe_profile.i
+
+# target to preprocess a source file
+src/pipe_profile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.i
+.PHONY : src/pipe_profile.cpp.i
+
+src/pipe_profile.s: src/pipe_profile.cpp.s
+.PHONY : src/pipe_profile.s
+
+# target to generate assembly for a file
+src/pipe_profile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/pipe_profile.cpp.s
+.PHONY : src/pipe_profile.cpp.s
 
 src/project_format.o: src/project_format.cpp.o
 .PHONY : src/project_format.o
@@ -988,6 +1746,30 @@ src/recovery.s: src/recovery.cpp.s
 src/recovery.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/recovery.cpp.s
 .PHONY : src/recovery.cpp.s
+
+src/serialization/protobuf_serializer.o: src/serialization/protobuf_serializer.cpp.o
+.PHONY : src/serialization/protobuf_serializer.o
+
+# target to build an object file
+src/serialization/protobuf_serializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o
+.PHONY : src/serialization/protobuf_serializer.cpp.o
+
+src/serialization/protobuf_serializer.i: src/serialization/protobuf_serializer.cpp.i
+.PHONY : src/serialization/protobuf_serializer.i
+
+# target to preprocess a source file
+src/serialization/protobuf_serializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.i
+.PHONY : src/serialization/protobuf_serializer.cpp.i
+
+src/serialization/protobuf_serializer.s: src/serialization/protobuf_serializer.cpp.s
+.PHONY : src/serialization/protobuf_serializer.s
+
+# target to generate assembly for a file
+src/serialization/protobuf_serializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.s
+.PHONY : src/serialization/protobuf_serializer.cpp.s
 
 src/serializer.o: src/serializer.cpp.o
 .PHONY : src/serializer.o
@@ -1085,6 +1867,30 @@ tests/test_atomic_save.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_atomic_save.dir/build.make CMakeFiles/test_atomic_save.dir/tests/test_atomic_save.cpp.s
 .PHONY : tests/test_atomic_save.cpp.s
 
+tests/test_bend_calculator.o: tests/test_bend_calculator.cpp.o
+.PHONY : tests/test_bend_calculator.o
+
+# target to build an object file
+tests/test_bend_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/tests/test_bend_calculator.cpp.o
+.PHONY : tests/test_bend_calculator.cpp.o
+
+tests/test_bend_calculator.i: tests/test_bend_calculator.cpp.i
+.PHONY : tests/test_bend_calculator.i
+
+# target to preprocess a source file
+tests/test_bend_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/tests/test_bend_calculator.cpp.i
+.PHONY : tests/test_bend_calculator.cpp.i
+
+tests/test_bend_calculator.s: tests/test_bend_calculator.cpp.s
+.PHONY : tests/test_bend_calculator.s
+
+# target to generate assembly for a file
+tests/test_bend_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bend_calculator.dir/build.make CMakeFiles/test_bend_calculator.dir/tests/test_bend_calculator.cpp.s
+.PHONY : tests/test_bend_calculator.cpp.s
+
 tests/test_brep.o: tests/test_brep.cpp.o
 .PHONY : tests/test_brep.o
 
@@ -1156,6 +1962,30 @@ tests/test_command_manager.s: tests/test_command_manager.cpp.s
 tests/test_command_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_command_manager.dir/build.make CMakeFiles/test_command_manager.dir/tests/test_command_manager.cpp.s
 .PHONY : tests/test_command_manager.cpp.s
+
+tests/test_database_manager.o: tests/test_database_manager.cpp.o
+.PHONY : tests/test_database_manager.o
+
+# target to build an object file
+tests/test_database_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/tests/test_database_manager.cpp.o
+.PHONY : tests/test_database_manager.cpp.o
+
+tests/test_database_manager.i: tests/test_database_manager.cpp.i
+.PHONY : tests/test_database_manager.i
+
+# target to preprocess a source file
+tests/test_database_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/tests/test_database_manager.cpp.i
+.PHONY : tests/test_database_manager.cpp.i
+
+tests/test_database_manager.s: tests/test_database_manager.cpp.s
+.PHONY : tests/test_database_manager.s
+
+# target to generate assembly for a file
+tests/test_database_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_database_manager.dir/build.make CMakeFiles/test_database_manager.dir/tests/test_database_manager.cpp.s
+.PHONY : tests/test_database_manager.cpp.s
 
 tests/test_dependency_graph.o: tests/test_dependency_graph.cpp.o
 .PHONY : tests/test_dependency_graph.o
@@ -1301,6 +2131,30 @@ tests/test_feature_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_feature_system.dir/build.make CMakeFiles/test_feature_system.dir/tests/test_feature_system.cpp.s
 .PHONY : tests/test_feature_system.cpp.s
 
+tests/test_format_exporters.o: tests/test_format_exporters.cpp.o
+.PHONY : tests/test_format_exporters.o
+
+# target to build an object file
+tests/test_format_exporters.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/tests/test_format_exporters.cpp.o
+.PHONY : tests/test_format_exporters.cpp.o
+
+tests/test_format_exporters.i: tests/test_format_exporters.cpp.i
+.PHONY : tests/test_format_exporters.i
+
+# target to preprocess a source file
+tests/test_format_exporters.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/tests/test_format_exporters.cpp.i
+.PHONY : tests/test_format_exporters.cpp.i
+
+tests/test_format_exporters.s: tests/test_format_exporters.cpp.s
+.PHONY : tests/test_format_exporters.s
+
+# target to generate assembly for a file
+tests/test_format_exporters.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_format_exporters.dir/build.make CMakeFiles/test_format_exporters.dir/tests/test_format_exporters.cpp.s
+.PHONY : tests/test_format_exporters.cpp.s
+
 tests/test_geometry_cache.o: tests/test_geometry_cache.cpp.o
 .PHONY : tests/test_geometry_cache.o
 
@@ -1348,6 +2202,30 @@ tests/test_geometry_engine.s: tests/test_geometry_engine.cpp.s
 tests/test_geometry_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_engine.dir/build.make CMakeFiles/test_geometry_engine.dir/tests/test_geometry_engine.cpp.s
 .PHONY : tests/test_geometry_engine.cpp.s
+
+tests/test_geometry_ops.o: tests/test_geometry_ops.cpp.o
+.PHONY : tests/test_geometry_ops.o
+
+# target to build an object file
+tests/test_geometry_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/tests/test_geometry_ops.cpp.o
+.PHONY : tests/test_geometry_ops.cpp.o
+
+tests/test_geometry_ops.i: tests/test_geometry_ops.cpp.i
+.PHONY : tests/test_geometry_ops.i
+
+# target to preprocess a source file
+tests/test_geometry_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/tests/test_geometry_ops.cpp.i
+.PHONY : tests/test_geometry_ops.cpp.i
+
+tests/test_geometry_ops.s: tests/test_geometry_ops.cpp.s
+.PHONY : tests/test_geometry_ops.s
+
+# target to generate assembly for a file
+tests/test_geometry_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_geometry_ops.dir/build.make CMakeFiles/test_geometry_ops.dir/tests/test_geometry_ops.cpp.s
+.PHONY : tests/test_geometry_ops.cpp.s
 
 tests/test_history_stack.o: tests/test_history_stack.cpp.o
 .PHONY : tests/test_history_stack.o
@@ -1397,6 +2275,102 @@ tests/test_legacy_adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_legacy_adapter.dir/build.make CMakeFiles/test_legacy_adapter.dir/tests/test_legacy_adapter.cpp.s
 .PHONY : tests/test_legacy_adapter.cpp.s
 
+tests/test_manufacturing.o: tests/test_manufacturing.cpp.o
+.PHONY : tests/test_manufacturing.o
+
+# target to build an object file
+tests/test_manufacturing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/tests/test_manufacturing.cpp.o
+.PHONY : tests/test_manufacturing.cpp.o
+
+tests/test_manufacturing.i: tests/test_manufacturing.cpp.i
+.PHONY : tests/test_manufacturing.i
+
+# target to preprocess a source file
+tests/test_manufacturing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/tests/test_manufacturing.cpp.i
+.PHONY : tests/test_manufacturing.cpp.i
+
+tests/test_manufacturing.s: tests/test_manufacturing.cpp.s
+.PHONY : tests/test_manufacturing.s
+
+# target to generate assembly for a file
+tests/test_manufacturing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_manufacturing.dir/build.make CMakeFiles/test_manufacturing.dir/tests/test_manufacturing.cpp.s
+.PHONY : tests/test_manufacturing.cpp.s
+
+tests/test_matrix_ops.o: tests/test_matrix_ops.cpp.o
+.PHONY : tests/test_matrix_ops.o
+
+# target to build an object file
+tests/test_matrix_ops.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/tests/test_matrix_ops.cpp.o
+.PHONY : tests/test_matrix_ops.cpp.o
+
+tests/test_matrix_ops.i: tests/test_matrix_ops.cpp.i
+.PHONY : tests/test_matrix_ops.i
+
+# target to preprocess a source file
+tests/test_matrix_ops.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/tests/test_matrix_ops.cpp.i
+.PHONY : tests/test_matrix_ops.cpp.i
+
+tests/test_matrix_ops.s: tests/test_matrix_ops.cpp.s
+.PHONY : tests/test_matrix_ops.s
+
+# target to generate assembly for a file
+tests/test_matrix_ops.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix_ops.dir/build.make CMakeFiles/test_matrix_ops.dir/tests/test_matrix_ops.cpp.s
+.PHONY : tests/test_matrix_ops.cpp.s
+
+tests/test_model_importer.o: tests/test_model_importer.cpp.o
+.PHONY : tests/test_model_importer.o
+
+# target to build an object file
+tests/test_model_importer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.o
+.PHONY : tests/test_model_importer.cpp.o
+
+tests/test_model_importer.i: tests/test_model_importer.cpp.i
+.PHONY : tests/test_model_importer.i
+
+# target to preprocess a source file
+tests/test_model_importer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.i
+.PHONY : tests/test_model_importer.cpp.i
+
+tests/test_model_importer.s: tests/test_model_importer.cpp.s
+.PHONY : tests/test_model_importer.s
+
+# target to generate assembly for a file
+tests/test_model_importer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_model_importer.dir/build.make CMakeFiles/test_model_importer.dir/tests/test_model_importer.cpp.s
+.PHONY : tests/test_model_importer.cpp.s
+
+tests/test_parallel_executor.o: tests/test_parallel_executor.cpp.o
+.PHONY : tests/test_parallel_executor.o
+
+# target to build an object file
+tests/test_parallel_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/tests/test_parallel_executor.cpp.o
+.PHONY : tests/test_parallel_executor.cpp.o
+
+tests/test_parallel_executor.i: tests/test_parallel_executor.cpp.i
+.PHONY : tests/test_parallel_executor.i
+
+# target to preprocess a source file
+tests/test_parallel_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/tests/test_parallel_executor.cpp.i
+.PHONY : tests/test_parallel_executor.cpp.i
+
+tests/test_parallel_executor.s: tests/test_parallel_executor.cpp.s
+.PHONY : tests/test_parallel_executor.s
+
+# target to generate assembly for a file
+tests/test_parallel_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parallel_executor.dir/build.make CMakeFiles/test_parallel_executor.dir/tests/test_parallel_executor.cpp.s
+.PHONY : tests/test_parallel_executor.cpp.s
+
 tests/test_parameter_store.o: tests/test_parameter_store.cpp.o
 .PHONY : tests/test_parameter_store.o
 
@@ -1421,6 +2395,30 @@ tests/test_parameter_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_parameter_store.dir/build.make CMakeFiles/test_parameter_store.dir/tests/test_parameter_store.cpp.s
 .PHONY : tests/test_parameter_store.cpp.s
 
+tests/test_pipe_components.o: tests/test_pipe_components.cpp.o
+.PHONY : tests/test_pipe_components.o
+
+# target to build an object file
+tests/test_pipe_components.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/tests/test_pipe_components.cpp.o
+.PHONY : tests/test_pipe_components.cpp.o
+
+tests/test_pipe_components.i: tests/test_pipe_components.cpp.i
+.PHONY : tests/test_pipe_components.i
+
+# target to preprocess a source file
+tests/test_pipe_components.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/tests/test_pipe_components.cpp.i
+.PHONY : tests/test_pipe_components.cpp.i
+
+tests/test_pipe_components.s: tests/test_pipe_components.cpp.s
+.PHONY : tests/test_pipe_components.s
+
+# target to generate assembly for a file
+tests/test_pipe_components.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipe_components.dir/build.make CMakeFiles/test_pipe_components.dir/tests/test_pipe_components.cpp.s
+.PHONY : tests/test_pipe_components.cpp.s
+
 tests/test_project_format.o: tests/test_project_format.cpp.o
 .PHONY : tests/test_project_format.o
 
@@ -1444,6 +2442,30 @@ tests/test_project_format.s: tests/test_project_format.cpp.s
 tests/test_project_format.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_project_format.dir/build.make CMakeFiles/test_project_format.dir/tests/test_project_format.cpp.s
 .PHONY : tests/test_project_format.cpp.s
+
+tests/test_protobuf_serializer.o: tests/test_protobuf_serializer.cpp.o
+.PHONY : tests/test_protobuf_serializer.o
+
+# target to build an object file
+tests/test_protobuf_serializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/tests/test_protobuf_serializer.cpp.o
+.PHONY : tests/test_protobuf_serializer.cpp.o
+
+tests/test_protobuf_serializer.i: tests/test_protobuf_serializer.cpp.i
+.PHONY : tests/test_protobuf_serializer.i
+
+# target to preprocess a source file
+tests/test_protobuf_serializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/tests/test_protobuf_serializer.cpp.i
+.PHONY : tests/test_protobuf_serializer.cpp.i
+
+tests/test_protobuf_serializer.s: tests/test_protobuf_serializer.cpp.s
+.PHONY : tests/test_protobuf_serializer.s
+
+# target to generate assembly for a file
+tests/test_protobuf_serializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_protobuf_serializer.dir/build.make CMakeFiles/test_protobuf_serializer.dir/tests/test_protobuf_serializer.cpp.s
+.PHONY : tests/test_protobuf_serializer.cpp.s
 
 tests/test_rebuild_engine.o: tests/test_rebuild_engine.cpp.o
 .PHONY : tests/test_rebuild_engine.o
@@ -1554,6 +2576,34 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
 	@echo "... bendcore"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -1561,21 +2611,31 @@ help:
 	@echo "... gtest_main"
 	@echo "... test_acceptance"
 	@echo "... test_atomic_save"
+	@echo "... test_bend_calculator"
 	@echo "... test_brep"
 	@echo "... test_cad_document"
 	@echo "... test_command_manager"
+	@echo "... test_database_manager"
 	@echo "... test_dependency_graph"
 	@echo "... test_document_event_bus"
 	@echo "... test_e2e"
 	@echo "... test_entity_id"
 	@echo "... test_entity_tree"
 	@echo "... test_feature_system"
+	@echo "... test_format_exporters"
 	@echo "... test_geometry_cache"
 	@echo "... test_geometry_engine"
+	@echo "... test_geometry_ops"
 	@echo "... test_history_stack"
 	@echo "... test_legacy_adapter"
+	@echo "... test_manufacturing"
+	@echo "... test_matrix_ops"
+	@echo "... test_model_importer"
+	@echo "... test_parallel_executor"
 	@echo "... test_parameter_store"
+	@echo "... test_pipe_components"
 	@echo "... test_project_format"
+	@echo "... test_protobuf_serializer"
 	@echo "... test_rebuild_engine"
 	@echo "... test_recovery"
 	@echo "... test_serializer"
@@ -1583,6 +2643,9 @@ help:
 	@echo "... src/atomic_save.o"
 	@echo "... src/atomic_save.i"
 	@echo "... src/atomic_save.s"
+	@echo "... src/bend_calculator.o"
+	@echo "... src/bend_calculator.i"
+	@echo "... src/bend_calculator.s"
 	@echo "... src/bezier_curve.o"
 	@echo "... src/bezier_curve.i"
 	@echo "... src/bezier_curve.s"
@@ -1598,6 +2661,12 @@ help:
 	@echo "... src/command_manager.o"
 	@echo "... src/command_manager.i"
 	@echo "... src/command_manager.s"
+	@echo "... src/constraint_system.o"
+	@echo "... src/constraint_system.i"
+	@echo "... src/constraint_system.s"
+	@echo "... src/database_manager.o"
+	@echo "... src/database_manager.i"
+	@echo "... src/database_manager.s"
 	@echo "... src/dependency_graph.o"
 	@echo "... src/dependency_graph.i"
 	@echo "... src/dependency_graph.s"
@@ -1613,6 +2682,9 @@ help:
 	@echo "... src/feature_system.o"
 	@echo "... src/feature_system.i"
 	@echo "... src/feature_system.s"
+	@echo "... src/format_exporters.o"
+	@echo "... src/format_exporters.i"
+	@echo "... src/format_exporters.s"
 	@echo "... src/geometry_cache.o"
 	@echo "... src/geometry_cache.i"
 	@echo "... src/geometry_cache.s"
@@ -1622,15 +2694,36 @@ help:
 	@echo "... src/history_stack.o"
 	@echo "... src/history_stack.i"
 	@echo "... src/history_stack.s"
+	@echo "... src/io/model_importer.o"
+	@echo "... src/io/model_importer.i"
+	@echo "... src/io/model_importer.s"
 	@echo "... src/legacy_adapter.o"
 	@echo "... src/legacy_adapter.i"
 	@echo "... src/legacy_adapter.s"
+	@echo "... src/manufacturing.o"
+	@echo "... src/manufacturing.i"
+	@echo "... src/manufacturing.s"
+	@echo "... src/math/geometry_ops.o"
+	@echo "... src/math/geometry_ops.i"
+	@echo "... src/math/geometry_ops.s"
+	@echo "... src/math/matrix_ops.o"
+	@echo "... src/math/matrix_ops.i"
+	@echo "... src/math/matrix_ops.s"
 	@echo "... src/mesh_generator.o"
 	@echo "... src/mesh_generator.i"
 	@echo "... src/mesh_generator.s"
+	@echo "... src/parallel/parallel_executor.o"
+	@echo "... src/parallel/parallel_executor.i"
+	@echo "... src/parallel/parallel_executor.s"
 	@echo "... src/parameter_store.o"
 	@echo "... src/parameter_store.i"
 	@echo "... src/parameter_store.s"
+	@echo "... src/pipe_fittings.o"
+	@echo "... src/pipe_fittings.i"
+	@echo "... src/pipe_fittings.s"
+	@echo "... src/pipe_profile.o"
+	@echo "... src/pipe_profile.i"
+	@echo "... src/pipe_profile.s"
 	@echo "... src/project_format.o"
 	@echo "... src/project_format.i"
 	@echo "... src/project_format.s"
@@ -1640,6 +2733,9 @@ help:
 	@echo "... src/recovery.o"
 	@echo "... src/recovery.i"
 	@echo "... src/recovery.s"
+	@echo "... src/serialization/protobuf_serializer.o"
+	@echo "... src/serialization/protobuf_serializer.i"
+	@echo "... src/serialization/protobuf_serializer.s"
 	@echo "... src/serializer.o"
 	@echo "... src/serializer.i"
 	@echo "... src/serializer.s"
@@ -1652,6 +2748,9 @@ help:
 	@echo "... tests/test_atomic_save.o"
 	@echo "... tests/test_atomic_save.i"
 	@echo "... tests/test_atomic_save.s"
+	@echo "... tests/test_bend_calculator.o"
+	@echo "... tests/test_bend_calculator.i"
+	@echo "... tests/test_bend_calculator.s"
 	@echo "... tests/test_brep.o"
 	@echo "... tests/test_brep.i"
 	@echo "... tests/test_brep.s"
@@ -1661,6 +2760,9 @@ help:
 	@echo "... tests/test_command_manager.o"
 	@echo "... tests/test_command_manager.i"
 	@echo "... tests/test_command_manager.s"
+	@echo "... tests/test_database_manager.o"
+	@echo "... tests/test_database_manager.i"
+	@echo "... tests/test_database_manager.s"
 	@echo "... tests/test_dependency_graph.o"
 	@echo "... tests/test_dependency_graph.i"
 	@echo "... tests/test_dependency_graph.s"
@@ -1679,24 +2781,48 @@ help:
 	@echo "... tests/test_feature_system.o"
 	@echo "... tests/test_feature_system.i"
 	@echo "... tests/test_feature_system.s"
+	@echo "... tests/test_format_exporters.o"
+	@echo "... tests/test_format_exporters.i"
+	@echo "... tests/test_format_exporters.s"
 	@echo "... tests/test_geometry_cache.o"
 	@echo "... tests/test_geometry_cache.i"
 	@echo "... tests/test_geometry_cache.s"
 	@echo "... tests/test_geometry_engine.o"
 	@echo "... tests/test_geometry_engine.i"
 	@echo "... tests/test_geometry_engine.s"
+	@echo "... tests/test_geometry_ops.o"
+	@echo "... tests/test_geometry_ops.i"
+	@echo "... tests/test_geometry_ops.s"
 	@echo "... tests/test_history_stack.o"
 	@echo "... tests/test_history_stack.i"
 	@echo "... tests/test_history_stack.s"
 	@echo "... tests/test_legacy_adapter.o"
 	@echo "... tests/test_legacy_adapter.i"
 	@echo "... tests/test_legacy_adapter.s"
+	@echo "... tests/test_manufacturing.o"
+	@echo "... tests/test_manufacturing.i"
+	@echo "... tests/test_manufacturing.s"
+	@echo "... tests/test_matrix_ops.o"
+	@echo "... tests/test_matrix_ops.i"
+	@echo "... tests/test_matrix_ops.s"
+	@echo "... tests/test_model_importer.o"
+	@echo "... tests/test_model_importer.i"
+	@echo "... tests/test_model_importer.s"
+	@echo "... tests/test_parallel_executor.o"
+	@echo "... tests/test_parallel_executor.i"
+	@echo "... tests/test_parallel_executor.s"
 	@echo "... tests/test_parameter_store.o"
 	@echo "... tests/test_parameter_store.i"
 	@echo "... tests/test_parameter_store.s"
+	@echo "... tests/test_pipe_components.o"
+	@echo "... tests/test_pipe_components.i"
+	@echo "... tests/test_pipe_components.s"
 	@echo "... tests/test_project_format.o"
 	@echo "... tests/test_project_format.i"
 	@echo "... tests/test_project_format.s"
+	@echo "... tests/test_protobuf_serializer.o"
+	@echo "... tests/test_protobuf_serializer.i"
+	@echo "... tests/test_protobuf_serializer.s"
 	@echo "... tests/test_rebuild_engine.o"
 	@echo "... tests/test_rebuild_engine.i"
 	@echo "... tests/test_rebuild_engine.s"

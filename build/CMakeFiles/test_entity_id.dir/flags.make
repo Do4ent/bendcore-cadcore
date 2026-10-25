@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/tmp/bendcore-cadcore/include -isystem /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest/include -isystem /tmp/bendcore-cadcore/build/_deps/googletest-src/googletest
 
-CXX_FLAGS =  -Wall -Wextra -Werror -pedantic -std=gnu++20
+CXX_FLAGS = -Wall -Wextra -Werror -pedantic -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG -std=gnu++20
 

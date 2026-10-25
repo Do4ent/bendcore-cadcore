@@ -5,6 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -pedantic")
 
+# Disable Taskflow tests to avoid compilation errors
+set(TF_BUILD_TESTS OFF CACHE BOOL "Disable Taskflow tests")
+set(TF_BUILD_EXAMPLES OFF CACHE BOOL "Disable Taskflow examples")
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Core library sources
@@ -38,21 +42,116 @@ set(BENDCORE_SOURCES
     src/format_exporters.cpp
     src/manufacturing.cpp
     src/database_manager.cpp
+    # Integration wrappers for external libraries
+    src/math/matrix_ops.cpp
+    src/math/geometry_ops.cpp
+    src/io/model_importer.cpp
+    src/parallel/parallel_executor.cpp
+    src/serialization/protobuf_serializer.cpp
 )
 
 add_library(bendcore STATIC ${BENDCORE_SOURCES})
 target_include_directories(bendcore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+# Include Taskflow (header-only, always available from FetchContent)
+target_include_directories(bendcore PUBLIC ${taskflow_SOURCE_DIR})
+
+# Optionally link Eigen
+if(Eigen3_FOUND)
+    target_link_libraries(bendcore PUBLIC Eigen3::Eigen)
+    message(STATUS "Linking with Eigen3 (system)")
+else()
+    message(STATUS "Eigen3 not available - using internal math operations")
+endif()
+
+# Optionally link Assimp
+if(assimp_FOUND)
+    target_link_libraries(bendcore PUBLIC assimp)
+    message(STATUS "Linking with Assimp (system)")
+else()
+    message(STATUS "Assimp not available - model import will be limited")
+endif()
+
+# Optionally link Protobuf
+if(Protobuf_FOUND)
+    target_link_libraries(bendcore PUBLIC protobuf::libprotobuf_lite)
+    message(STATUS "Linking with Protobuf (system)")
+else()
+    message(STATUS "Protobuf not available - using basic serialization")
+endif()
+
+# Optionally link CGAL
+if(CGAL_FOUND)
+    target_link_libraries(bendcore PUBLIC CGAL)
+    message(STATUS "Linking with CGAL (system)")
+else()
+    message(STATUS "CGAL not available - geometry operations will be limited")
+endif()
+
 set_target_properties(bendcore PROPERTIES VERSION 0.1.0 SOVERSION 0)
 
-# GoogleTest
+# Dependencies with FetchContent
 include(FetchContent)
+
+# GoogleTest (required for tests)
 FetchContent_Declare(
     googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
     GIT_TAG v1.14.0
+    TIMEOUT 60
 )
-FetchContent_MakeAvailable(googletest)
+
+# Taskflow - Header-only (required for parallel execution)
+FetchContent_Declare(
+    taskflow
+    GIT_REPOSITORY https://github.com/taskflow/taskflow.git
+    GIT_TAG v3.6.0
+    TIMEOUT 60
+    FIND_PACKAGE_ARGS
+)
+
+# Optional: Try to use system packages
+find_package(Eigen3 3.3 QUIET)
+find_package(assimp QUIET)
+find_package(Protobuf QUIET)
+find_package(CGAL QUIET)
+
+# Always fetch GoogleTest and Taskflow
+FetchContent_MakeAvailable(googletest taskflow)
+
+# Fallback: Create interface library for missing dependencies
+if(NOT Eigen3_FOUND)
+    message(STATUS "Eigen3 not found - will use internal stubs")
+    # We'll use internal implementation
+    set(Eigen3_FOUND FALSE)
+endif()
+
+if(NOT assimp_FOUND)
+    message(STATUS "Assimp not found - will use internal stubs")
+    # Create dummy target
+    add_library(assimp INTERFACE)
+    set(assimp_FOUND FALSE)
+endif()
+
+if(NOT Protobuf_FOUND)
+    message(STATUS "Protobuf not found - will use internal implementation")
+    # Create dummy target
+    add_library(protobuf INTERFACE)
+    set(protobuf_FOUND FALSE)
+endif()
+
+if(NOT CGAL_FOUND)
+    message(STATUS "CGAL not found - geometry operations will be limited")
+    # Create dummy target
+    add_library(CGAL INTERFACE)
+endif()
+
+# Make Eigen available even if not system package
+if(NOT Eigen3_FOUND)
+    set(Eigen Eigen)
+else()
+    set(Eigen Eigen3::Eigen)
+endif()
 
 enable_testing()
 
@@ -188,3 +287,39 @@ add_test(NAME Manufacturing COMMAND test_manufacturing)
 add_executable(test_database_manager tests/test_database_manager.cpp)
 target_link_libraries(test_database_manager bendcore gtest_main)
 add_test(NAME DatabaseManager COMMAND test_database_manager)
+
+# ===== Integration Library Tests =====
+
+# Matrix Operations Tests (EIGEN)
+add_executable(test_matrix_ops tests/test_matrix_ops.cpp)
+target_link_libraries(test_matrix_ops bendcore gtest_main)
+if(Eigen3_FOUND)
+    target_link_libraries(test_matrix_ops Eigen3::Eigen)
+endif()
+add_test(NAME MatrixOps COMMAND test_matrix_ops)
+
+# Geometry Operations Tests (CGAL)
+add_executable(test_geometry_ops tests/test_geometry_ops.cpp)
+target_link_libraries(test_geometry_ops bendcore gtest_main)
+add_test(NAME GeometryOps COMMAND test_geometry_ops)
+
+# Model Importer Tests (ASSIMP)
+add_executable(test_model_importer tests/test_model_importer.cpp)
+target_link_libraries(test_model_importer bendcore gtest_main)
+if(assimp_FOUND)
+    target_link_libraries(test_model_importer assimp)
+endif()
+add_test(NAME ModelImporter COMMAND test_model_importer)
+
+# Parallel Executor Tests (TASKFLOW)
+add_executable(test_parallel_executor tests/test_parallel_executor.cpp)
+target_link_libraries(test_parallel_executor bendcore gtest_main)
+add_test(NAME ParallelExecutor COMMAND test_parallel_executor)
+
+# Protobuf Serializer Tests (PROTOBUF)
+add_executable(test_protobuf_serializer tests/test_protobuf_serializer.cpp)
+target_link_libraries(test_protobuf_serializer bendcore gtest_main)
+if(Protobuf_FOUND)
+    target_link_libraries(test_protobuf_serializer protobuf::libprotobuf_lite)
+endif()
+add_test(NAME ProtobufSerializer COMMAND test_protobuf_serializer)
