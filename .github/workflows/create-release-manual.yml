@@ -1,0 +1,100 @@
+name: Manual Release Creation
+
+# This workflow creates a GitHub Release when manually triggered
+# Used for v1.0.0-PRODUCTION release creation
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g., v1.0.0-PRODUCTION)'
+        required: true
+        default: 'v1.0.0-PRODUCTION'
+      draft:
+        description: 'Create as draft release?'
+        required: false
+        default: 'false'
+
+jobs:
+  create-release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate tag exists
+        run: |
+          git fetch --tags
+          if git rev-parse ${{ github.event.inputs.version }} >/dev/null 2>&1; then
+            echo "✓ Tag exists: ${{ github.event.inputs.version }}"
+          else
+            echo "Error: Tag does not exist"
+            exit 1
+          fi
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ build-essential
+
+      - name: Build release artifacts
+        run: |
+          mkdir -p build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Release ..
+          cmake --build . --parallel $(nproc)
+
+          # Run tests
+          ctest --output-on-failure --parallel $(nproc)
+
+          # Create artifacts directory
+          mkdir -p release-assets
+          cp bendcore_app release-assets/bendcore_app-linux-x64
+          ls -lh test_* | awk '{print $NF}' | head -10 | xargs -I {} cp {} release-assets/
+          chmod +x release-assets/*
+
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          VERSION="${{ github.event.inputs.version }}"
+
+          # Get previous tag
+          PREV_TAG=$(git tag --sort=-version:refname | grep -v "$VERSION" | head -1)
+
+          if [ -z "$PREV_TAG" ]; then
+            NOTES=$(git log --pretty=format:"- %h: %s (%an)" | head -30)
+          else
+            NOTES=$(git log $PREV_TAG..HEAD --pretty=format:"- %h: %s (%an)")
+          fi
+
+          # Read release notes from RELEASE_NOTES.md if exists
+          if [ -f "RELEASE_NOTES.md" ]; then
+            FULL_NOTES=$(cat RELEASE_NOTES.md)
+          else
+            FULL_NOTES="$NOTES"
+          fi
+
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          echo "$FULL_NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.event.inputs.version }}
+          tag_name: ${{ github.event.inputs.version }}
+          body: ${{ steps.release_notes.outputs.notes }}
+          draft: ${{ github.event.inputs.draft }}
+          files: |
+            build/release-assets/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release created successfully
+        run: |
+          echo "✓ Release created: ${{ github.event.inputs.version }}"
+          echo "Release URL: https://github.com/${{ github.repository }}/releases/tag/${{ github.event.inputs.version }}"
