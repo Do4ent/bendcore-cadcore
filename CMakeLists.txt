@@ -54,6 +54,8 @@ set(BENDCORE_SOURCES
     src/assembly/mate_solver.cpp
     # Phase M8: Assembly UI/UX
     src/assembly/assembly_ui.cpp
+    # Phase M9: Direct Editing & Parametrics
+    src/geometry/direct_editing.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -390,3 +392,12 @@ add_test(NAME MateSolver COMMAND test_mate_solver)
 add_executable(test_assembly_ui tests/test_assembly_ui.cpp)
 target_link_libraries(test_assembly_ui bendcore gtest_main)
 add_test(NAME AssemblyUI COMMAND test_assembly_ui)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M9: Direct Editing & Parametrics
+# ═════════════════════════════════════════════════════════════════
+
+# Direct Editing Tests (CAD-DEV-051 to CAD-DEV-075)
+add_executable(test_direct_editing tests/test_direct_editing.cpp)
+target_link_libraries(test_direct_editing bendcore gtest_main)
+add_test(NAME DirectEditing COMMAND test_direct_editing)

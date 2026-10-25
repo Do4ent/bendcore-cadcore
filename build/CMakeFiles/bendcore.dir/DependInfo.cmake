@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/entity_tree.cpp" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/entity_tree.cpp.o.d"
   "/tmp/bendcore-cadcore/src/feature_system.cpp" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
   "/tmp/bendcore-cadcore/src/format_exporters.cpp" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/geometry/direct_editing.cpp" "CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry/occt_wrapper.cpp" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry/surface_features.cpp" "CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o.d"
   "/tmp/bendcore-cadcore/src/geometry_cache.cpp" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/geometry_cache.cpp.o.d"

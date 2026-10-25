@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/feature_system.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o"
   "CMakeFiles/bendcore.dir/src/format_exporters.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o"
+  "CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o"
   "CMakeFiles/bendcore.dir/src/geometry/occt_wrapper.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/geometry/surface_features.cpp.o"

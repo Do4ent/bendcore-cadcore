@@ -679,6 +679,19 @@ test_assembly_ui/fast:
 .PHONY : test_assembly_ui/fast
 
 #=============================================================================
+# Target rules for targets named test_direct_editing
+
+# Build rule for target.
+test_direct_editing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_direct_editing
+.PHONY : test_direct_editing
+
+# fast build rule for target.
+test_direct_editing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_direct_editing.dir/build.make CMakeFiles/test_direct_editing.dir/build
+.PHONY : test_direct_editing/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -1502,6 +1515,30 @@ src/format_exporters.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/format_exporters.cpp.s
 .PHONY : src/format_exporters.cpp.s
 
+src/geometry/direct_editing.o: src/geometry/direct_editing.cpp.o
+.PHONY : src/geometry/direct_editing.o
+
+# target to build an object file
+src/geometry/direct_editing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.o
+.PHONY : src/geometry/direct_editing.cpp.o
+
+src/geometry/direct_editing.i: src/geometry/direct_editing.cpp.i
+.PHONY : src/geometry/direct_editing.i
+
+# target to preprocess a source file
+src/geometry/direct_editing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.i
+.PHONY : src/geometry/direct_editing.cpp.i
+
+src/geometry/direct_editing.s: src/geometry/direct_editing.cpp.s
+.PHONY : src/geometry/direct_editing.s
+
+# target to generate assembly for a file
+src/geometry/direct_editing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/geometry/direct_editing.cpp.s
+.PHONY : src/geometry/direct_editing.cpp.s
+
 src/geometry/occt_wrapper.o: src/geometry/occt_wrapper.cpp.o
 .PHONY : src/geometry/occt_wrapper.o
 
@@ -2294,6 +2331,30 @@ tests/test_dependency_graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dependency_graph.dir/build.make CMakeFiles/test_dependency_graph.dir/tests/test_dependency_graph.cpp.s
 .PHONY : tests/test_dependency_graph.cpp.s
 
+tests/test_direct_editing.o: tests/test_direct_editing.cpp.o
+.PHONY : tests/test_direct_editing.o
+
+# target to build an object file
+tests/test_direct_editing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_direct_editing.dir/build.make CMakeFiles/test_direct_editing.dir/tests/test_direct_editing.cpp.o
+.PHONY : tests/test_direct_editing.cpp.o
+
+tests/test_direct_editing.i: tests/test_direct_editing.cpp.i
+.PHONY : tests/test_direct_editing.i
+
+# target to preprocess a source file
+tests/test_direct_editing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_direct_editing.dir/build.make CMakeFiles/test_direct_editing.dir/tests/test_direct_editing.cpp.i
+.PHONY : tests/test_direct_editing.cpp.i
+
+tests/test_direct_editing.s: tests/test_direct_editing.cpp.s
+.PHONY : tests/test_direct_editing.s
+
+# target to generate assembly for a file
+tests/test_direct_editing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_direct_editing.dir/build.make CMakeFiles/test_direct_editing.dir/tests/test_direct_editing.cpp.s
+.PHONY : tests/test_direct_editing.cpp.s
+
 tests/test_document_event_bus.o: tests/test_document_event_bus.cpp.o
 .PHONY : tests/test_document_event_bus.o
 
@@ -3045,6 +3106,7 @@ help:
 	@echo "... test_command_manager"
 	@echo "... test_database_manager"
 	@echo "... test_dependency_graph"
+	@echo "... test_direct_editing"
 	@echo "... test_document_event_bus"
 	@echo "... test_e2e"
 	@echo "... test_entity_id"
@@ -3125,6 +3187,9 @@ help:
 	@echo "... src/format_exporters.o"
 	@echo "... src/format_exporters.i"
 	@echo "... src/format_exporters.s"
+	@echo "... src/geometry/direct_editing.o"
+	@echo "... src/geometry/direct_editing.i"
+	@echo "... src/geometry/direct_editing.s"
 	@echo "... src/geometry/occt_wrapper.o"
 	@echo "... src/geometry/occt_wrapper.i"
 	@echo "... src/geometry/occt_wrapper.s"
@@ -3224,6 +3289,9 @@ help:
 	@echo "... tests/test_dependency_graph.o"
 	@echo "... tests/test_dependency_graph.i"
 	@echo "... tests/test_dependency_graph.s"
+	@echo "... tests/test_direct_editing.o"
+	@echo "... tests/test_direct_editing.i"
+	@echo "... tests/test_direct_editing.s"
 	@echo "... tests/test_document_event_bus.o"
 	@echo "... tests/test_document_event_bus.i"
 	@echo "... tests/test_document_event_bus.s"

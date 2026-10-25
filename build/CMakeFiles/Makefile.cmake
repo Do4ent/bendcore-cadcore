@@ -141,6 +141,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_occt_wrapper.dir/DependInfo.cmake"
   "CMakeFiles/test_mate_solver.dir/DependInfo.cmake"
   "CMakeFiles/test_assembly_ui.dir/DependInfo.cmake"
+  "CMakeFiles/test_direct_editing.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
