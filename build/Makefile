@@ -718,6 +718,19 @@ test_sheet_metal_ops/fast:
 .PHONY : test_sheet_metal_ops/fast
 
 #=============================================================================
+# Target rules for targets named test_advanced_sketcher
+
+# Build rule for target.
+test_advanced_sketcher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_advanced_sketcher
+.PHONY : test_advanced_sketcher
+
+# fast build rule for target.
+test_advanced_sketcher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_advanced_sketcher.dir/build.make CMakeFiles/test_advanced_sketcher.dir/build
+.PHONY : test_advanced_sketcher/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -2141,6 +2154,30 @@ src/serializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/serializer.cpp.s
 .PHONY : src/serializer.cpp.s
 
+src/sketch/advanced_sketcher.o: src/sketch/advanced_sketcher.cpp.o
+.PHONY : src/sketch/advanced_sketcher.o
+
+# target to build an object file
+src/sketch/advanced_sketcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o
+.PHONY : src/sketch/advanced_sketcher.cpp.o
+
+src/sketch/advanced_sketcher.i: src/sketch/advanced_sketcher.cpp.i
+.PHONY : src/sketch/advanced_sketcher.i
+
+# target to preprocess a source file
+src/sketch/advanced_sketcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.i
+.PHONY : src/sketch/advanced_sketcher.cpp.i
+
+src/sketch/advanced_sketcher.s: src/sketch/advanced_sketcher.cpp.s
+.PHONY : src/sketch/advanced_sketcher.s
+
+# target to generate assembly for a file
+src/sketch/advanced_sketcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bendcore.dir/build.make CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.s
+.PHONY : src/sketch/advanced_sketcher.cpp.s
+
 src/sweep.o: src/sweep.cpp.o
 .PHONY : src/sweep.o
 
@@ -2212,6 +2249,30 @@ tests/test_acceptance.s: tests/test_acceptance.cpp.s
 tests/test_acceptance.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acceptance.dir/build.make CMakeFiles/test_acceptance.dir/tests/test_acceptance.cpp.s
 .PHONY : tests/test_acceptance.cpp.s
+
+tests/test_advanced_sketcher.o: tests/test_advanced_sketcher.cpp.o
+.PHONY : tests/test_advanced_sketcher.o
+
+# target to build an object file
+tests/test_advanced_sketcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_advanced_sketcher.dir/build.make CMakeFiles/test_advanced_sketcher.dir/tests/test_advanced_sketcher.cpp.o
+.PHONY : tests/test_advanced_sketcher.cpp.o
+
+tests/test_advanced_sketcher.i: tests/test_advanced_sketcher.cpp.i
+.PHONY : tests/test_advanced_sketcher.i
+
+# target to preprocess a source file
+tests/test_advanced_sketcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_advanced_sketcher.dir/build.make CMakeFiles/test_advanced_sketcher.dir/tests/test_advanced_sketcher.cpp.i
+.PHONY : tests/test_advanced_sketcher.cpp.i
+
+tests/test_advanced_sketcher.s: tests/test_advanced_sketcher.cpp.s
+.PHONY : tests/test_advanced_sketcher.s
+
+# target to generate assembly for a file
+tests/test_advanced_sketcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_advanced_sketcher.dir/build.make CMakeFiles/test_advanced_sketcher.dir/tests/test_advanced_sketcher.cpp.s
+.PHONY : tests/test_advanced_sketcher.cpp.s
 
 tests/test_assembly_ui.o: tests/test_assembly_ui.cpp.o
 .PHONY : tests/test_assembly_ui.o
@@ -3220,6 +3281,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_acceptance"
+	@echo "... test_advanced_sketcher"
 	@echo "... test_assembly_ui"
 	@echo "... test_atomic_save"
 	@echo "... test_bend_calculator"
@@ -3386,6 +3448,9 @@ help:
 	@echo "... src/serializer.o"
 	@echo "... src/serializer.i"
 	@echo "... src/serializer.s"
+	@echo "... src/sketch/advanced_sketcher.o"
+	@echo "... src/sketch/advanced_sketcher.i"
+	@echo "... src/sketch/advanced_sketcher.s"
 	@echo "... src/sweep.o"
 	@echo "... src/sweep.i"
 	@echo "... src/sweep.s"
@@ -3395,6 +3460,9 @@ help:
 	@echo "... tests/test_acceptance.o"
 	@echo "... tests/test_acceptance.i"
 	@echo "... tests/test_acceptance.s"
+	@echo "... tests/test_advanced_sketcher.o"
+	@echo "... tests/test_advanced_sketcher.i"
+	@echo "... tests/test_advanced_sketcher.s"
 	@echo "... tests/test_assembly_ui.o"
 	@echo "... tests/test_assembly_ui.i"
 	@echo "... tests/test_assembly_ui.s"

@@ -83,6 +83,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/serializer.cpp.o"
   "CMakeFiles/bendcore.dir/src/serializer.cpp.o.d"
+  "CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o"
+  "CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/sweep.cpp.o"
   "CMakeFiles/bendcore.dir/src/sweep.cpp.o.d"
   "CMakeFiles/bendcore.dir/src/transaction.cpp.o"

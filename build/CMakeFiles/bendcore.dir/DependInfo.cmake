@@ -50,6 +50,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/bendcore-cadcore/src/revolve.cpp" "CMakeFiles/bendcore.dir/src/revolve.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/revolve.cpp.o.d"
   "/tmp/bendcore-cadcore/src/serialization/protobuf_serializer.cpp" "CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/serialization/protobuf_serializer.cpp.o.d"
   "/tmp/bendcore-cadcore/src/serializer.cpp" "CMakeFiles/bendcore.dir/src/serializer.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/serializer.cpp.o.d"
+  "/tmp/bendcore-cadcore/src/sketch/advanced_sketcher.cpp" "CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/sketch/advanced_sketcher.cpp.o.d"
   "/tmp/bendcore-cadcore/src/sweep.cpp" "CMakeFiles/bendcore.dir/src/sweep.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/sweep.cpp.o.d"
   "/tmp/bendcore-cadcore/src/transaction.cpp" "CMakeFiles/bendcore.dir/src/transaction.cpp.o" "gcc" "CMakeFiles/bendcore.dir/src/transaction.cpp.o.d"
   )

@@ -60,6 +60,8 @@ set(BENDCORE_SOURCES
     src/manufacturing/nc_generator.cpp
     # Phase M11: Sheet Metal Operations
     src/geometry/sheet_metal_ops.cpp
+    # Phase M12: Advanced Sketcher Tools
+    src/sketch/advanced_sketcher.cpp
     # Integration wrappers for external libraries
     src/math/matrix_ops.cpp
     src/math/geometry_ops.cpp
@@ -423,3 +425,12 @@ add_test(NAME NCGenerator COMMAND test_nc_generator)
 add_executable(test_sheet_metal_ops tests/test_sheet_metal_ops.cpp)
 target_link_libraries(test_sheet_metal_ops bendcore gtest_main)
 add_test(NAME SheetMetalOps COMMAND test_sheet_metal_ops)
+
+# ═════════════════════════════════════════════════════════════════
+# Phase M12: Advanced Sketcher Tools
+# ═════════════════════════════════════════════════════════════════
+
+# Advanced Sketcher Tests (CAD-DEV-126 to CAD-DEV-150)
+add_executable(test_advanced_sketcher tests/test_advanced_sketcher.cpp)
+target_link_libraries(test_advanced_sketcher bendcore gtest_main)
+add_test(NAME AdvancedSketcher COMMAND test_advanced_sketcher)
